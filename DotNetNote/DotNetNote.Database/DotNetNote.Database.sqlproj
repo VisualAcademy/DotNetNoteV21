@@ -62,4 +62,7 @@
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="dbo\Functions" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Buyers.sql" />
+  </ItemGroup>
 </Project>
