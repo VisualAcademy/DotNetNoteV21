@@ -28,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\VariableTest\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DotNetNote.Models\DotNetNote.Models.csproj" />
   </ItemGroup>
 
