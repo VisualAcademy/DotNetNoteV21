@@ -39,7 +39,7 @@ namespace DotNetNote
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // In production, the Angular files will be served from this directory
@@ -48,9 +48,31 @@ namespace DotNetNote
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            //[DI] 의존성 주입(Dependency Injection)
+            DependencyInjectionContainer(services);
+        }
+
+        /// <summary>
+        /// 의존성 주입 관련 코드만 따로 모아서 관리
+        /// - 리포지토리 등록
+        /// </summary>
+        private void DependencyInjectionContainer(IServiceCollection services)
+        {
+            //[?] ConfigureServices가 호출되기 전에는 DI(종속성 주입)가 설정되지 않습니다.
+
+            //[DNN][!] Configuration 개체 주입: 
+            //    IConfiguration 또는 IConfigurationRoot에 Configuration 개체 전달
+            //    appsettings.json 파일의 데이터베이스 연결 문자열을 
+            //    리포지토리 클래스에서 사용할 수 있도록 설정
+            // IConfiguration 주입 -> Configuration의 인스턴스를 실행 
+            services.AddSingleton<IConfiguration>(Configuration);
+
             // IBuyerRepository 개체를 생성자 매개 변수로 주입: BuyerRepository의 인스턴스를 생성 
             services.AddSingleton<IBuyerRepository>(new BuyerRepository(Configuration["ConnectionStrings:DefaultConnection"]));
             services.AddTransient<IVariableRepository, VariableRepositoryInMemory>();
+
+            //[IdeaManager]: 아이디어 관리자: ASP.NET Core부터 Angular까지 A to Z 
+            services.AddTransient<IIdeaRepository, IdeaRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,7 +97,7 @@ namespace DotNetNote
 
             app.UseAuthentication();
                        
-            var isMvc = true; // true면 ASP.NET Core, false면 Angular
+            var isMvc = false; // true면 ASP.NET Core, false면 Angular
             if (isMvc)
             {
                 // [1] ASP.NET Core를 메인으로 사용할 때

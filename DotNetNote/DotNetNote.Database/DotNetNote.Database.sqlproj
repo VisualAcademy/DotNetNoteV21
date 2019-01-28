@@ -64,5 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Buyers.sql" />
+    <Build Include="dbo\Tables\Ideas.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DotNetNote.Database.publish.xml" />
   </ItemGroup>
 </Project>

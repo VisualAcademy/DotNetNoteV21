@@ -1,0 +1,17 @@
+﻿<h1>{{ title }}</h1>
+
+<ul>
+    <li *ngFor="let idea of ideas">
+        {{ idea.id }} - {{ idea.note }}
+    </li>
+</ul>
+
+<hr />
+
+<form #frm="ngForm" (ngSubmit)="btnSubmit_Click(frm.value)">
+    <input type="text" name="note" value="" [(ngModel)]="note" />
+    <input type="button" name="btnSave" value="저장" 
+           (click)="btnSave_Click(frm.value)" />
+
+    <input type="submit" name="btnSubmit" value="전송" />
+</form>
