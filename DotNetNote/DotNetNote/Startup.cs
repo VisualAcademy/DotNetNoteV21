@@ -48,6 +48,14 @@ namespace DotNetNote
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            // 새로운 DbContext 추가
+            services.AddEntityFrameworkSqlServer().AddDbContext<DashboardContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
+
+            // 의존성 주입
+            services.AddTransient<ITwelveRepository, TwelveRepository>();
+
             //[DI] 의존성 주입(Dependency Injection)
             DependencyInjectionContainer(services);
         }
