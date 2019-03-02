@@ -1,0 +1,22 @@
+﻿<h1>템플릿 기반 폼 사용하기</h1>
+
+<form #frmDemo="ngForm">
+    <style>
+        .has-error {
+            border: 1px solid red;
+        }
+    </style>
+    <div [ngClass]="{ 'has-error' : txtNote.touched && txtNote.invalid }">
+        <input type="text" name="note"
+               [(ngModel)]="vm.note" #txtNote="ngModel"
+               placeholder="노트를 입력하세요."
+               required />
+        <span *ngIf="txtNote.touched && txtNote.errors">
+            * 노트를 입력하세요.
+        </span>
+    </div>
+    <input type="button" value="저장" name="btnSave"
+           [disabled]="!frmDemo.valid"
+           (click)="btnSave_Click(txtNote.value)" />
+</form>
+{{ frmDemo.value | json}}

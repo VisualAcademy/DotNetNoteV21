@@ -1,0 +1,38 @@
+﻿<h1>로그인</h1>
+<hr />
+<div class="row">
+
+    <div class="col-md-4">
+        <form autocomplete="off" #frmLogin="ngForm" novalidate
+              (ngSubmit)="btnLogin_Click(frmLogin.value)">
+            <div class="form-group">
+                <label for="username">아이디: </label>
+                <span *ngIf="frmLogin.controls.username?.touched
+                  && frmLogin.controls.username?.invalid">
+                    * 필수
+                </span>
+                <input type="text" id="username" name="username"
+                       [(ngModel)]="username" required
+                       placeholder="아이디..." class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="password">암호: </label>
+                <span *ngIf="pwd.touched && pwd.invalid">
+                    * 필수
+                </span>
+                <input type="password" id="password" name="password"
+                       #pwd="ngModel"
+                       [(ngModel)]="password" required
+                       placeholder="암호..." class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary"
+                    [disabled]="frmLogin.invalid">
+                로그인
+            </button>
+            <button type="button" class="btn btn-default">취소</button>
+        </form>
+        <hr />
+        {{ frmLogin.value | json }}
+    </div>
+
+</div>
