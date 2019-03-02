@@ -1,0 +1,13 @@
+﻿<h1>학점 계산기</h1>
+<form #frm="ngForm" (ngSubmit)="btnSubmit_Click()">
+    당신의 점수는? 
+    <input type="text" name="score" [(ngModel)]="score" />
+    <input type="submit" value="계산" />
+</form>
+{{frm.value | json}}
+<hr />
+<div *ngIf="message !== ''">
+    {{message}}
+</div>
+
+<grades-graph [score]="score"></grades-graph>
