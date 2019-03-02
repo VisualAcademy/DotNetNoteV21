@@ -2030,3 +2030,71 @@ i 節쥄dm節? Compiled successfully.
 2019-03-02 23:29:01.066 +09:00 [Information] Request finished in 20504.4317ms 101 
 2019-03-02 23:29:06.234 +09:00 [Information] Committing the session was canceled.
 2019-03-02 23:29:06.235 +09:00 [Information] Request finished in 25017.326ms 200 application/javascript; charset=UTF-8
+2019-03-02 23:34:34.902 +09:00 [Information] Starting @angular/cli on port 52715...
+2019-03-02 23:34:35.270 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:34:35.292 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:34:41.738 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52715"
+
+** Angular Live Development Server is listening on localhost:52715, open your browser on http://localhost:52715/ **
+
+2019-03-02 23:34:48.222 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-02 23:34:53.271 +09:00 [Information] Date: 2019-03-02T14:34:53.239Z
+Hash: 7b601572782065fd743f
+Time: 11343ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:34:53.366 +09:00 [Information] Request finished in 18096.9197ms 304 
+2019-03-02 23:34:53.382 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:34:53.382 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:34:53.384 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:34:53.384 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:34:53.384 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:34:53.395 +09:00 [Information] Request finished in 10.7281ms 304 
+2019-03-02 23:34:55.136 +09:00 [Information] Request finished in 1753.8801ms 304 
+2019-03-02 23:34:55.142 +09:00 [Information] Request finished in 1758.5285ms 304 
+2019-03-02 23:34:55.143 +09:00 [Information] Request finished in 1759.8388ms 304 
+2019-03-02 23:34:55.144 +09:00 [Information] Request finished in 1761.6239ms 304 
+2019-03-02 23:34:55.198 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:34:55.199 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:34:55.252 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:34:55.450 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:34:55.701 +09:00 [Information] Request finished in 501.614ms 304 
+2019-03-02 23:34:55.703 +09:00 [Information] Request finished in 504.6227ms 304 
+2019-03-02 23:34:55.703 +09:00 [Information] Request finished in 451.5859ms 304 
+2019-03-02 23:34:55.710 +09:00 [Information] Request finished in 259.9415ms 304 
+2019-03-02 23:34:55.792 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:34:55.794 +09:00 [Information] Request finished in 2.3204ms 304 
+2019-03-02 23:34:55.865 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551537295861  
+2019-03-02 23:34:55.875 +09:00 [Information] Request finished in 9.9342ms 200 application/json; charset=UTF-8
+2019-03-02 23:34:55.884 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/099/0r3yg10m/websocket  
+2019-03-02 23:34:55.886 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:34:56.553 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/099/adrfnfex/xhr_streaming?t=1551537296548  0
+2019-03-02 23:34:56.553 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:34:59.251 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/SampleData/WeatherForecasts  
+2019-03-02 23:34:59.253 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:34:59.265 +09:00 [Information] Route matched with "{action = \"WeatherForecasts\", controller = \"SampleData\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"
+2019-03-02 23:34:59.279 +09:00 [Information] Executing action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" - Validation state: Valid
+2019-03-02 23:34:59.285 +09:00 [Information] Executed action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.7521ms.
+2019-03-02 23:34:59.292 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectIPartitionIterator`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DotNetNote.Controllers.SampleDataController+WeatherForecast, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:34:59.427 +09:00 [Information] Executed action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" in 159.737ms
+2019-03-02 23:34:59.427 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:34:59.428 +09:00 [Information] Request finished in 177.3188ms 200 application/json; charset=utf-8
+2019-03-02 23:34:59.749 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:34:59.763 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:34:59.765 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:34:59.766 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:34:59.820 +09:00 [Information] Executed action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 54.1999ms.
+2019-03-02 23:34:59.820 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Idea, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:34:59.822 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 56.7162ms
+2019-03-02 23:34:59.822 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:34:59.823 +09:00 [Information] Request finished in 73.4634ms 200 application/json; charset=utf-8
+2019-03-02 23:35:01.739 +09:00 [Information] Request finished in 5854.2653ms 101 
+2019-03-02 23:35:21.569 +09:00 [Information] Committing the session was canceled.
+2019-03-02 23:35:21.570 +09:00 [Information] Request finished in 25016.6895ms 200 application/javascript; charset=UTF-8
