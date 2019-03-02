@@ -1,0 +1,17 @@
+﻿<h1>파일 업로드</h1>
+
+<form (ngSubmit)="frm_Submit()">
+    <input 
+           type="file" 
+           name="imgFile" 
+           (change)="imgFile_Changed()"
+    />
+
+    <input 
+           type="submit" 
+           value="업로드" 
+           name="btnSubmit"
+           id="btnSubmit"
+           (click)="btnSubmit_Click()"
+    />
+</form>

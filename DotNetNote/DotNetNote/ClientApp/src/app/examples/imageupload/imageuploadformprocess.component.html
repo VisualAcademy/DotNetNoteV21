@@ -1,0 +1,18 @@
+﻿<h1>이미지 업로드 폼 만들기 연습</h1>
+<form #frmImageUpload="ngForm" (ngSubmit)="btnUpload_Submit(frmImageUpload.value)">
+    <input type="text" name="txtName" ngModel required />
+    <input type="file" 
+           name="imgFile" 
+           ngModel 
+           #imgFile 
+           accept="image/*"
+           (change)="imgFile_Changed($event.target.files)" />
+    <input type="submit" name="btnUpload" value="이미지 업로드" 
+           [disabled]="!frmImageUpload.valid || imgFile.value === ''" />
+    <hr />
+    <img [src]="imgUrl" style="width: 100px; height: 100px; " />
+</form>
+<hr />
+{{ frmImageUpload.value | json }}
+<hr />
+{{ frm}}

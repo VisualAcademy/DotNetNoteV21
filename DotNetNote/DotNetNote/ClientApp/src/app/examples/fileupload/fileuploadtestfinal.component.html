@@ -1,0 +1,25 @@
+﻿<h1>파일 업로드 테스트</h1>
+
+<form>
+    <input 
+           type="file" 
+           name="imgFile" 
+           (change)="imgFile_Changed($event)"
+           #imgFile
+           style="display: none;"
+    />
+
+    <button 
+            class="btn btn-default"
+            (click)="imgFile.click()"
+    >파일 첨부</button>
+
+    <input 
+           type="button" 
+           value="업로드" 
+           name="btnSubmit"
+           id="btnSubmit"
+           (click)="btnSubmit_Click()"
+           class="btn btn-primary"
+    />
+</form>

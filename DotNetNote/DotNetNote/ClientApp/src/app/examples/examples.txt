@@ -1,0 +1,14 @@
+﻿지연 로딩(Lazy Loading) 기반의 examples 독립 모듈 만들기
+
+앵귤러 프로젝트 생성: ASP.NET Core 2.0 + Angular 
+컴포넌트: /examples
+	부분 페이지
+	전체 페이지(라우팅)
+모듈 & 라우팅 모듈: 
+	/examples: examples 컴포넌트
+	/examples/xxxx: xxxx 컴포넌트
+독립 모듈
+	서브 모듈에서 컴포넌트와 라우팅 관리
+독립 모듈(Lazy 로딩)
+	all.js
+	n.js...
