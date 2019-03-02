@@ -10,8 +10,8 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <UserSecretsId>DotNetNote</UserSecretsId>
-    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <!--<UserSecretsId>DotNetNote</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>-->
   </PropertyGroup>
 
   <ItemGroup>
