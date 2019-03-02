@@ -25,7 +25,8 @@ namespace DotNetNote.Controllers
         public IEnumerable<Idea> Get()
         {
             // cRud
-            return _repository.GetAll().AsEnumerable();
+            //return _repository.GetAll().AsEnumerable();
+            return _repository.GetAll().ToList();
         }
 
         /// <summary>

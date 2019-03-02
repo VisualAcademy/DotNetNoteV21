@@ -1100,3 +1100,933 @@ System.ArgumentException: ConnectionString cannot be empty or null.
 2019-03-02 23:00:57.232 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" in 0.3019ms
 2019-03-02 23:00:57.232 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
 2019-03-02 23:00:57.233 +09:00 [Information] Request finished in 1.2339ms 200 application/json; charset=utf-8
+2019-03-02 23:16:06.940 +09:00 [Information] Starting @angular/cli on port 52079...
+2019-03-02 23:16:07.325 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:16:07.349 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:16:13.558 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52079"
+
+** Angular Live Development Server is listening on localhost:52079, open your browser on http://localhost:52079/ **
+
+2019-03-02 23:16:19.876 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-02 23:16:24.762 +09:00 [Information] Date: 2019-03-02T14:16:24.727Z
+Hash: 7b601572782065fd743f
+Time: 11005ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:16:24.859 +09:00 [Information] Request finished in 17536.3376ms 304 
+2019-03-02 23:16:24.878 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:16:24.878 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:16:24.879 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:16:24.880 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:16:24.880 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:16:24.890 +09:00 [Information] Request finished in 10.7787ms 304 
+2019-03-02 23:16:26.406 +09:00 [Information] Request finished in 1526.0552ms 304 
+2019-03-02 23:16:26.406 +09:00 [Information] Request finished in 1526.3657ms 304 
+2019-03-02 23:16:26.407 +09:00 [Information] Request finished in 1529.0479ms 304 
+2019-03-02 23:16:26.407 +09:00 [Information] Request finished in 1529.5387ms 304 
+2019-03-02 23:16:27.063 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536187058  
+2019-03-02 23:16:27.092 +09:00 [Information] Request finished in 29.1958ms 200 application/json; charset=UTF-8
+2019-03-02 23:16:27.099 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/742/jycpymfw/websocket  
+2019-03-02 23:16:27.101 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:16:27.800 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/742/vlu14e3o/xhr_streaming?t=1551536187795  0
+2019-03-02 23:16:27.800 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:16:30.398 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/SampleData/WeatherForecasts  
+2019-03-02 23:16:30.399 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:16:30.408 +09:00 [Information] Route matched with "{action = \"WeatherForecasts\", controller = \"SampleData\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"
+2019-03-02 23:16:30.417 +09:00 [Information] Executing action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" - Validation state: Valid
+2019-03-02 23:16:30.422 +09:00 [Information] Executed action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.1685ms.
+2019-03-02 23:16:30.428 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectIPartitionIterator`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DotNetNote.Controllers.SampleDataController+WeatherForecast, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:16:30.562 +09:00 [Information] Executed action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" in 151.3816ms
+2019-03-02 23:16:30.562 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:16:30.563 +09:00 [Information] Request finished in 165.1117ms 200 application/json; charset=utf-8
+2019-03-02 23:16:31.255 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:16:31.268 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:16:31.271 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:16:31.271 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:16:31.309 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 38.3319ms
+2019-03-02 23:16:31.309 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:16:31.371 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:16:31.408 +09:00 [Information] Request finished in 152.6382ms 500 text/html; charset=utf-8
+2019-03-02 23:16:32.491 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:16:32.529 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:16:32.530 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:16:32.531 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:16:32.531 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:16:33.500 +09:00 [Information] Request finished in 1008.6876ms 304 
+2019-03-02 23:16:33.522 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:16:33.524 +09:00 [Information] Request finished in 2.7621ms 304 
+2019-03-02 23:16:33.540 +09:00 [Information] Request finished in 1009.0059ms 304 
+2019-03-02 23:16:33.541 +09:00 [Information] Request finished in 1011.7123ms 304 
+2019-03-02 23:16:33.542 +09:00 [Information] Request finished in 1012.5354ms 304 
+2019-03-02 23:16:33.543 +09:00 [Information] Request finished in 1011.6001ms 304 
+2019-03-02 23:16:39.000 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:16:39.001 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:16:39.001 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:16:39.001 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:16:39.003 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.7127ms
+2019-03-02 23:16:39.003 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:16:39.008 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:16:39.022 +09:00 [Information] Request finished in 21.6714ms 500 text/html; charset=utf-8
+2019-03-02 23:17:45.494 +09:00 [Information] Starting @angular/cli on port 52184...
+2019-03-02 23:17:45.679 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/742/vlu14e3o/xhr_streaming?t=1551536258553  0
+2019-03-02 23:17:45.704 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:17:45.725 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:17:47.225 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:17:47.243 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:47.252 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:17:47.263 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:17:47.268 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 13.6947ms
+2019-03-02 23:17:47.269 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:47.388 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:17:47.442 +09:00 [Information] Request finished in 216.5431ms 500 text/html; charset=utf-8
+2019-03-02 23:17:47.493 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:17:47.506 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:17:47.508 +09:00 [Information] Request finished in 14.6218ms 200 image/x-icon
+2019-03-02 23:17:48.786 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:17:48.799 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:48.799 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:17:48.799 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:17:48.800 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.4371ms
+2019-03-02 23:17:48.801 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:48.805 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:17:48.817 +09:00 [Information] Request finished in 31.1968ms 500 text/html; charset=utf-8
+2019-03-02 23:17:48.882 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:17:48.883 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:17:48.884 +09:00 [Information] Request finished in 1.7672ms 200 image/x-icon
+2019-03-02 23:17:49.724 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:17:49.725 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:49.725 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:17:49.725 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:17:49.726 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 0.9083ms
+2019-03-02 23:17:49.726 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:17:49.731 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:17:49.745 +09:00 [Information] Request finished in 20.4002ms 500 text/html; charset=utf-8
+2019-03-02 23:17:49.807 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:17:49.808 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:17:49.809 +09:00 [Information] Request finished in 1.8809ms 200 image/x-icon
+2019-03-02 23:17:52.440 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52184"
+
+** Angular Live Development Server is listening on localhost:52184, open your browser on http://localhost:52184/ **
+
+2019-03-02 23:18:02.559 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536282554  
+2019-03-02 23:18:03.631 +09:00 [Information] Request finished in 1072.1779ms 200 application/json; charset=UTF-8
+2019-03-02 23:18:03.637 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/126/a5r2ohm1/websocket  
+2019-03-02 23:18:03.637 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:18:03.760 +09:00 [Information] Date: 2019-03-02T14:18:03.725Z
+Hash: 7b601572782065fd743f
+Time: 11133ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:18:03.772 +09:00 [Information] Committing the session was canceled.
+2019-03-02 23:18:03.772 +09:00 [Information] Request finished in 18094.7798ms 200 application/javascript; charset=UTF-8
+2019-03-02 23:18:05.564 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/IdeaApp  
+2019-03-02 23:18:05.921 +09:00 [Information] Request finished in 356.9596ms 200 text/html; charset=UTF-8
+2019-03-02 23:18:05.941 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:18:05.942 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:18:05.942 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:18:05.943 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:18:05.943 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:18:05.946 +09:00 [Information] Request finished in 4.8828ms 304 
+2019-03-02 23:18:05.950 +09:00 [Information] Request finished in 7.096ms 304 
+2019-03-02 23:18:06.140 +09:00 [Information] Request finished in 2503.3892ms 101 
+2019-03-02 23:18:06.949 +09:00 [Information] Request finished in 1006.3954ms 304 
+2019-03-02 23:18:06.949 +09:00 [Information] Request finished in 1007.4629ms 304 
+2019-03-02 23:18:06.950 +09:00 [Information] Request finished in 1006.6392ms 304 
+2019-03-02 23:18:07.587 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:18:07.587 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:18:07.587 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:18:07.587 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:18:07.595 +09:00 [Information] Request finished in 8.2488ms 304 
+2019-03-02 23:18:07.596 +09:00 [Information] Request finished in 9.0058ms 304 
+2019-03-02 23:18:07.597 +09:00 [Information] Request finished in 9.8817ms 304 
+2019-03-02 23:18:07.598 +09:00 [Information] Request finished in 10.4545ms 304 
+2019-03-02 23:18:07.614 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:07.614 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:07.614 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:07.614 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:07.615 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.0577ms
+2019-03-02 23:18:07.615 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:07.620 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:07.632 +09:00 [Information] Request finished in 17.8823ms 500 text/html; charset=utf-8
+2019-03-02 23:18:07.669 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:18:07.672 +09:00 [Information] Request finished in 3.482ms 304 
+2019-03-02 23:18:08.565 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536288554  
+2019-03-02 23:18:08.573 +09:00 [Information] Request finished in 8.5885ms 200 application/json; charset=UTF-8
+2019-03-02 23:18:08.594 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/016/yyfzlxqt/websocket  
+2019-03-02 23:18:08.595 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:18:30.123 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:30.123 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:30.123 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:30.123 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:30.125 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.2372ms
+2019-03-02 23:18:30.125 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:30.129 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:30.141 +09:00 [Information] Request finished in 18.3629ms 500 text/html; charset=utf-8
+2019-03-02 23:18:30.262 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:30.263 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:30.264 +09:00 [Information] Request finished in 1.7349ms 200 image/x-icon
+2019-03-02 23:18:31.214 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:31.215 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:31.215 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:31.215 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:31.216 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.2799ms
+2019-03-02 23:18:31.216 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:31.222 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:31.236 +09:00 [Information] Request finished in 21.6953ms 500 text/html; charset=utf-8
+2019-03-02 23:18:31.301 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:31.302 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:31.302 +09:00 [Information] Request finished in 1.8703ms 200 image/x-icon
+2019-03-02 23:18:31.859 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:31.859 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:31.859 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:31.859 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:31.861 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.1983ms
+2019-03-02 23:18:31.861 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:31.866 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:31.879 +09:00 [Information] Request finished in 20.5691ms 500 text/html; charset=utf-8
+2019-03-02 23:18:31.944 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:31.945 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:31.946 +09:00 [Information] Request finished in 1.581ms 200 image/x-icon
+2019-03-02 23:18:32.376 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:32.376 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.376 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:32.377 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:32.378 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 1.0578ms
+2019-03-02 23:18:32.378 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.383 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:32.397 +09:00 [Information] Request finished in 20.842ms 500 text/html; charset=utf-8
+2019-03-02 23:18:32.460 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:32.461 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:32.462 +09:00 [Information] Request finished in 1.7561ms 200 image/x-icon
+2019-03-02 23:18:32.557 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:32.557 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.557 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:32.557 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:32.558 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 0.864ms
+2019-03-02 23:18:32.558 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.563 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:32.575 +09:00 [Information] Request finished in 18.5697ms 500 text/html; charset=utf-8
+2019-03-02 23:18:32.638 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:32.639 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:32.640 +09:00 [Information] Request finished in 1.5067ms 200 image/x-icon
+2019-03-02 23:18:32.745 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:18:32.745 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.746 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:18:32.746 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:18:32.746 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 0.6856ms
+2019-03-02 23:18:32.746 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:18:32.751 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:18:32.762 +09:00 [Information] Request finished in 16.7132ms 500 text/html; charset=utf-8
+2019-03-02 23:18:32.822 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:18:32.823 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:18:32.824 +09:00 [Information] Request finished in 1.4119ms 200 image/x-icon
+2019-03-02 23:18:45.216 +09:00 [Information] Starting @angular/cli on port 52274...
+2019-03-02 23:18:45.398 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536323553  
+2019-03-02 23:18:45.422 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:18:51.951 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52274"
+
+** Angular Live Development Server is listening on localhost:52274, open your browser on http://localhost:52274/ **
+
+2019-03-02 23:18:57.560 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536337554  
+2019-03-02 23:18:59.083 +09:00 [Information] Committing the session was canceled.
+2019-03-02 23:18:59.090 +09:00 [Information] Request finished in 13694.6711ms 200 application/json; charset=UTF-8
+2019-03-02 23:18:59.145 +09:00 [Information] Request finished in 1585.1591ms 200 application/json; charset=UTF-8
+2019-03-02 23:18:59.150 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/482/2xgnakl1/websocket  
+2019-03-02 23:18:59.152 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:19:02.696 +09:00 [Information] Date: 2019-03-02T14:19:02.666Z
+Hash: 7b601572782065fd743f
+Time: 10555ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:19:03.564 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/IdeaApp  
+2019-03-02 23:19:05.198 +09:00 [Information] Request finished in 1633.2675ms 304 
+2019-03-02 23:19:05.214 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:19:05.215 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:19:05.215 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:19:05.215 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:19:05.216 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:19:05.219 +09:00 [Information] Request finished in 4.0291ms 304 
+2019-03-02 23:19:05.345 +09:00 [Information] Committing the session was canceled.
+2019-03-02 23:19:05.345 +09:00 [Information] Request finished in 6195.2471ms 101 
+2019-03-02 23:19:06.226 +09:00 [Information] Request finished in 1011.2485ms 304 
+2019-03-02 23:19:06.227 +09:00 [Information] Request finished in 1013.0965ms 304 
+2019-03-02 23:19:06.228 +09:00 [Information] Request finished in 1012.1464ms 304 
+2019-03-02 23:19:06.229 +09:00 [Information] Request finished in 1014.3531ms 304 
+2019-03-02 23:19:06.760 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:19:06.760 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:19:06.760 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:19:06.761 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:19:06.763 +09:00 [Information] Request finished in 2.8607ms 304 
+2019-03-02 23:19:06.769 +09:00 [Information] Request finished in 8.4967ms 304 
+2019-03-02 23:19:06.770 +09:00 [Information] Request finished in 9.5935ms 304 
+2019-03-02 23:19:06.770 +09:00 [Information] Request finished in 9.7672ms 304 
+2019-03-02 23:19:06.787 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:19:06.788 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:19:06.797 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:19:06.810 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:19:06.815 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 14.9101ms
+2019-03-02 23:19:06.815 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:19:06.834 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:19:06.837 +09:00 [Information] Request finished in 3.0801ms 304 
+2019-03-02 23:19:06.858 +09:00 [Error] An unhandled exception has occurred while executing the request.
+System.IO.FileLoadException: Could not load file or assembly 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Dapper, Version=1.50.5.0, Culture=neutral, PublicKeyToken=null'
+   at DotNetNote.Models.IdeaRepository.GetAll()
+   at DotNetNote.Controllers.IdeaServicesController.Get() in C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\Controllers\IdeaServicesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+
+2019-03-02 23:19:06.887 +09:00 [Information] Request finished in 100.3518ms 500 text/html; charset=utf-8
+2019-03-02 23:19:07.560 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536347554  
+2019-03-02 23:19:07.563 +09:00 [Information] Request finished in 3.0513ms 200 application/json; charset=UTF-8
+2019-03-02 23:19:07.572 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/267/o1si0sdh/websocket  
+2019-03-02 23:19:07.572 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:19:14.365 +09:00 [Information] Starting @angular/cli on port 52330...
+2019-03-02 23:19:14.649 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536352553  
+2019-03-02 23:19:14.675 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:19:17.125 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:19:21.715 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52330"
+
+** Angular Live Development Server is listening on localhost:52330, open your browser on http://localhost:52330/ **
+
+2019-03-02 23:19:29.322 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-02 23:19:29.422 +09:00 [Information] Request finished in 14775.0899ms 200 application/json; charset=UTF-8
+2019-03-02 23:19:33.566 +09:00 [Information] Date: 2019-03-02T14:19:33.530Z
+Hash: 7b601572782065fd743f
+Time: 11647ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:19:33.572 +09:00 [Information] Request finished in 16446.3041ms 304 
+2019-03-02 23:19:33.590 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:19:33.590 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:19:33.591 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:19:33.592 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:19:33.592 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:19:33.660 +09:00 [Information] Request finished in 68.4037ms 304 
+2019-03-02 23:19:33.665 +09:00 [Information] Request finished in 72.7743ms 304 
+2019-03-02 23:19:35.236 +09:00 [Information] Request finished in 1644.4373ms 304 
+2019-03-02 23:19:35.237 +09:00 [Information] Request finished in 1646.504ms 304 
+2019-03-02 23:19:35.237 +09:00 [Information] Request finished in 1647.2669ms 304 
+2019-03-02 23:19:35.252 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:19:35.354 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:19:35.401 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:19:35.609 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:19:35.844 +09:00 [Information] Request finished in 591.5586ms 304 
+2019-03-02 23:19:35.845 +09:00 [Information] Request finished in 491.7726ms 304 
+2019-03-02 23:19:35.846 +09:00 [Information] Request finished in 445.2158ms 304 
+2019-03-02 23:19:35.853 +09:00 [Information] Request finished in 243.453ms 304 
+2019-03-02 23:19:35.990 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:19:35.993 +09:00 [Information] Request finished in 2.3901ms 304 
+2019-03-02 23:19:36.055 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536376051  
+2019-03-02 23:19:36.058 +09:00 [Information] Request finished in 2.548ms 200 application/json; charset=UTF-8
+2019-03-02 23:19:36.067 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/344/vttknkoh/websocket  
+2019-03-02 23:19:36.069 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:19:36.719 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/344/btxbjbxe/xhr_streaming?t=1551536376713  0
+2019-03-02 23:19:36.719 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:19:59.745 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/SampleData/WeatherForecasts  
+2019-03-02 23:19:59.747 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:19:59.759 +09:00 [Information] Route matched with "{action = \"WeatherForecasts\", controller = \"SampleData\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"
+2019-03-02 23:19:59.773 +09:00 [Information] Executing action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" - Validation state: Valid
+2019-03-02 23:19:59.778 +09:00 [Information] Executed action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.8068ms.
+2019-03-02 23:19:59.787 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectIPartitionIterator`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DotNetNote.Controllers.SampleDataController+WeatherForecast, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:19:59.924 +09:00 [Information] Executed action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" in 162.1546ms
+2019-03-02 23:19:59.924 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:19:59.925 +09:00 [Information] Request finished in 179.4864ms 200 application/json; charset=utf-8
+2019-03-02 23:20:00.580 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:20:00.594 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:20:00.596 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:20:00.597 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:20:00.663 +09:00 [Information] Executed action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 65.8444ms.
+2019-03-02 23:20:00.663 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Idea, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:20:00.666 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 69.3948ms
+2019-03-02 23:20:00.666 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:20:00.667 +09:00 [Information] Request finished in 87.1478ms 200 application/json; charset=utf-8
+2019-03-02 23:20:04.195 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/SampleData/WeatherForecasts  
+2019-03-02 23:20:04.195 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:20:04.195 +09:00 [Information] Route matched with "{action = \"WeatherForecasts\", controller = \"SampleData\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"
+2019-03-02 23:20:04.196 +09:00 [Information] Executing action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" - Validation state: Valid
+2019-03-02 23:20:04.196 +09:00 [Information] Executed action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0237ms.
+2019-03-02 23:20:04.196 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectIPartitionIterator`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DotNetNote.Controllers.SampleDataController+WeatherForecast, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:20:04.196 +09:00 [Information] Executed action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" in 0.5834ms
+2019-03-02 23:20:04.196 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:20:04.197 +09:00 [Information] Request finished in 2.8668ms 200 application/json; charset=utf-8
+2019-03-02 23:21:21.343 +09:00 [Information] Request finished in 105276.3775ms 101 
+2019-03-02 23:21:52.193 +09:00 [Information] Starting @angular/cli on port 52479...
+2019-03-02 23:21:52.589 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:21:52.614 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:21:59.028 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52479"
+
+** Angular Live Development Server is listening on localhost:52479, open your browser on http://localhost:52479/ **
+
+2019-03-02 23:22:05.618 +09:00 [Information] Date: 2019-03-02T14:22:05.617Z
+Hash: daca4e715960fb6ccc98
+Time: 6421ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-02 23:22:05.666 +09:00 [Information] ERROR in src/app/components/animation/animation.component.ts(4,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'trigger'.
+src/app/components/animation/animation.component.ts(5,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'style'.
+src/app/components/animation/animation.component.ts(6,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'transition'.
+src/app/components/animation/animation.component.ts(7,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'animate'.
+src/app/components/animation/animation.component.ts(8,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'state'.
+src/app/components/animation/animation.component.ts(9,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'keyframes'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-02 23:22:07.209 +09:00 [Information] Request finished in 14622.2545ms 404 text/html; charset=utf-8
+2019-03-02 23:22:25.383 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:22:26.396 +09:00 [Information] Request finished in 1013.1352ms 404 text/html; charset=utf-8
+2019-03-02 23:22:26.515 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-02 23:22:26.528 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-02 23:22:26.529 +09:00 [Information] Request finished in 14.1287ms 200 image/x-icon
+2019-03-02 23:22:38.265 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:22:39.279 +09:00 [Information] Request finished in 1014.1486ms 404 text/html; charset=utf-8
+2019-03-02 23:23:54.126 +09:00 [Information] Starting @angular/cli on port 52548...
+2019-03-02 23:23:54.485 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:23:54.507 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:24:00.841 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52548"
+
+** Angular Live Development Server is listening on localhost:52548, open your browser on http://localhost:52548/ **
+
+2019-03-02 23:24:07.495 +09:00 [Information] Date: 2019-03-02T14:24:07.492Z
+Hash: daca4e715960fb6ccc98
+Time: 6479ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-02 23:24:07.540 +09:00 [Information] ERROR in src/app/components/animation/animation.component.ts(4,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'trigger'.
+src/app/components/animation/animation.component.ts(5,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'style'.
+src/app/components/animation/animation.component.ts(6,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'transition'.
+src/app/components/animation/animation.component.ts(7,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'animate'.
+src/app/components/animation/animation.component.ts(8,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'state'.
+src/app/components/animation/animation.component.ts(9,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'keyframes'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-02 23:24:08.342 +09:00 [Information] Request finished in 13858.8783ms 404 text/html; charset=utf-8
+2019-03-02 23:25:40.398 +09:00 [Information] Starting @angular/cli on port 52632...
+2019-03-02 23:25:40.648 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:25:40.672 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:25:47.305 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52632"
+
+** Angular Live Development Server is listening on localhost:52632, open your browser on http://localhost:52632/ **
+
+2019-03-02 23:25:53.282 +09:00 [Information] Date: 2019-03-02T14:25:53.280Z
+Hash: daca4e715960fb6ccc98
+Time: 5816ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-02 23:25:53.326 +09:00 [Information] ERROR in src/app/components/animation/animation.component.ts(4,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'trigger'.
+src/app/components/animation/animation.component.ts(5,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'style'.
+src/app/components/animation/animation.component.ts(6,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'transition'.
+src/app/components/animation/animation.component.ts(7,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'animate'.
+src/app/components/animation/animation.component.ts(8,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'state'.
+src/app/components/animation/animation.component.ts(9,5): error TS2305: Module '"C:/DotNetNote2019/DotNetNote/DotNetNote/DotNetNote/ClientApp/node_modules/@angular/core/core"' has no exported member 'keyframes'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-02 23:25:54.742 +09:00 [Information] Request finished in 14096.0353ms 404 text/html; charset=utf-8
+2019-03-02 23:26:40.278 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-02 23:26:48.572 +09:00 [Information] Date: 2019-03-02T14:26:48.496Z - Hash: edfa19e62da35aa0de92 - Time: 8218ms
+2 unchanged chunks
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:28:21.523 +09:00 [Information] Starting @angular/cli on port 52649...
+2019-03-02 23:28:21.797 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-02 23:28:21.819 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-02 23:28:28.153 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52649"
+
+** Angular Live Development Server is listening on localhost:52649, open your browser on http://localhost:52649/ **
+
+2019-03-02 23:28:34.904 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-02 23:28:38.437 +09:00 [Information] Date: 2019-03-02T14:28:38.405Z
+Hash: 7b601572782065fd743f
+Time: 10101ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-02 23:28:38.470 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-02 23:28:38.471 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-02 23:28:38.471 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-02 23:28:38.471 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-02 23:28:38.536 +09:00 [Information] Request finished in 16740.4518ms 200 text/html; charset=UTF-8
+2019-03-02 23:28:38.537 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:28:38.544 +09:00 [Information] Request finished in 72.7901ms 304 
+2019-03-02 23:28:38.557 +09:00 [Information] Request finished in 20.273ms 304 
+2019-03-02 23:28:39.968 +09:00 [Information] Request finished in 1497.0553ms 304 
+2019-03-02 23:28:39.969 +09:00 [Information] Request finished in 1498.2145ms 304 
+2019-03-02 23:28:39.969 +09:00 [Information] Request finished in 1499.8701ms 304 
+2019-03-02 23:28:40.548 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551536920544  
+2019-03-02 23:28:40.555 +09:00 [Information] Request finished in 7.4293ms 200 application/json; charset=UTF-8
+2019-03-02 23:28:40.561 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/030/uskmgvvo/websocket  
+2019-03-02 23:28:40.563 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:28:41.217 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/030/uedgjoq1/xhr_streaming?t=1551536921212  0
+2019-03-02 23:28:41.218 +09:00 [Information] CORS policy execution successful.
+2019-03-02 23:28:51.913 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/SampleData/WeatherForecasts  
+2019-03-02 23:28:51.915 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:28:51.926 +09:00 [Information] Route matched with "{action = \"WeatherForecasts\", controller = \"SampleData\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"
+2019-03-02 23:28:51.937 +09:00 [Information] Executing action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" - Validation state: Valid
+2019-03-02 23:28:51.943 +09:00 [Information] Executed action method "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.8906ms.
+2019-03-02 23:28:51.951 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectIPartitionIterator`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DotNetNote.Controllers.SampleDataController+WeatherForecast, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:28:52.078 +09:00 [Information] Executed action "DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)" in 149.6457ms
+2019-03-02 23:28:52.078 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.SampleDataController.WeatherForecasts (DotNetNote)"'
+2019-03-02 23:28:52.079 +09:00 [Information] Request finished in 166.7963ms 200 application/json; charset=utf-8
+2019-03-02 23:28:52.757 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/IdeaServices  
+2019-03-02 23:28:52.770 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:28:52.772 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"IdeaServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"
+2019-03-02 23:28:52.772 +09:00 [Information] Executing action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" - Validation state: Valid
+2019-03-02 23:28:52.827 +09:00 [Information] Executed action method "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 54.0541ms.
+2019-03-02 23:28:52.827 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Idea, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-02 23:28:52.829 +09:00 [Information] Executed action "DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)" in 56.7623ms
+2019-03-02 23:28:52.829 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.IdeaServicesController.Get (DotNetNote)"'
+2019-03-02 23:28:52.830 +09:00 [Information] Request finished in 72.6715ms 200 application/json; charset=utf-8
+2019-03-02 23:28:55.614 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-02 23:28:55.674 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-02 23:28:55.674 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-02 23:28:55.676 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-02 23:28:55.676 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-02 23:28:56.622 +09:00 [Information] Request finished in 1007.7381ms 304 
+2019-03-02 23:28:56.640 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-02 23:28:56.643 +09:00 [Information] Request finished in 2.6894ms 304 
+2019-03-02 23:28:56.679 +09:00 [Information] Request finished in 1004.8024ms 304 
+2019-03-02 23:28:56.680 +09:00 [Information] Request finished in 1006.0306ms 304 
+2019-03-02 23:28:56.687 +09:00 [Information] Request finished in 1011.3423ms 304 
+2019-03-02 23:28:56.688 +09:00 [Information] Request finished in 1011.6711ms 304 
+2019-03-02 23:29:01.066 +09:00 [Information] Request finished in 20504.4317ms 101 
+2019-03-02 23:29:06.234 +09:00 [Information] Committing the session was canceled.
+2019-03-02 23:29:06.235 +09:00 [Information] Request finished in 25017.326ms 200 application/javascript; charset=UTF-8

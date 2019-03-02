@@ -546,6 +546,11 @@ namespace DotNetNote
                         template: "{controller}/{action=Index}/{id?}");
                 });
 
+                // *.csproj 파일에 아래 2줄 주석 처리
+                //< !--Set this to true if you enable server-side prerendering-- >
+                //< BuildServerSideRenderer > false </ BuildServerSideRenderer >
+                //< !--< UserSecretsId > DotNetNote </ UserSecretsId >
+                //< AspNetCoreHostingModel > InProcess </ AspNetCoreHostingModel > -->
                 app.UseSpa(spa =>
                 {
                     // To learn more about options for serving an Angular SPA from ASP.NET Core,
