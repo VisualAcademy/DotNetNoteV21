@@ -1,0 +1,11 @@
+
+<h2>{{ Title }} - about.component.html</h2>
+
+<h3>추천 사이트</h3>
+<ul *ngIf='Sites.length'>
+    <li *ngFor='let s of Sites'>
+        <a [href]='s.siteUrl'>
+            {{ s.siteName }}
+        </a>
+    </li>
+</ul>

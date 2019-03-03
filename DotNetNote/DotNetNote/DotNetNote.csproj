@@ -1618,6 +1618,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\app\samples\" />
     <Folder Include="Logs\" />
   </ItemGroup>
 

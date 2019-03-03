@@ -1,0 +1,16 @@
+﻿import { Component, OnInit } from '@angular/core';
+
+//@Component() 데코레이터 
+@Component({
+    selector: 'angular-core',
+    templateUrl: './angularcore.component.html' // 연결된 템플릿 사용
+})
+
+export class AngularCoreDemoComponent implements OnInit {
+
+    name = 'Angular 4';
+
+    constructor() { }
+
+    ngOnInit() { }
+}
