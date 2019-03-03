@@ -641,3 +641,362 @@ i 節쥄dm節? Compiled successfully.
 2019-03-03 17:59:26.920 +09:00 [Information] Request finished in 17193.1469ms 101 
 2019-03-03 17:59:35.368 +09:00 [Information] Committing the session was canceled.
 2019-03-03 17:59:35.368 +09:00 [Information] Request finished in 25005.0207ms 200 application/javascript; charset=UTF-8
+2019-03-03 18:00:52.020 +09:00 [Information] Starting @angular/cli on port 52586...
+2019-03-03 18:00:52.258 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 18:00:52.284 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 18:00:59.409 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52586"
+
+** Angular Live Development Server is listening on localhost:52586, open your browser on http://localhost:52586/ **
+
+2019-03-03 18:01:06.329 +09:00 [Information] Date: 2019-03-03T09:01:06.326Z
+Hash: 4cb943e389b49e06ec4b
+Time: 6731ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-03 18:01:06.377 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:01:07.778 +09:00 [Information] Request finished in 15522.1731ms 404 text/html; charset=utf-8
+2019-03-03 18:02:08.676 +09:00 [Information] Starting @angular/cli on port 52617...
+2019-03-03 18:02:08.933 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 18:02:08.956 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 18:02:15.772 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52617"
+
+** Angular Live Development Server is listening on localhost:52617, open your browser on http://localhost:52617/ **
+
+2019-03-03 18:02:22.240 +09:00 [Information] Date: 2019-03-03T09:02:22.238Z
+Hash: 4cb943e389b49e06ec4b
+Time: 6294ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-03 18:02:22.289 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:02:24.925 +09:00 [Information] Request finished in 15993.5704ms 404 text/html; charset=utf-8
+2019-03-03 18:03:14.345 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:03:17.056 +09:00 [Information] Date: 2019-03-03T09:03:17.055Z - Hash: 04fc0e7efeec140034ce - Time: 2710ms
+5 unchanged chunks
+
+
+2019-03-03 18:03:17.077 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/shared/shared.module.ts(7,10): error TS2307: Cannot find module './angularnote-paging-helper/angularnote-paging-helper.component'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:03:20.259 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:03:22.308 +09:00 [Information] Date: 2019-03-03T09:03:22.307Z - Hash: 122b62f8b48ed5536694 - Time: 2048ms
+5 unchanged chunks
+
+
+2019-03-03 18:03:22.332 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:03:30.701 +09:00 [Information] Starting @angular/cli on port 52633...
+2019-03-03 18:03:31.048 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 18:03:31.072 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 18:03:37.838 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52633"
+
+** Angular Live Development Server is listening on localhost:52633, open your browser on http://localhost:52633/ **
+
+2019-03-03 18:03:44.459 +09:00 [Information] Date: 2019-03-03T09:03:44.457Z
+Hash: 4cb943e389b49e06ec4b
+Time: 6448ms
+chunk {main} main.js, main.js.map (main) 1.98 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 706 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+
+2019-03-03 18:03:44.511 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:03:47.277 +09:00 [Information] Request finished in 16231.0501ms 404 text/html; charset=utf-8
+2019-03-03 18:06:32.793 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:35.482 +09:00 [Information] Date: 2019-03-03T09:06:35.481Z - Hash: 14dee0d0d370c0bf2bec - Time: 2688ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:35.513 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:35.729 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:37.818 +09:00 [Information] Date: 2019-03-03T09:06:37.817Z - Hash: dcc5dd0a729bc812cd6b - Time: 2089ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:37.845 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:38.326 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:40.318 +09:00 [Information] Date: 2019-03-03T09:06:40.317Z - Hash: d2698f5262c9ccf46668 - Time: 1992ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:40.344 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:40.553 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:42.458 +09:00 [Information] Date: 2019-03-03T09:06:42.458Z - Hash: 9590f69b7a4ea540e0b9 - Time: 1905ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:42.482 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:42.690 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:44.644 +09:00 [Information] Date: 2019-03-03T09:06:44.643Z - Hash: 9590f69b7a4ea540e0b9 - Time: 1953ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:44.672 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:44.882 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:46.778 +09:00 [Information] Date: 2019-03-03T09:06:46.777Z - Hash: 28781eee07c1e0810162 - Time: 1895ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:46.824 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/SiteListViewComponent/SiteListViewComponent.ts(2,37): error TS2307: Cannot find module '../services/SiteListDataService'.
+src/app/blogposts/TechListViewComponent/TechListViewComponent.ts(3,37): error TS2307: Cannot find module '../services/TechListDataService'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+src/app/blogposts/blogposts.module.ts(24,37): error TS2307: Cannot find module './services/blog-archieve.service'.
+src/app/blogposts/blogposts.module.ts(25,37): error TS2307: Cannot find module './services/TechListDataService'.
+src/app/blogposts/blogposts.module.ts(26,37): error TS2307: Cannot find module './services/SiteListDataService'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:47.333 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:49.305 +09:00 [Information] Date: 2019-03-03T09:06:49.304Z - Hash: 2bb923e7ba3c828bf61e - Time: 1970ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:49.327 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/TechListViewComponent/TechListViewComponent.ts(3,37): error TS2307: Cannot find module '../services/TechListDataService'.
+src/app/blogposts/blogposts.component.ts(3,31): error TS2307: Cannot find module './shared/logger.service'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(19,39): error TS2307: Cannot find module './SiteListViewComponent/SiteListViewComponent'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+src/app/blogposts/blogposts.module.ts(23,31): error TS2307: Cannot find module './shared/logger.service'.
+src/app/blogposts/blogposts.module.ts(24,37): error TS2307: Cannot find module './services/blog-archieve.service'.
+src/app/blogposts/blogposts.module.ts(25,37): error TS2307: Cannot find module './services/TechListDataService'.
+src/app/blogposts/blogposts.module.ts(26,37): error TS2307: Cannot find module './services/SiteListDataService'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:49.539 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:51.553 +09:00 [Information] Date: 2019-03-03T09:06:51.552Z - Hash: 7758b3d9eb03fdc7dcab - Time: 2014ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:51.575 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts.component.ts(3,31): error TS2307: Cannot find module './shared/logger.service'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(18,39): error TS2307: Cannot find module './TechListViewComponent/TechListViewComponent'.
+src/app/blogposts/blogposts.module.ts(19,39): error TS2307: Cannot find module './SiteListViewComponent/SiteListViewComponent'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+src/app/blogposts/blogposts.module.ts(23,31): error TS2307: Cannot find module './shared/logger.service'.
+src/app/blogposts/blogposts.module.ts(24,37): error TS2307: Cannot find module './services/blog-archieve.service'.
+src/app/blogposts/blogposts.module.ts(25,37): error TS2307: Cannot find module './services/TechListDataService'.
+src/app/blogposts/blogposts.module.ts(26,37): error TS2307: Cannot find module './services/SiteListDataService'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:54.996 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:57.008 +09:00 [Information] Date: 2019-03-03T09:06:57.007Z - Hash: 2da4f71445dbf52088a0 - Time: 2010ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:57.036 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+src/app/blogposts/blogposts-routing.module.ts(5,36): error TS2307: Cannot find module './blogposts.component'.
+src/app/blogposts/blogposts.module.ts(13,36): error TS2307: Cannot find module './blogposts.component'.
+src/app/blogposts/blogposts.module.ts(14,39): error TS2307: Cannot find module './blog-category/blog-category.component'.
+src/app/blogposts/blogposts.module.ts(15,38): error TS2307: Cannot find module './blog-comment/blog-comment.component'.
+src/app/blogposts/blogposts.module.ts(16,39): error TS2307: Cannot find module './blog-archieve/blog-archieve.component'.
+src/app/blogposts/blogposts.module.ts(17,33): error TS2307: Cannot find module './main-summary-list/main-summary-list'.
+src/app/blogposts/blogposts.module.ts(18,39): error TS2307: Cannot find module './TechListViewComponent/TechListViewComponent'.
+src/app/blogposts/blogposts.module.ts(19,39): error TS2307: Cannot find module './SiteListViewComponent/SiteListViewComponent'.
+src/app/blogposts/blogposts.module.ts(20,46): error TS2307: Cannot find module './blog.post.mainsummary/blog.post.mainsummary'.
+src/app/blogposts/blogposts.module.ts(23,31): error TS2307: Cannot find module './shared/logger.service'.
+src/app/blogposts/blogposts.module.ts(24,37): error TS2307: Cannot find module './services/blog-archieve.service'.
+src/app/blogposts/blogposts.module.ts(25,37): error TS2307: Cannot find module './services/TechListDataService'.
+src/app/blogposts/blogposts.module.ts(26,37): error TS2307: Cannot find module './services/SiteListDataService'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:06:57.245 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:06:59.162 +09:00 [Information] Date: 2019-03-03T09:06:59.161Z - Hash: 122b62f8b48ed5536694 - Time: 1916ms
+5 unchanged chunks
+
+
+2019-03-03 18:06:59.183 +09:00 [Information] ERROR in src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:07:32.028 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:07:34.212 +09:00 [Information] Date: 2019-03-03T09:07:34.211Z - Hash: 924821d207f8269eade5 - Time: 2184ms
+5 unchanged chunks
+
+
+2019-03-03 18:07:34.234 +09:00 [Information] ERROR in src/app/an/an.module.ts(12,37): error TS2307: Cannot find module './blog/SiteListDataService'.
+src/app/an/an.module.ts(13,37): error TS2307: Cannot find module './blog/TechListDataService'.
+src/app/an/an.module.ts(14,39): error TS2307: Cannot find module './blog/SiteListViewComponent'.
+src/app/an/an.module.ts(15,39): error TS2307: Cannot find module './blog/TechListViewComponent'.
+src/app/an/an.module.ts(16,42): error TS2307: Cannot find module './blog/main-summary-list.component'.
+src/app/an/an.module.ts(17,46): error TS2307: Cannot find module './blog/blog.post.mainsummary'.
+src/app/an/header/an-header.component.ts(2,29): error TS2307: Cannot find module '../../sign/sign.service'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:07:39.354 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:07:41.202 +09:00 [Information] Date: 2019-03-03T09:07:41.201Z - Hash: b45f9e06199e41cb80b6 - Time: 1848ms
+5 unchanged chunks
+
+
+2019-03-03 18:07:41.222 +09:00 [Information] ERROR in src/app/an/an.module.ts(6,35): error TS2307: Cannot find module './header/an-header.component'.
+src/app/an/an.module.ts(12,37): error TS2307: Cannot find module './blog/SiteListDataService'.
+src/app/an/an.module.ts(13,37): error TS2307: Cannot find module './blog/TechListDataService'.
+src/app/an/an.module.ts(14,39): error TS2307: Cannot find module './blog/SiteListViewComponent'.
+src/app/an/an.module.ts(15,39): error TS2307: Cannot find module './blog/TechListViewComponent'.
+src/app/an/an.module.ts(16,42): error TS2307: Cannot find module './blog/main-summary-list.component'.
+src/app/an/an.module.ts(17,46): error TS2307: Cannot find module './blog/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:07:46.574 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:07:48.365 +09:00 [Information] Date: 2019-03-03T09:07:48.363Z - Hash: d6e8b97575f5a342b105 - Time: 1791ms
+5 unchanged chunks
+
+
+2019-03-03 18:07:48.386 +09:00 [Information] ERROR in src/app/an/an.module.ts(6,35): error TS2307: Cannot find module './header/an-header.component'.
+src/app/an/an.module.ts(9,38): error TS2307: Cannot find module './main/main-summary.component'.
+src/app/an/an.module.ts(12,37): error TS2307: Cannot find module './blog/SiteListDataService'.
+src/app/an/an.module.ts(13,37): error TS2307: Cannot find module './blog/TechListDataService'.
+src/app/an/an.module.ts(14,39): error TS2307: Cannot find module './blog/SiteListViewComponent'.
+src/app/an/an.module.ts(15,39): error TS2307: Cannot find module './blog/TechListViewComponent'.
+src/app/an/an.module.ts(16,42): error TS2307: Cannot find module './blog/main-summary-list.component'.
+src/app/an/an.module.ts(17,46): error TS2307: Cannot find module './blog/blog.post.mainsummary'.
+
+i 節쥄dm節? Failed to compile.
+
+2019-03-03 18:07:52.581 +09:00 [Information] i 節쥄dm節? Compiling...
+
+2019-03-03 18:08:00.510 +09:00 [Information] Date: 2019-03-03T09:08:00.439Z - Hash: edfa19e62da35aa0de92 - Time: 7858ms
+2 unchanged chunks
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-03 18:08:35.201 +09:00 [Information] Starting @angular/cli on port 52807...
+2019-03-03 18:08:35.440 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 18:08:35.466 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 18:08:42.213 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52807"
+
+** Angular Live Development Server is listening on localhost:52807, open your browser on http://localhost:52807/ **
+
+2019-03-03 18:08:48.977 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-03 18:08:53.647 +09:00 [Information] Date: 2019-03-03T09:08:53.620Z
+Hash: 7b601572782065fd743f
+Time: 11225ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-03 18:08:53.685 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-03 18:08:53.686 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-03 18:08:53.687 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-03 18:08:53.687 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-03 18:08:54.952 +09:00 [Information] Request finished in 1265.1459ms 304 
+2019-03-03 18:08:54.952 +09:00 [Information] Request finished in 19514.4069ms 200 text/html; charset=UTF-8
+2019-03-03 18:08:54.954 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 18:08:55.379 +09:00 [Information] Request finished in 425.7268ms 304 
+2019-03-03 18:08:55.380 +09:00 [Information] Request finished in 1693.1574ms 304 
+2019-03-03 18:08:55.385 +09:00 [Information] Request finished in 1698.847ms 304 
+2019-03-03 18:08:55.386 +09:00 [Information] Request finished in 1701.0123ms 304 
+2019-03-03 18:08:55.395 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-03 18:08:55.448 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-03 18:08:55.493 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-03 18:08:55.681 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-03 18:08:55.931 +09:00 [Information] Request finished in 535.8032ms 304 
+2019-03-03 18:08:55.932 +09:00 [Information] Request finished in 484.0801ms 304 
+2019-03-03 18:08:55.933 +09:00 [Information] Request finished in 440.6019ms 304 
+2019-03-03 18:08:55.940 +09:00 [Information] Request finished in 258.7436ms 304 
+2019-03-03 18:08:56.014 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-03 18:08:56.016 +09:00 [Information] Request finished in 1.8445ms 304 
+2019-03-03 18:08:56.093 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551604136090  
+2019-03-03 18:08:56.100 +09:00 [Information] Request finished in 6.3927ms 200 application/json; charset=UTF-8
+2019-03-03 18:08:56.109 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/458/mg1iuoiy/websocket  
+2019-03-03 18:08:56.111 +09:00 [Information] CORS policy execution successful.
+2019-03-03 18:08:56.776 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/458/cx2lnexo/xhr_streaming?t=1551604136770  0
+2019-03-03 18:08:56.777 +09:00 [Information] CORS policy execution successful.
