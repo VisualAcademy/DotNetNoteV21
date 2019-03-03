@@ -227,10 +227,14 @@ namespace DotNetNote.Controllers
                 // 다운로드 카운트 증가 메서드 호출
                 _repository.UpdateDownCountById(id);
 
-                byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(
-                    _environment.WebRootPath, "files") + "\\" + fileName);
+                if (System.IO.File.Exists(Path.Combine(_environment.WebRootPath, "files") + "\\" + fileName))
+                {
+                    byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(_environment.WebRootPath, "files") + "\\" + fileName);
 
-                return File(fileBytes, "application/octet-stream", fileName);
+                    return File(fileBytes, "application/octet-stream", fileName);
+                }
+
+                return null;
             }
         }
 
@@ -535,7 +539,7 @@ namespace DotNetNote.Controllers
         /// /DotNetNote/ImageDown/1234 => 1234번 이미지 파일을 강제 다운로드
         /// <img src="/DotNetNote/ImageDown/1234" /> => 이미지 태그 실행
         /// </summary>
-        public FileResult ImageDown(int id)
+        public IActionResult ImageDown(int id)
         {
             string fileName = "";
 
@@ -567,15 +571,20 @@ namespace DotNetNote.Controllers
                     }
                 }
 
-                // 다운로드 카운트 증가 메서드 호출
-                _repository.UpdateDownCount(fileName);
+                if (System.IO.File.Exists(Path.Combine(_environment.WebRootPath, "files") + "\\" + fileName))
+                {
+                    // 다운로드 카운트 증가 메서드 호출
+                    _repository.UpdateDownCount(fileName);
 
-                // 이미지 파일 정보 얻기
-                byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(
-                    _environment.WebRootPath, "files") + "\\" + fileName);
+                    // 이미지 파일 정보 얻기
+                    byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(
+                        _environment.WebRootPath, "files") + "\\" + fileName);
 
-                // 이미지 파일 다운로드 
-                return File(fileBytes, strContentType, fileName);
+                    // 이미지 파일 다운로드 
+                    return File(fileBytes, strContentType, fileName);
+                }
+
+                return Content("http://placehold.it/250x150?text=NoImage");
             }
         }
 
