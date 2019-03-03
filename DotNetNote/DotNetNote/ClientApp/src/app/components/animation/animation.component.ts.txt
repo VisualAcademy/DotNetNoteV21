@@ -1,0 +1,38 @@
+﻿import {
+    Component,
+    // 앵귤러 애니메이션 관련 참조 추가: trigger, style, transition, animate, state, keyframes
+    trigger,
+    style, 
+    transition,
+    animate,
+    state,
+    keyframes
+}
+    from '@angular/core';
+
+@Component({
+    selector: 'animation',
+    templateUrl: './animation.component.html',
+    styles: [],
+    animations: [
+        trigger('myTrigger', [
+            state('small', style({
+                transform: 'scale(1)'
+            })),
+            state('large', style({
+                transform: 'scale(2.0)'
+            })),
+            //transition('small => large', animate('500ms ease-in')),
+            //transition('large => small', animate('500ms ease-out')),
+            //transition('small => large, large => small', animate('500ms'))
+            transition('small <=> large', animate('500ms'))
+        ])
+    ]
+})
+export class AnimationComponent {
+    state: string = 'small';
+
+    toggleState() {
+        this.state = (this.state === 'small') ? 'large' : 'small';
+    }
+}
