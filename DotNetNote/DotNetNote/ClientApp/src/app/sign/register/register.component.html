@@ -1,0 +1,12 @@
+﻿<h1>회원 가입</h1>
+<form [formGroup]="frmRegister" (ngSubmit)="btnSubmit_Click()">
+    이메일: 
+        <input type="text" name="txtEmail" value="" 
+               formControlName="email"
+               [ngClass]="{ 'has-error': !frmRegister.get('email').valid && frmRegister.controls.email.touched }"
+               />
+    암호: <input type="password" name="txtPassword" value="" 
+               [ngClass]="{ 'has-error': isValid('password') }"
+               formControlName="password" />
+    <input type="submit" name="btnSubmit" value="가입" />
+</form>

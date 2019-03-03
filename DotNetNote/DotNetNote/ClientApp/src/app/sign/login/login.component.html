@@ -1,0 +1,15 @@
+﻿<h1>로그인</h1>
+
+<form (submit)="btnLogin_Click()" #frmLogin="ngForm" novalidate>
+    이메일: <input type="text" name="txtEmail" value=""
+                [(ngModel)]="sign.email" required #txtEmail="ngModel" />
+    <div class="text-danger" *ngIf="txtEmail.invalid && txtEmail.errors.required && txtEmail.touched">
+        이메일을 입력하세요.
+    </div>
+    암호: <input type="password" name="txtPassword" value=""
+               [(ngModel)]="sign.password" required #txtPassword="ngModel" />
+    <div class="text-danger" *ngIf="txtPassword.invalid && txtPassword.errors.required && txtPassword.touched">
+        암호를 입력하세요.
+    </div>
+    <input type="submit" name="btnLogin" value="로그인" [disabled]="frmLogin.invalid" />
+</form>

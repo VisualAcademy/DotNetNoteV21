@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-site-layout',
+  template: `
+  <h1>공통 레이아웃</h1>
+  <router-outlet></router-outlet>
+  `,
+  styles: []
+})
+export class SiteLayoutComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
