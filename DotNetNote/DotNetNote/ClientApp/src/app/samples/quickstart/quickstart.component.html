@@ -1,0 +1,43 @@
+<h1>{{ title }}</h1>
+<div>
+    안녕하세요. {{ name }} 님.
+    <br />
+    {{ description }}
+    <hr />
+
+    <!-- One-Way Data Binding -->
+    <input 
+        type="text"
+        [value]="name" 
+        (keyup.enter)="name = $event.target.value"
+    />
+
+    <!-- Two-Way Data Binding -->
+    <input 
+        type="text"
+        [(ngModel)]="name"
+    />
+
+</div>
+
+<h2>기술 리스트</h2>
+
+<ul>
+    <li>
+        {{ teches[0].id }} - {{ teches[0].title }}
+    </li>
+    <li>
+        {{ teches[1].id }} - {{ teches[1].title }}
+    </li>
+    <li>
+        {{ teches[2].id }} - {{ teches[2].title }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let t of teches">
+        {{t.id}} - {{t.title}}
+    </li>
+</ul>
+
+

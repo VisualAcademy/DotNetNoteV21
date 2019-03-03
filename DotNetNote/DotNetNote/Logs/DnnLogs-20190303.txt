@@ -431,3 +431,125 @@ i 節쥄dm節? Compiled successfully.
 2019-03-03 17:46:11.033 +09:00 [Information] CORS policy execution successful.
 2019-03-03 17:46:25.505 +09:00 [Information] Committing the session was canceled.
 2019-03-03 17:46:25.505 +09:00 [Information] Request finished in 150007.5364ms 200 application/javascript; charset=UTF-8
+2019-03-03 17:47:51.920 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 17:47:52.927 +09:00 [Information] Request finished in 1007.059ms 304 
+2019-03-03 17:47:52.945 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 17:47:52.945 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-03 17:47:52.945 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-03 17:47:52.946 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-03 17:47:52.946 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-03 17:47:52.947 +09:00 [Information] Request finished in 2.2568ms 304 
+2019-03-03 17:47:52.953 +09:00 [Information] Request finished in 6.7818ms 304 
+2019-03-03 17:47:53.048 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-03 17:47:53.051 +09:00 [Information] Request finished in 3.0847ms 304 
+2019-03-03 17:47:53.093 +09:00 [Information] Request finished in 102705.7869ms 101 
+2019-03-03 17:47:53.951 +09:00 [Information] Request finished in 1005.2569ms 304 
+2019-03-03 17:47:53.951 +09:00 [Information] Request finished in 1005.886ms 304 
+2019-03-03 17:47:53.952 +09:00 [Information] Request finished in 1005.4555ms 304 
+2019-03-03 17:47:53.959 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-03 17:47:53.960 +09:00 [Information] Request finished in 1.825ms 304 
+2019-03-03 17:47:54.065 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-03 17:47:54.065 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-03 17:47:54.072 +09:00 [Information] Request finished in 7.4061ms 304 
+2019-03-03 17:47:54.073 +09:00 [Information] Request finished in 8.0143ms 304 
+2019-03-03 17:47:54.404 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-03 17:47:54.406 +09:00 [Information] Request finished in 2.377ms 304 
+2019-03-03 17:47:54.445 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-03 17:47:54.445 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-03 17:47:54.446 +09:00 [Information] Request finished in 1.3921ms 200 image/x-icon
+2019-03-03 17:47:54.451 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551602874448  
+2019-03-03 17:47:54.453 +09:00 [Information] Request finished in 2.0367ms 200 application/json; charset=UTF-8
+2019-03-03 17:47:54.460 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/842/q2aovwpn/websocket  
+2019-03-03 17:47:54.460 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:47:55.095 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/842/a01ezozj/xhr_streaming?t=1551602875091  0
+2019-03-03 17:47:55.095 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:48:16.040 +09:00 [Information] Committing the session was canceled.
+2019-03-03 17:48:16.040 +09:00 [Information] Request finished in 125006.6671ms 200 application/javascript; charset=UTF-8
+2019-03-03 17:48:38.346 +09:00 [Information] Committing the session was canceled.
+2019-03-03 17:48:38.346 +09:00 [Information] Request finished in 43886.6929ms 101 
+2019-03-03 17:48:45.100 +09:00 [Information] Committing the session was canceled.
+2019-03-03 17:48:45.100 +09:00 [Information] Request finished in 50004.7945ms 200 application/javascript; charset=UTF-8
+2019-03-03 17:49:06.936 +09:00 [Information] Starting @angular/cli on port 51905...
+2019-03-03 17:49:07.224 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 17:49:07.250 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 17:49:14.186 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "51905"
+
+** Angular Live Development Server is listening on localhost:51905, open your browser on http://localhost:51905/ **
+
+2019-03-03 17:49:20.944 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-03 17:49:25.842 +09:00 [Information] Date: 2019-03-03T08:49:25.813Z
+Hash: 7b601572782065fd743f
+Time: 11450ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-03 17:49:27.058 +09:00 [Information] Request finished in 19836.5955ms 304 
+2019-03-03 17:49:27.071 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 17:49:27.071 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-03 17:49:27.072 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-03 17:49:27.072 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-03 17:49:27.072 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-03 17:49:27.603 +09:00 [Information] Request finished in 532.0819ms 304 
+2019-03-03 17:49:28.176 +09:00 [Information] Request finished in 1104.0316ms 304 
+2019-03-03 17:49:28.176 +09:00 [Information] Request finished in 1104.2765ms 304 
+2019-03-03 17:49:28.177 +09:00 [Information] Request finished in 1105.4364ms 304 
+2019-03-03 17:49:28.177 +09:00 [Information] Request finished in 1105.7433ms 304 
+2019-03-03 17:49:28.745 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551602968740  
+2019-03-03 17:49:28.771 +09:00 [Information] Request finished in 26.912ms 200 application/json; charset=UTF-8
+2019-03-03 17:49:28.779 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/216/lmembmil/websocket  
+2019-03-03 17:49:28.781 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:49:29.465 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/216/mljst3sb/xhr_streaming?t=1551602969460  0
+2019-03-03 17:49:29.465 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:49:41.027 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 17:49:41.064 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-03 17:49:41.064 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-03 17:49:41.066 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-03 17:49:41.066 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-03 17:49:42.034 +09:00 [Information] Request finished in 1007.3163ms 304 
+2019-03-03 17:49:42.051 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-03 17:49:42.054 +09:00 [Information] Request finished in 2.6375ms 304 
+2019-03-03 17:49:42.067 +09:00 [Information] Request finished in 1003.4821ms 304 
+2019-03-03 17:49:42.068 +09:00 [Information] Request finished in 1004.1699ms 304 
+2019-03-03 17:49:42.070 +09:00 [Information] Request finished in 1003.8739ms 304 
+2019-03-03 17:49:42.076 +09:00 [Information] Request finished in 1010.3827ms 304 
+2019-03-03 17:50:57.893 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 17:50:58.900 +09:00 [Information] Request finished in 1007.0245ms 304 
+2019-03-03 17:50:58.919 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 17:50:58.920 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-03 17:50:58.920 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-03 17:50:58.921 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-03 17:50:58.921 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-03 17:50:58.923 +09:00 [Information] Request finished in 3.5099ms 304 
+2019-03-03 17:50:59.027 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css.map  
+2019-03-03 17:50:59.030 +09:00 [Information] Request finished in 2.7226ms 304 
+2019-03-03 17:50:59.034 +09:00 [Information] Committing the session was canceled.
+2019-03-03 17:50:59.034 +09:00 [Information] Request finished in 90255.1023ms 101 
+2019-03-03 17:50:59.927 +09:00 [Information] Request finished in 1005.9678ms 304 
+2019-03-03 17:50:59.928 +09:00 [Information] Request finished in 1007.3546ms 304 
+2019-03-03 17:50:59.928 +09:00 [Information] Request finished in 1008.4884ms 304 
+2019-03-03 17:50:59.935 +09:00 [Information] Request finished in 1014.771ms 304 
+2019-03-03 17:50:59.939 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js.map  
+2019-03-03 17:50:59.941 +09:00 [Information] Request finished in 2.1581ms 304 
+2019-03-03 17:50:59.996 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js.map  
+2019-03-03 17:50:59.998 +09:00 [Information] Request finished in 2.5768ms 304 
+2019-03-03 17:51:00.505 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js.map  
+2019-03-03 17:51:00.505 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js.map  
+2019-03-03 17:51:00.508 +09:00 [Information] Request finished in 2.5577ms 304 
+2019-03-03 17:51:00.514 +09:00 [Information] Request finished in 8.8404ms 304 
+2019-03-03 17:51:00.538 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551603060534  
+2019-03-03 17:51:00.540 +09:00 [Information] Request finished in 2.0746ms 200 application/json; charset=UTF-8
+2019-03-03 17:51:00.551 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-03-03 17:51:00.563 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-03-03 17:51:00.564 +09:00 [Information] Request finished in 13.6818ms 200 image/x-icon
+2019-03-03 17:51:00.566 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/310/n5znxk3p/websocket  
+2019-03-03 17:51:00.567 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:51:01.177 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/310/wtviwslu/xhr_streaming?t=1551603061172  0
+2019-03-03 17:51:01.177 +09:00 [Information] CORS policy execution successful.
+2019-03-03 17:51:09.478 +09:00 [Information] Committing the session was canceled.
+2019-03-03 17:51:09.478 +09:00 [Information] Request finished in 100012.9943ms 200 application/javascript; charset=UTF-8
