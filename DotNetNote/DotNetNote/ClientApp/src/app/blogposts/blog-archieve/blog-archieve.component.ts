@@ -1,0 +1,25 @@
+﻿import { Component } from '@angular/core';
+
+import { BlogArchieveService } from '../services/blog-archieve.service';
+import { LoggerService } from '../shared/logger.service';
+
+@Component({
+    selector: 'blog-archieve',
+    templateUrl: './blog-archieve.component.html'
+})
+export class BlogArchieveComponent {
+    // archieves: any[] = [
+    //     {strDate:'201701', intCount: 5}, 
+    //     {strDate:'201702', intCount: 7}
+    // ];
+    archieves: any[] = [];
+
+    // 생성자 매개변수로 주입해서 사용
+    constructor(
+        private archieveSvc: BlogArchieveService,
+        private logger: LoggerService
+    ) {
+        logger.log("BlogArchieveComponent가 호출됨");
+        this.archieves = archieveSvc.getArchieves();
+    }
+}

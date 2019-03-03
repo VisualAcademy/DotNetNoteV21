@@ -1,0 +1,16 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+    selector: 'blog-comment',
+    templateUrl: './blog-comment.component.html'
+})
+export class BlogCommentComponent {
+    //comments = ['좋아요.', '아주 좋아요.']; 
+    @Input()
+    comments: any[];
+
+  isShowRecentComment = false; 
+  showRecentComment() {
+    this.isShowRecentComment = !this.isShowRecentComment;     
+  }    
+}
