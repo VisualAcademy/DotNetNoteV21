@@ -41,7 +41,7 @@
                  class="img-responsive" />
             <div class="carousel-caption" role="option">
                 <p>
-                    이 사이트는 ASP.NET Core 2.0을 사용하여 제작되었습니다.<br />
+                    이 사이트는 ASP.NET Core 2.2을 사용하여 제작되었습니다.<br />
                     <a class="btn btn-default" href="#">Learn More</a>
                 </p>
             </div>
@@ -98,7 +98,8 @@
     <div class="col-md-12 text-center">
         <a href="http://www.dotnetkorea.com/BoardView?BoardName=ServerScriptSource&Num=104" 
            class="alert-success" target="_blank">
-            <h3><i class="fa fa-download"></i> 닷넷노트 최신 소스 다운로드 <i class="fa fa-download"></i></h3>
+            <h3><i class="fa fa-download"></i> 
+            닷넷노트 최신 소스 다운로드 <i class="fa fa-download"></i></h3>
         </a>
     </div>
 </div>
@@ -186,8 +187,9 @@
                 <i style="font-size:small;">(with MVC Partial View)</i>
             </span>
         </h3>
-        @Html.Partial("~/Views/DotNetNote/_MainSummary.cshtml"
-            , ViewData["RecentPost"])
+        @*@Html.Partial("~/Views/DotNetNote/_MainSummary.cshtml"
+            , ViewData["RecentPost"])*@
+        <partial name="~/Views/DotNetNote/_MainSummary.cshtml" model="ViewBag.RecentPost" />
     </div>
     <div class="col-md-6">
         <h3 class="MainSummaryTitle">
@@ -199,8 +201,9 @@
                 <i style="font-size:small;">(with MVC Partial View)</i>
             </span>
         </h3>
-        @Html.Partial("~/Views/DotNetNote/_MainCommentSummary.cshtml"
-            , ViewData["RecentComment"])
+        @*@Html.Partial("~/Views/DotNetNote/_MainCommentSummary.cshtml"
+            , ViewData["RecentComment"])*@
+        <partial name="~/Views/DotNetNote/_MainCommentSummary.cshtml" model="ViewBag.RecentComment" />
     </div>
 </div>
 <br />
@@ -249,7 +252,8 @@
                 <i style="font-size:small;">(with Web API + jQuery)</i>
             </span>
         </h3>
-        @Html.Partial("~/Views/DotNetNote/_RecentlyNoteList.cshtml")
+        @*@Html.Partial("~/Views/DotNetNote/_RecentlyNoteList.cshtml")*@
+        <partial name="~/Views/DotNetNote/_RecentlyNoteList.cshtml" />
     </div>
     <div class="col-md-6">
         <h3 class="MainSummaryTitle">
@@ -261,7 +265,8 @@
                 <i style="font-size:small;">(with Web API + jQuery)</i>
             </span>
         </h3>
-        @Html.Partial("~/Views/DotNetNote/_RecentlyNoteCommentList.cshtml")
+        @*@Html.Partial("~/Views/DotNetNote/_RecentlyNoteCommentList.cshtml")*@
+        <partial name="~/Views/DotNetNote/_RecentlyNoteCommentList.cshtml" />
     </div>
 </div>
 <br />
@@ -277,7 +282,8 @@
                 <i style="font-size:small;">(with Web API + Angular)</i>
             </span>
         </h3>
-        @Html.Partial("~/Views/DotNetNote/_RecentlyNoteListWithAngular.cshtml")
+        @*@Html.Partial("~/Views/DotNetNote/_RecentlyNoteListWithAngular.cshtml")*@
+        <partial name="~/Views/DotNetNote/_RecentlyNoteListWithAngular.cshtml" />
     </div>
     <div class="col-md-6">
         <h3 class="MainSummaryTitle">
@@ -289,8 +295,8 @@
                 <i style="font-size:small;">(with Web API + Angular)</i>
             </span>
         </h3>
-        @Html.Partial(
-        "~/Views/DotNetNote/_RecentlyNoteCommentListWithAngular.cshtml")
+        @*@Html.Partial("~/Views/DotNetNote/_RecentlyNoteCommentListWithAngular.cshtml")*@
+        <partial name="~/Views/DotNetNote/_RecentlyNoteCommentListWithAngular.cshtml" />
     </div>
 </div>
 <br />
@@ -316,14 +322,14 @@
 <div class="text-center">
     <em>
         @ViewBag.SiteName<text>(</text>@ViewBag.SiteUrl@(")") 사이트는
-        ASP.NET Core 2.0 데모 사이트입니다.
+        ASP.NET Core 2.2 데모 사이트입니다.
     </em>
 </div>
 
 
 <div class="text-center">
     <em>
-        <a href="http://angular.dul.me">앵귤러노트(http://angular.dul.me)</a> 사이트는 ASP.NET Core 2.0 + Angular 4.0 데모 사이트입니다. 
+        <a href="http://angular.dul.me">앵귤러노트(http://angular.dul.me)</a> 사이트는 ASP.NET Core 2.2 + Angular 6.0 데모 사이트입니다. 
     </em>
 </div>
 
