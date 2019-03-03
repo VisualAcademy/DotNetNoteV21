@@ -1,0 +1,28 @@
+﻿<h1>ngFor 문</h1>
+
+<ul>
+    <li *ngFor="let color of colors">
+        {{ color }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let color of colors; let i = index">
+        {{ i }} - {{ color }}
+    </li>
+</ul>
+
+
+<ul>
+    <li *ngFor="let color of colors; let i = index">
+        {{ i + 1 }} - {{ color }}
+    </li>
+</ul>
+
+<hr />
+
+<ul>
+    <li>{{ colors[0] }}</li>
+    <li>{{ colors[1] }}</li>
+    <li>{{ colors[2] }}</li>
+</ul>
