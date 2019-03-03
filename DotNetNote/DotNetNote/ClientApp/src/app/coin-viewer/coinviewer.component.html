@@ -1,0 +1,10 @@
+﻿<h1>화폐 매수 계산기</h1>
+<form #frm="ngForm" (ngSubmit)="submit()">
+    돈을 입력하세요? : 
+    <input type="text" name="money" [(ngModel)]="money" /><br />
+    <input type="submit" value="계산" />
+    <hr /> {{ money }} <hr /> {{ message }}
+</form>
+{{ frm.value | json }}
+<hr /> 
+<coin-graph [coins]="money"></coin-graph>
