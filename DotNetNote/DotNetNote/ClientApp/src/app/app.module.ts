@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common'; // ?
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
+//import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
@@ -180,7 +180,7 @@ import { GradesViewComponent, GradesGraphComponent } from './grades/index';
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
+    //HomeComponent,
     CounterComponent,
     FetchDataComponent,
 
@@ -252,7 +252,10 @@ import { GradesViewComponent, GradesGraphComponent } from './grades/index';
 
     RouterModule.forRoot([
 
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      //{ path: '', component: HomeComponent, pathMatch: 'full' },
+
+      //[1] 홈페이지 지정 
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
 
       // Home 모듈을 독립(기능) 모듈로 Lazy 로딩 방식으로 읽어오기 
       // // <app asp-prerender-module="" /> asp-prerender-module 제거할 것
