@@ -1,0 +1,9 @@
+﻿
+<h1>고객 리스트</h1>
+
+<ul>
+    <li *ngFor="let cust of customers">
+        {{ cust?.id }} : {{ cust?.name }} / {{ cust?.city }}
+    </li>
+</ul>
+

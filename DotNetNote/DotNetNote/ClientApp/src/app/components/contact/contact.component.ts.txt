@@ -1,0 +1,10 @@
+﻿import { Component } from '@angular/core';
+
+@Component({
+    selector: 'contact',
+    templateUrl: './contact.component.html'
+})
+export class ContactComponent {
+    title = "연락처";
+    message = "안녕하세요. AngularNote 사이트입니다.";
+}

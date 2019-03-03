@@ -23,6 +23,10 @@ import { IdeasComponent } from './components/ideas/ideas.component';
 import { IdeaAppComponent } from './components/IdeaApp/IdeaApp.component';
 import { IdeaAppService } from './components/IdeaApp/IdeaApp.service';
 
+// @Output 데모
+import { OutputParent } from './components/OutputDemo/OutputParent';
+import { OutputChild } from './components/OutputDemo/OutputChild';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +36,7 @@ import { IdeaAppService } from './components/IdeaApp/IdeaApp.service';
     FetchDataComponent,
 
     IdeaComponent, IdeasComponent, IdeaAppComponent,
+    OutputParent, OutputChild,
 
   ],
   imports: [
@@ -46,6 +51,8 @@ import { IdeaAppService } from './components/IdeaApp/IdeaApp.service';
       { path: 'IdeaManager', component: IdeaComponent }, // 아이디어 관리자(입출력 연습)
       { path: 'ideas', component: IdeasComponent },      // 아이디어 관리자(입출력 연습)
       { path: 'IdeaApp', component: IdeaAppComponent },  // 아이디어 관리자 2018
+
+      { path: 'OutputDemo', component: OutputParent },
 
     ])
   ],
