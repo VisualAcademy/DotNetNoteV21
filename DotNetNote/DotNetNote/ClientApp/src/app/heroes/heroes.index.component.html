@@ -1,0 +1,28 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>영웅 캐릭터 리스트</h3>
+    </div>
+    <div class="panel-body">
+        <h3 *ngIf="models.length == 0">로딩중...</h3>
+
+        <heroes-grid [models]="models"></heroes-grid>
+
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-md-10">
+                <heroes-paging-helper [recordCount]="totalRecordCount"
+                                      [pageSize]="pageSize"
+                                      (pageIndexChanging)="pageIndexChaging($event)">
+                </heroes-paging-helper>
+                <!--<angularnote-paging-helper [recordCount]="totalRecordCount"
+                                      [pageSize]="pageSize"
+                                      (pageIndexChanging)="pageIndexChaging($event)">
+                </angularnote-paging-helper>-->
+            </div>
+            <div class="col-md-2 text-right">
+                <a [routerLink]="['/heroes/write']" class="btn btn-primary">글쓰기</a>
+            </div>
+        </div>
+    </div>
+</div>

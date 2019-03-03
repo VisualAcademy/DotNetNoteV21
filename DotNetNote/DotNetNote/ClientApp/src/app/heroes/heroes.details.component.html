@@ -1,0 +1,19 @@
+﻿<h1>상세 보기</h1>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        상세 보기
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li>번호: {{ model.id }}</li>
+            <li>이름: {{ model.name }}</li>
+            <li>아이콘: {{ model.icon }}</li>
+        </ul>
+    </div>
+    <div class="panel-footer">
+        <button (click)="goList()" class="btn btn-default">리스트</button>
+        <button (click)="goModify()" class="btn btn-default">수정</button>
+        <button (click)="goDelete()" class="btn btn-default">삭제</button>
+    </div>
+</div>
