@@ -1000,3 +1000,43 @@ i 節쥄dm節? Compiled successfully.
 2019-03-03 18:08:56.111 +09:00 [Information] CORS policy execution successful.
 2019-03-03 18:08:56.776 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/458/cx2lnexo/xhr_streaming?t=1551604136770  0
 2019-03-03 18:08:56.777 +09:00 [Information] CORS policy execution successful.
+2019-03-03 18:09:40.579 +09:00 [Information] Request finished in 44470.3183ms 101 
+2019-03-03 18:09:46.797 +09:00 [Information] Committing the session was canceled.
+2019-03-03 18:09:46.798 +09:00 [Information] Request finished in 50021.5522ms 200 application/javascript; charset=UTF-8
+2019-03-03 18:11:18.126 +09:00 [Information] Starting @angular/cli on port 52985...
+2019-03-03 18:11:18.387 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-03 18:11:18.413 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-03 18:11:25.019 +09:00 [Information] > DotNetNote@0.0.0 start C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\ClientApp
+> ng serve "--port" "52985"
+
+** Angular Live Development Server is listening on localhost:52985, open your browser on http://localhost:52985/ **
+
+2019-03-03 18:11:31.647 +09:00 [Information] i 節쥄dm節? wait until bundle finished: /
+
+2019-03-03 18:11:36.331 +09:00 [Information] Date: 2019-03-03T09:11:36.308Z
+Hash: 7b601572782065fd743f
+Time: 11107ms
+chunk {main} main.js, main.js.map (main) 55.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 130 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.98 MB [initial] [rendered]
+i 節쥄dm節? Compiled successfully.
+
+2019-03-03 18:11:37.605 +09:00 [Information] Request finished in 19219.7903ms 304 
+2019-03-03 18:11:37.620 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/styles.css  
+2019-03-03 18:11:37.620 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/runtime.js  
+2019-03-03 18:11:37.620 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/polyfills.js  
+2019-03-03 18:11:37.621 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/vendor.js  
+2019-03-03 18:11:37.621 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/main.js  
+2019-03-03 18:11:38.075 +09:00 [Information] Request finished in 453.8608ms 304 
+2019-03-03 18:11:38.633 +09:00 [Information] Request finished in 1011.427ms 304 
+2019-03-03 18:11:38.634 +09:00 [Information] Request finished in 1013.4267ms 304 
+2019-03-03 18:11:38.634 +09:00 [Information] Request finished in 1014.0205ms 304 
+2019-03-03 18:11:38.635 +09:00 [Information] Request finished in 1014.8391ms 304 
+2019-03-03 18:11:39.260 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/info?t=1551604299255  
+2019-03-03 18:11:39.286 +09:00 [Information] Request finished in 26.197ms 200 application/json; charset=UTF-8
+2019-03-03 18:11:39.294 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/sockjs-node/163/43nfclzt/websocket  
+2019-03-03 18:11:39.295 +09:00 [Information] CORS policy execution successful.
+2019-03-03 18:11:39.978 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/sockjs-node/163/c2tdltei/xhr_streaming?t=1551604299972  0
+2019-03-03 18:11:39.978 +09:00 [Information] CORS policy execution successful.
