@@ -1,0 +1,18 @@
+﻿<input type="text" [value]="name" /><hr />
+<input type="text" 
+       [value]="name" 
+       (input)="name=$event.target.value" /><hr />
+<input type="text"
+       [value]="name"
+        #txt (input)="name=txt.value" /><hr />
+<input type="text"
+       [value]="name"
+       (keyup.enter)="name=$event.target.value"
+       (blur)="name=$event.target.value" /><hr />
+<!--app.module.ts-->
+<!--import { FormsModule } from '@angular/forms';-->
+<input type="text" [(ngModel)]="name" /><hr />
+<input type="text" [ngModel]="name" 
+       (ngModelChange)="name=$event" />
+<hr />
+{{ name }}

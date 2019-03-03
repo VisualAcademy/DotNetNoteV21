@@ -1,0 +1,138 @@
+import { Component, OnInit } from '@angular/core';
+
+//[!] Reactive 폼을 구현하기 위해서 FormGroup 등 컴포넌트 참조 
+//[2] FormBuilder를 사용하기 위해서 참조 
+import { FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn, FormArray } from '@angular/forms';
+
+import 'rxjs/add/operator/debounceTime';
+
+//[!] Customer 클래스 참조 
+import { Customer } from './customer';
+
+// Custom Validator: 사용자 정의 유효성 검사 
+function emailMatcher(c: AbstractControl): {[key: string]: boolean} | null {
+    let emailControl = c.get('email');
+    let confirmControl = c.get('confirmEmail');
+
+    if (emailControl.pristine || confirmControl.pristine) {
+      return null;
+    }
+
+    if (emailControl.value === confirmControl.value) {
+        return null;
+    }
+    return { 'match': true };
+ }
+
+// Custom Validator: 사용자 정의 유효성 검사 
+function ratingRange(min: number, max: number): ValidatorFn {
+    return  (c: AbstractControl): {[key: string]: boolean} | null => {
+        if (c.value !== undefined && (isNaN(c.value) || c.value < min || c.value > max)) {
+            return { 'range': true };
+        };
+        return null;
+    };
+}
+
+@Component({
+    selector: 'my-signup',
+    templateUrl: './app/suppliers/customer.component.html'
+})
+export class CustomerComponent implements OnInit {
+    customerForm: FormGroup;
+    customer: Customer = new Customer();
+    emailMessage: string;
+
+    get addresses(): FormArray{
+        return <FormArray>this.customerForm.get('addresses');
+    }
+
+    private validationMessages = {
+        required: '이메일 주소를 입력하세요.',
+        pattern: '정확한 이메일 주소를 입력하세요.'
+    };
+
+    //[!] FormBuilder 인스턴스를 생성자 매개변수를 사용하여 생성자에 주입 
+    constructor(private fb: FormBuilder) { }
+
+    ngOnInit(): void {
+        //[!] FormBuilder 인스턴스를 사용하여 각각의 폼 요소(컨트롤) 설정 
+        this.customerForm = this.fb.group({
+            // 첫번째 매개변수: 기본값, 두번째 유효성 검사 규칙, 세번째 생략(비동기 유효성 검사, 서버측 유효성 검사)
+            // Validators.required : 필수 입력 요소
+            // Validators.maxLength(n) : 최댓값
+            // Validators.minLength(n) : 최솟값 
+            firstName: ['', [Validators.required, Validators.minLength(2)]],
+            lastName: ['', [Validators.required, Validators.maxLength(50)]],
+            homePage: '', // 빈 문자열로 기본값 설정 
+            schedule: [''], // 이렇게 기본값 설정도 가능 
+            who: '', 
+            emailGroup: this.fb.group({
+                email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+')]],
+                confirmEmail: ['', Validators.required],
+            }, {validator: emailMatcher}), // 크로스 필드 유효성 검사 
+            phone: '',
+            notification: 'email',
+            rating: ['', ratingRange(1, 5)],
+            sendCatalog: true,
+            addresses: this.fb.array([this.buildAddress()])
+        });
+
+        this.customerForm.get('notification').valueChanges
+                         .subscribe(value => this.setNotification(value));
+
+        const emailControl = this.customerForm.get('emailGroup.email');
+        emailControl.valueChanges.debounceTime(1000).subscribe(value =>
+            this.setMessage(emailControl));
+    }
+
+    addAddress(): void {
+        this.addresses.push(this.buildAddress());
+    }
+
+    buildAddress(): FormGroup {
+        return this.fb.group({
+                addressType: 'home',
+                street1: '',
+                street2: '',
+                city: '',
+                state: '',
+                zip: ''
+        });
+    }
+
+    populateTestData(): void {
+        // setValue()는 모든 항목에 대한 유효성 검사 처리
+        // patchValue()는 지정한 속성만 값 설정 
+        this.customerForm.patchValue({
+            firstName: '박용준',
+            lastName: '우리집',
+            emailGroup: {email: 'cloudhunter@outlook.kr', confirmEmail: 'cloudhunter@outlook.kr'}
+        });
+    }
+
+    save(): void {
+        console.log('Saved: ' + JSON.stringify(this.customerForm.value));
+    }
+
+    // Custom Validator: 사용자 정의 유효성 검사 
+    setMessage(c: AbstractControl): void {
+        this.emailMessage = '';
+        if ((c.touched || c.dirty) && c.errors) {
+            this.emailMessage = Object.keys(c.errors).map(key =>
+                this.validationMessages[key]).join(' ');
+        }
+    }
+
+    setNotification(notifyVia: string): void {
+        const phoneControl = this.customerForm.get('phone');
+        if (notifyVia === 'text') {
+            // 실행 시점에 유효성 검사 규칙 적용
+            phoneControl.setValidators(Validators.required);
+        } else {
+            // 적용된 유효성 검사 규칙 초기화 
+            phoneControl.clearValidators();
+        }
+        phoneControl.updateValueAndValidity();
+    }
+}

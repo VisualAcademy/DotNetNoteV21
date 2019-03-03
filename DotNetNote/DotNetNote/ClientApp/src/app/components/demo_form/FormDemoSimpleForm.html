@@ -1,0 +1,91 @@
+﻿<h2>Angular 폼</h2>
+<div>
+    뷰 모델: {{ vm | json }}
+    <hr />
+    폼 내용: {{ form.value | json }}
+</div>
+<form #form="ngForm" novalidate class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="name">Name</label>
+        <div class="col-sm-10">
+            <!--[1] 바인딩 없음 -->
+            <input type="text" class="form-control" id="name"
+                   name="name"
+                   ngModel
+                   placeholder="이름"
+                   required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="title">Title</label>
+        <div class="col-sm-10">
+            <!--[2] 단방향 바인딩 -->
+            <input type="text" class="form-control" id="title"
+                   name="title"
+                   [ngModel]="vm.title"
+                   placeholder="Enter Title" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="content">Content</label>
+        <div class="col-sm-10">
+            <!--[3] 양방향 바인딩 -->
+            <textarea cols="40" rows="2"
+                      name="cotent"
+                      [(ngModel)]="vm.content"
+                      class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="encoding">Encoding</label>
+        <div class="col-sm-10">
+            <select class="form-control" name="encoding"
+                    [(ngModel)]="vm.encoding">
+                <option *ngFor="let enc of encodings">
+                    {{ enc }}
+                </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"
+                           name="isRemember"
+                           [(ngModel)]="vm.isRemember"> Remember me
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">전송</button>
+        </div>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" name="isPinned"
+                   value="Yes"
+                   [(ngModel)]="vm.isPinned"
+                   >
+            공지글 올리기
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="isPinned"
+                   value="No"
+                   [(ngModel)]="vm.isPinned"
+                   >
+            공지글 내리기
+        </label>
+    </div>
+
+</form>
+<hr />
+pristine: {{ form.pristine }} <br />
+dirty: {{ form.dirty }} <br />

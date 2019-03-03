@@ -1,0 +1,53 @@
+﻿<!-- 여기 코드 블록은 Angular4와 ASP.NET Core를 사용하여 출력한 영역 -->
+<div class="row">
+    <div class="col-md-6">
+        <h3 class="MainSummaryTitle">
+            <a class="readMore" href="/DotNetNote/Index"
+               title="앵귤러노트">리스트</a>
+            <i class="fa fa-table"></i>&nbsp;&nbsp;
+            <span class="sprite sprite_notice">
+                최근 글 리스트
+                <i style="font-size:small;">(with Web API + Angular2)</i>
+            </span>
+        </h3>
+        <div>
+            <div class="post_item" *ngFor="let n of notes">
+                <div class="post_item_text">
+                    <span class="post_date">
+                        {{ n.postDate.substring(0, 10) }}
+                    </span>
+                    <span class="post_title">
+                        <a href="/DotNetNote/Details/{{ n.id }}">
+                            {{ n.title.substring(0, 31) }}
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3 class="MainSummaryTitle">
+            <a class="readMore" href="/DotNetNote/Index"
+               title="앵귤러노트">리스트</a>
+            <i class="fa fa-table"></i>&nbsp;&nbsp;
+            <span class="sprite sprite_notice">
+                최근 댓글 리스트
+                <i style="font-size:small;">(with Web API + Angular2)</i>
+            </span>
+        </h3>
+        <div>
+            <div class="post_item" *ngFor="let c of comments">
+                <div class="post_item_text">
+                    <span class="post_date">
+                        {{ c.postDate.substring(0, 10)  }}
+                    </span>
+                    <span class="post_title">
+                        <a href="/DotNetNote/Details/{{ c.boardId }}">
+                            {{ c.opinion.substring(0, 31) }}
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

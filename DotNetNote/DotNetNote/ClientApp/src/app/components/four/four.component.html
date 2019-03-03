@@ -1,0 +1,12 @@
+﻿<h1>Fours ...</h1>
+
+<a [routerLink]="['/fourwrite']" class="btn btn-primary">글쓰기</a>
+
+<h3 *ngIf="fours.length == 0">로딩중...</h3>
+<four-grid [fours]="fours"></four-grid>
+
+
+<an-paging-helper [recordCount]="66" 
+                  [pageSize]="10"
+                  (pageIndexChanging)="pageIndexChanging($event)"></an-paging-helper>
+

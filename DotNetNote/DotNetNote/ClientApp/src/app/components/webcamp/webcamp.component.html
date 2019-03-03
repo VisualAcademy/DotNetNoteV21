@@ -1,0 +1,81 @@
+﻿
+<div class="row">
+    <div class="visible-lg col-lg-2">
+        <img src="/images/Banner-WC.png" class="img-responsive" />
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>웹 캠프 2017</h1>
+                <p>
+                    "오픈소스 및 크로스 플랫폼 개발자와의 소통"
+                    WebCamp 2017 개발자 컨퍼런스에 초대합니다!
+                </p>
+                <p>
+                    <a href="#" class="btn btn-info btn-lg">
+                        Learn more &raquo;
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h2>Angular</h2>
+                <p>AnguarJS는 JavaScript MVC/SPA 프레임워크입니다.</p>
+                <p>
+                    <a href="http://www.angularjs.org"
+                       class="btn btn-primary">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h2>Bootstrap</h2>
+                <p>Bootstrap은 UI 프레임워크입니다.</p>
+                <p>
+                    <a href="http://www.getbootstrap.com"
+                       class="btn btn-default">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h2>C#(ASP.NET)</h2>
+                <p>크로스 플랫폼 개발 환경입니다.</p>
+                <p>
+                    <a href="http://www.asp.net"
+                       class="btn btn-danger">Learn more &raquo;</a>
+                </p>
+            </div>
+        </div>
+        <div class="row visible-lg">
+            <div class="alert alert-danger text-center">
+                <h4>양쪽 배너는 큰 화면(1200px 이상)에서만 보입니다.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="visible-lg col-lg-2">
+        <img src="/images/Banner-RED.png" class="img-responsive" />
+    </div>
+</div>
+
+<hr />
+
+
+<h1>웹 캠프</h1>
+<h2><span class="glyphicon glyphicon-thumbs-up"></span> 
+    {{ title }}
+</h2>
+
+<p *ngIf="!speakers"><em>Loading...</em></p>
+
+<div class="row" *ngIf="speakers">
+    <div style="height:150px;"
+        class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumbnail"
+        *ngFor="let speaker of speakers">
+        <a href="#" class="pull-right">
+            <img src="http://placeimg.com/100/100/any" 
+                class="img-thumbnail"
+                alt="{{ speaker.name }}" />
+        </a>
+        <h3>{{ speaker.name }}</h3>
+        <p><em>{{ speaker.title }}</em> {{ speaker.description }}</p>
+        <div class="clearfix visible-xs"></div>
+    </div>
+</div>

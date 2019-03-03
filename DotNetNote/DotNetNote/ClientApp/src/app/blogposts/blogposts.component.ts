@@ -1,0 +1,40 @@
+﻿import { Component } from '@angular/core';
+
+import { LoggerService } from './shared/logger.service';
+
+@Component({
+    selector: 'blogposts',
+    templateUrl: './blogposts.component.html',
+    styleUrls: [ './blogposts.component.css' ]
+})
+export class BlogPostsComponent {
+    pageTitle = '블로그 포스트!';
+    imgUrl = "angular.ico";
+    public title: string = '블로그를 오픈합니다.';
+    public content: string = "내용<br />들어오는 곳...";
+    public tags: any[] = ['Angular', 'ASP.NET', 'Azure'];
+    public posts: any[] = ['첫번째 블로그 내용', '두번째 블로그 내용', '세번째'];
+    public blogs = ['홍길동', '백두산', '임꺽정'];
+    titleColor = "black";
+    colorChange(): void {
+        this.titleColor = (this.titleColor === "black" ? 'blue' : 'black');
+    }
+    isShowPostList = false;
+    showPostList() {
+        this.logger.log("포스트 리스트가 호출됨");
+        this.isShowPostList = !this.isShowPostList;
+    }
+    isShowBlogList = false;
+    showBlogList() {
+        this.isShowBlogList = !this.isShowBlogList;
+    }
+
+    isShowTags = true; // 태그 리스트 표시
+
+    // RecentComment 컴포넌트에서 사용할 데이터 
+    comments = ['좋아요.', '아주 좋아요.', '더 좋아요.'];
+
+    constructor(private logger: LoggerService) {
+        this.logger.log("메인 컴포넌트가 호출됨");
+    }
+}

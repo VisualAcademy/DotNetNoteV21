@@ -1,0 +1,12 @@
+﻿
+<table class="table table-bordered table-hover table-condensed table-striped">
+    <thead><tr><th>번호</th><th>노트</th><tr></thead>
+    <tbody>
+        <tr *ngFor="let t of models">
+            <td>{{t.id}}</td>
+            <td>
+                <a [routerLink]="['/questiondetail', t.id]">{{t.id}} - {{t.title}}</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

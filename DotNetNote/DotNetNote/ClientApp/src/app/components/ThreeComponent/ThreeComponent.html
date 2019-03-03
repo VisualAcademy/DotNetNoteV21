@@ -1,0 +1,19 @@
+﻿
+<h1>Threes ...</h1>
+
+<ul>
+    <li *ngFor="let t of threes">
+        {{t.id}} - {{t.note}}
+    </li>
+</ul>
+
+<hr />
+
+<form #frmTwo="ngForm">
+    노트:
+    <input type="text" name="note"
+           [(ngModel)]="note" />
+    <input type="submit" name="btnSave"
+           value="저장"
+           (click)="btnSave_Click(frmTwo.value)" />
+</form>

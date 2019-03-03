@@ -1,0 +1,16 @@
+﻿<h1>수정</h1>
+
+<form #frm="ngForm">
+    <input type="text" name="id"
+           [(ngModel)]="model.id" />
+    <input type="text" name="title" #title="ngModel"
+           [(ngModel)]="model.title" />
+    <span [hidden]="title.untouched || title.valid">* 필수입력</span>
+
+    <input type="submit" name="btnEdit"
+           value="수정"
+           (click)="btnEdit_Click(frm.value)" [disabled]="!frm.valid"  />
+</form>
+
+<hr />
+{{ frm.value | json }}

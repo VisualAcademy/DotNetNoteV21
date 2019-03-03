@@ -1,0 +1,12 @@
+﻿<h2 [style.color]="foreColor" (click)="btnChange_Click()">{{ title }}</h2>
+
+<table class="table table-bordered table-condensed table-stripped table-hover">
+    <tr>
+        <td>순위</td>
+        <td>이름</td>
+    </tr>
+    <tr *ngFor="let r of rankings">
+        <td><img src="/images/{{r.rankImage | uppercase}}" *ngIf="r.rankImage != ''" /></td>
+        <td>{{ r.name }}</td>
+    </tr>
+</table>

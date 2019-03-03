@@ -1,0 +1,11 @@
+﻿
+<h1>수정</h1>
+
+<form #frmFour="ngForm">
+    노트:
+    <input type="text" name="note"
+           [(ngModel)]="four.note" />
+    <input type="submit" name="btnSave"
+           value="수정"
+           (click)="btnSave_Click(frmFour.value)" />
+</form>

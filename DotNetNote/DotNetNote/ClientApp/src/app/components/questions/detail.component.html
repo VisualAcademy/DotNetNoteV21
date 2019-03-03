@@ -1,0 +1,15 @@
+﻿<h1>상세</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">상세보기</div>
+    <div class="panel-body">
+        번호: {{model.id}}
+
+        문제: {{model.title}}
+    </div>
+    <div class="panel-footer">
+        <button (click)="goList()" class="btn btn-default">리스트</button>
+        <button type="button" class="btn btn-default" (click)="goModify()">수정</button>
+        <button type="button" class="btn btn-default" (click)="goDelete()">삭제</button>
+    </div>
+</div>

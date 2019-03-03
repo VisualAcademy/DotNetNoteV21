@@ -1,0 +1,8 @@
+﻿<form #frmFour="ngForm">
+    노트:
+    <input type="text" name="note"
+           [(ngModel)]="note" />
+    <input type="submit" name="btnSave"
+           value="저장"
+           (click)="btnSave_Click(frmFour.value)" />
+</form>

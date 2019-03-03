@@ -1,0 +1,14 @@
+﻿<h1>데이터 바인딩 데모</h1>
+
+{{ title }}
+<hr />
+<div [style.backgroundColor]="color"
+     [hidden]="flag">
+    배경색 지정
+</div>
+
+<button (click)="btnToggle()">토글</button>
+
+<hr />
+
+<input type="text" [(ngModel)]="title" />

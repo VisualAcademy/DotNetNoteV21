@@ -1,0 +1,9 @@
+﻿
+<h1 *ngIf="isBusy">로딩중...</h1>
+<h1 *ngIf="!isBusy">Observable 데모</h1>
+
+<ul>
+    <li *ngFor="let n of names">
+        {{n.id}} - {{n.name}}
+    </li>
+</ul>

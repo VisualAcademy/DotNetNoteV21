@@ -1,0 +1,360 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        서포트 신청서(공급)
+    </div>
+
+    <div class="panel-body">
+        <form class="form-horizontal"
+              novalidate
+              (ngSubmit)="save()"
+              [formGroup]="customerForm">
+            <fieldset>
+                <div class="form-group"
+                    [ngClass]="{'has-error': (customerForm.get('firstName').touched || 
+                                              customerForm.get('firstName').dirty) &&
+                                              !customerForm.get('firstName').valid }">
+                    <label class="col-md-2 control-label" 
+                           for="firstNameId">대표자 성함</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="firstNameId" 
+                               type="text" 
+                               placeholder="대표자 성함 (필수)" 
+                               formControlName="firstName" />
+                        <span class="help-block" *ngIf="(customerForm.get('firstName').touched || 
+                                                         customerForm.get('firstName').dirty) && 
+                                                         customerForm.get('firstName').errors">
+                            <span *ngIf="customerForm.get('firstName').errors.required">
+                                대표자 이름을 입력하세요.
+                            </span>
+                            <span *ngIf="customerForm.get('firstName').errors.minlength">
+                                대표자 이름은 최소 2자 이상입니다.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': !customerForm.get('phone').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="phoneId">연락처</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="phoneId" 
+                               type="tel" 
+                               placeholder="연락처" 
+                               formControlName = "phone" />
+                        <span class="help-block" *ngIf="customerForm.get('phone').errors">
+                            <span *ngIf="customerForm.get('phone').errors.required">
+                                연락처 전화 번호를 남겨주세요.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': (customerForm.get('lastName').touched || customerForm.get('lastName').dirty) && !customerForm.get('lastName').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="lastNameId">단체명</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="lastNameId" 
+                               type="text" 
+                               placeholder="단체명 (필수)" 
+                               formControlName="lastName" />
+                        <span class="help-block" *ngIf="(customerForm.get('lastName').touched || customerForm.get('lastName').dirty) && customerForm.get('lastName').errors">
+                            <span *ngIf="customerForm.get('lastName').errors.required">
+                                단체명을 입력하세요.
+                            </span>
+                             <span *ngIf="customerForm.controls.lastName.errors.maxlength">
+                                단체명은 50자 이하로 입력하세요.
+                            </span>
+                       </span>
+                    </div>
+                </div>
+
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': !customerForm.get('homePage').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="homePageId">운영 홈페이지(URL)</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="homePageId" 
+                               type="text" 
+                               placeholder="운영 홈페이지(URL)" 
+                               formControlName = "homePage" />
+                        <span class="help-block" *ngIf="customerForm.get('homePage').errors">
+                            <span *ngIf="customerForm.get('homePage').errors.required">
+                                운영 홈페이지(URL)를 남겨주세요.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': !customerForm.get('schedule').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="scheduleId">전달 요청 일자 및 시간</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="scheduleId" 
+                               type="text" 
+                               placeholder="전달 요청 스케줄명(일자 및 시간)" 
+                               formControlName = "schedule" />
+                        <span class="help-block" *ngIf="customerForm.get('schedule').errors">
+                            <span *ngIf="customerForm.get('schedule').errors.required">
+                                전달 요청 스케줄명(일자 및 시간)을 남겨주세요.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': !customerForm.get('who').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="whoId">받는 사람(서포트 대상)</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="whoId" 
+                               type="text" 
+                               placeholder="받는 사람(서포트 대상)" 
+                               formControlName = "who" />
+                        <span class="help-block" *ngIf="customerForm.get('who').errors">
+                            <span *ngIf="customerForm.get('who').errors.required">
+                                받는 사람(서포트 대상)을 남겨주세요.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div formGroupName="emailGroup"
+                     [ngClass]="{'has-error': customerForm.get('emailGroup').errors }">
+                     
+                    <div class="form-group"
+                         [ngClass]="{'has-error': emailMessage}">
+                        <label class="col-md-2 control-label" 
+                            for="emailId">이메일</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" 
+                                id="emailId" 
+                                type="email" 
+                                placeholder="이메일 (필수)" 
+                                formControlName = "email" />
+                            <span class="help-block" *ngIf="emailMessage">
+                                {{ emailMessage }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group"
+                        [ngClass]="{'has-error': (customerForm.get('emailGroup.confirmEmail').touched || 
+                                                  customerForm.get('emailGroup.confirmEmail').dirty) && 
+                                                  !customerForm.get('emailGroup.confirmEmail').valid }">
+                        <label class="col-md-2 control-label" 
+                            for="confirmEmailId">이메일 확인</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" 
+                                id="confirmEmailId" 
+                                type="email" 
+                                placeholder="이메일 확인 (필수)" 
+                                formControlName = "confirmEmail" />
+                            <span class="help-block" *ngIf="(customerForm.get('emailGroup.confirmEmail').touched || 
+                                                            customerForm.get('emailGroup.confirmEmail').dirty) && 
+                                                            (customerForm.get('emailGroup.confirmEmail').errors ||
+                                                             customerForm.get('emailGroup').errors)">
+                                <span *ngIf="customerForm.get('emailGroup.confirmEmail').errors?.required">
+                                    Please confirm your email address.
+                                </span>
+                                <span *ngIf="customerForm.get('emailGroup').errors?.match">
+                                    The confirmation does not match the email address.
+                                </span>                          
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="form-group" >
+                    <label class="col-md-2 control-label">Send Notifications</label>
+                    <div class="col-md-8">
+                            <label class="radio-inline">
+                                <input type="radio" 
+                                       value="email" 
+                                       formControlName = "notification">Email
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" 
+                                       value="text" 
+                                       formControlName = "notification">Text
+                            </label>
+                    </div>
+                </div>
+
+                <div class="form-group"
+                    [ngClass]="{'has-error': (customerForm.get('rating').touched || 
+                                              customerForm.get('rating').dirty) && 
+                                              !customerForm.get('rating').valid }">
+                    <label class="col-md-2 control-label" 
+                        for="ratingId">Rating</label>
+
+                    <div class="col-md-8">
+                        <input class="form-control" 
+                               id="ratingId" 
+                               type="number" 
+                               formControlName = "rating" />
+                        <span class="help-block" *ngIf="(customerForm.get('rating').touched 
+                                                         || customerForm.get('rating').dirty) && 
+                                                         customerForm.get('rating').errors">
+                             <span *ngIf="customerForm.get('rating').errors.range">
+                                Please rate your experience from 1 to 5.
+                            </span>
+                       </span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-8 checkbox" >
+                        <label>
+                            <input id="sendCatalogId"
+                                   type="checkbox"
+                                   formControlName = "sendCatalog" >
+                            물품 추가하기(필수)
+                        </label>
+                    </div>
+                </div>
+
+                <div *ngIf="customerForm.get('sendCatalog').value">
+                    <div class="form-group">
+                        <div class="col-md-4 col-md-offset-2">
+                            <span>
+                                <button class="btn btn-primary"
+                                        type="button"
+		                                [disabled]="!addresses.valid"
+                                        (click)="addAddress()">
+                                    항목 추가 
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div formArrayName="addresses" *ngFor="let address of addresses.controls; let i=index">
+                        <div [formGroupName]="i">
+                            <div class="form-group" >
+                                <label class="col-md-2 control-label"
+                                       attr.for="{{'addressType1Id' + i}}">Address Type</label>
+                                <div class="col-md-8">
+                                    <label class="radio-inline">
+                                        <input type="radio" id="{{'addressType1Id' + i}}" value="home"
+                                        formControlName="addressType">Home
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="{{'addressType1Id' + i}}" value="work"
+                                        formControlName="addressType">Work
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="{{'addressType1Id' + i}}" value="other"
+                                        formControlName="addressType">Other
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"
+                                       attr.for="{{'street1Id' + i}}">Street Address 1</label>
+                                <div class="col-md-8">
+                                    <input type="text" 
+                                        class="form-control" 
+                                        id="{{'street1Id' + i}}" 
+                                        placeholder="Street address"
+                                        formControlName="street1">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" 
+                                       attr.for="{{'street2Id' + i}}">Street Address 2</label>
+                                <div class="col-md-8">
+                                    <input type="text" 
+                                        class="form-control" 
+                                        id="{{'street2Id' + i}}"
+                                        placeholder="Street address (second line)"
+                                        formControlName="street2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" 
+                                    attr.for="{{'cityId' + i}}">City, State, Zip Code</label>
+                                <div class="col-md-3">
+                                    <input type="text" 
+                                        class="form-control" 
+                                        id="{{'cityId' + i}}" 
+                                        placeholder="City"
+                                        formControlName="city">
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-control"
+                                            id="{{'stateId' + i}}"
+                                            formControlName="state">
+                                        <option value="" disabled selected hidden>Select a State...</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                <input type="number"
+                                        class="form-control" 
+                                        id="{{'zipId' + i}}"
+                                        placeholder="Zip Code"
+                                        formControlName="zip">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-4 col-md-offset-2">
+                        <span>
+                            <button class="btn btn-primary"
+                                    type="submit"
+                                    [disabled]="!customerForm.valid">
+                                Save
+                            </button>
+                        </span>
+                        <span>
+                            <button class="btn btn-default"
+                                    type="button"
+                                    (click)="populateTestData()">
+                                Test Data
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<br>Dirty: {{ customerForm.dirty }} 
+<br>Touched: {{ customerForm.touched }}
+<br>Valid: {{ customerForm.valid }}
+<br>Value: {{ customerForm.value | json }}
+<br>Street: {{ addresses.get('0.street1')?.value }}

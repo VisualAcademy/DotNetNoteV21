@@ -1,0 +1,32 @@
+﻿
+<h1>폼 유효성 검사</h1>
+
+<form #form="ngForm">
+
+    <div [class.has-error]=
+         "txtName.invalid && txtName.touched">
+        <input type="text" name="name"
+               [(ngModel)]="name" 
+               #txtName="ngModel"
+               class="form-control"
+               required
+               />
+        <span class="text-danger"
+              *ngIf="txtName.invalid && txtName.touched"
+              >
+            이름을 입력하세요.
+        </span>
+    </div>
+
+    <button type="submit">전송</button>
+</form>
+
+<hr />
+텍스트박스 정보: {{ txtName.value | json }}
+<br />
+텍스트박스 스타일: {{ txtName.className }}
+<hr />
+폼 정보: {{ form.value | json }}
+<br />
+폼 상태: {{ txtName.dirty }}
+

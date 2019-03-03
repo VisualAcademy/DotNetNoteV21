@@ -1,0 +1,16 @@
+﻿
+<h1>수정</h1>
+
+<form #frm="ngForm">
+    노트:
+    <input type="text" name="id"
+           [(ngModel)]="model.id" />
+    <input type="text" name="note"
+           [(ngModel)]="model.note" />
+    <input type="submit" name="btnEdit"
+           value="수정"
+           (click)="btnEdit_Click(frm.value)" />
+</form>
+
+<hr />
+{{ frm.value | json }}

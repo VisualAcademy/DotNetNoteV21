@@ -1,0 +1,26 @@
+﻿import { Component } from '@angular/core';
+import { Http } from '@angular/http';
+
+@Component({
+    selector: 'main-summary',
+    templateUrl: './main-summary.component.html'
+})
+export class MainSummaryComponent {
+    NOTE_SERVICE = "http://www.dotnetnote.com/api/NoteService";
+    COMMENT_SERVICE = "http://www.dotnetnote.com/api/NoteCommentService/";
+
+    public notes = [];          // 최근 글 리스트
+    public comments = [];       // 최근 댓글 리스트 
+
+    constructor(private _http:Http) {
+        //[1] 게시판 리스트 3개 
+        _http.get(this.NOTE_SERVICE).subscribe(result => {
+            this.notes = result.json(); 
+        });
+
+        //[2] 댓글 리스트 3개
+        _http.get(this.COMMENT_SERVICE).subscribe(r => {
+            this.comments = r.json();  
+        }); 
+    }
+}

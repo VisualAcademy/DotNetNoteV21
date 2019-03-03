@@ -1,0 +1,32 @@
+﻿<h2>{{ title }}</h2>
+
+<div class="well thumbnail">
+    <ul>
+        <li>
+            국어 점수: {{ score.kor }}
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" 
+                     role="progressbar" 
+                     aria-valuenow="50" 
+                     aria-valuemin="0" 
+                     aria-valuemax="100" 
+                     [style.width.%]="score.kor">
+                    <span>{{ score.kor }}% Complete</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            영어 점수: {{ score.eng }}
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger"
+                     role="progressbar"
+                     aria-valuenow="50"
+                     aria-valuemin="0"
+                     aria-valuemax="100"
+                     [style.width.%]="score.eng">
+                    <span>{{ score.eng }}% Complete</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

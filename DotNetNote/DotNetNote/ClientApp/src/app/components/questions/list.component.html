@@ -1,0 +1,12 @@
+﻿<h1>출력 및 페이징</h1>
+
+<a [routerLink]="['/questionwrite']" class="btn btn-primary">글쓰기</a>
+
+<h3 *ngIf="models.length == 0">로딩중...</h3>
+
+<an-paging-helper [recordCount]="totalRecordCount"
+                  [pageSize]="pageSize"
+                  (pageIndexChanging)="pageIndexChanging($event)"></an-paging-helper>
+
+<question-grid [models]="models"></question-grid>
+

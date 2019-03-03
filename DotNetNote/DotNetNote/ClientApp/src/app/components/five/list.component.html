@@ -1,0 +1,13 @@
+﻿
+<h1>Five 리스트</h1>
+
+<a [routerLink]="['/fivewrite']" class="btn btn-primary">글쓰기</a>
+
+<h3 *ngIf="models.length == 0">로딩중...</h3>
+
+<an-paging-helper [recordCount]="totalRecordCount"
+                  [pageSize]="pageSize"
+                  (pageIndexChanging)="pageIndexChanging($event)"></an-paging-helper>
+
+<five-grid [models]="models"></five-grid>
+

@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+  <div class="panel-heading" (click)="showRecentComment()">댓글 리스트</div>
+  <div class="panel-body" *ngIf="isShowRecentComment">
+    <ul>
+      <li *ngFor="let c of comments">{{c}}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+﻿<h1>
+    <img src="{{imgUrl}}" />
+    {{pageTitle}}
+    <img [src]="imgUrl" />
+</h1>
+<blog-post-main-summary></blog-post-main-summary>
+<hr />
+<h3 [style.color]="titleColor" (click)="colorChange()">{{title}}</h3>
+<div [innerHTML]="content"></div>
+<label><input type="checkbox" [(ngModel)]="isShowTags"> 태그 리스트 표시</label>
+<div *ngIf="isShowTags">
+    <i *ngFor="let tag of tags"><span class="badge">{{tag}}</span>&nbsp;</i>
+</div>
+<hr />
+<div class="panel panel-default">
+    <div class="panel-heading" (click)="showPostList()">포스트 리스트</div>
+    <div class="panel-body" [hidden]="!isShowPostList">
+        <ol>
+            <li *ngFor="let post of posts">{{post}}</li>
+        </ol>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" (click)="showBlogList()">블로그 리스트</div>
+    <div class="panel-body" [hidden]="!isShowBlogList">
+        <ul>
+            <li *ngFor="let b of blogs">{{b}}</li>
+        </ul>
+    </div>
+</div>
+<blog-category></blog-category>
+<blog-comment [comments]="comments"></blog-comment>
+<blog-archieve></blog-archieve>
+<main-summary-list></main-summary-list>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>

@@ -1,0 +1,14 @@
+﻿<h1>드롭다운리스트 데모</h1>
+<select #ctl (change)="printSelect(ctl.value)">
+    <option>Angular</option>
+    <option>ASP.NET Core</option>
+    <option>Azure</option>
+</select>
+{{tech}}
+<hr />
+<select (change)="printWeb($event.target.value)">
+    <option>Angular</option>
+    <option>ASP.NET Core</option>
+    <option>Azure</option>
+</select>
+{{web}}
