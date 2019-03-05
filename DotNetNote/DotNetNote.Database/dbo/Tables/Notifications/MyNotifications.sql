@@ -4,6 +4,10 @@
 	[Message] [nvarchar](max) NULL,
 	[Type] [nvarchar](50) NULL,
 	[Url] [nvarchar](max) NULL,
+	--------------------------------------------------------
+	UserId Int Null,
+	IsComplete Bit Default(0) Not Null
+
  CONSTRAINT [PK_MyNotifications] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
