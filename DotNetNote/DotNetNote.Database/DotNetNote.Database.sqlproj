@@ -82,6 +82,7 @@
     <Folder Include="dbo\Views\Blog" />
     <Folder Include="dbo\Views\BoardManager" />
     <Folder Include="dbo\Tables\Notifications" />
+    <Folder Include="dbo\Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Buyers.sql" />
@@ -153,5 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DotNetNote.Database.publish.xml" />
+    <None Include="dbo\Scripts\SysDateTimeOffset.sql" />
   </ItemGroup>
 </Project>
