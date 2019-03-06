@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetNote.Controllers
 {
-    public class MyNotificationController : Controller
+    public class MyNotificationsController : Controller
     {
         private readonly IMyNotificationRepository _repository;
 
-        public MyNotificationController(IMyNotificationRepository repository)
+        public MyNotificationsController(IMyNotificationRepository repository)
         {
             _repository = repository;
         }
