@@ -32,6 +32,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication;
 using DotNetNoteCom;
+using DotNetNote.Models.Notifications;
 
 namespace DotNetNote
 {
@@ -381,6 +382,12 @@ namespace DotNetNote
             services.AddSingleton<ICompanyRepository>(new CompanyRepositoryAdo(Configuration["ConnectionStrings:DefaultConnection"]));
             //services.AddSingleton<ICompanyRepository>(new CompanyRepositoryDapper(Configuration["ConnectionStrings:DefaultConnection"]));
             //services.AddTransient<ICompanyRepository, CompanyRepositoryEntityFramework>();
+
+            // <Notifications>
+            // 종속성 해결: IMyNotificationRepository의 인스턴스를 MyNotificationRepository로 생성
+            services.AddSingleton<IMyNotificationRepository>(new MyNotificationRepository(Configuration["ConnectionString"]));
+            // </Notifications>
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace DotNetNote.Models.Notifications
 {
-    public class MyNotificationRepotiroy : IMyNotificationRepotiroy
+    public class MyNotificationRepository : IMyNotificationRepository
     {
         private IDbConnection db;
 
-        public MyNotificationRepotiroy(string connectionString)
+        public MyNotificationRepository(string connectionString)
         {
             db = new SqlConnection(connectionString);
         }
@@ -37,7 +37,7 @@ namespace DotNetNote.Models.Notifications
         /// </summary>
         public MyNotification GetNotificationByUserid(int userId)
         {
-            string sql = "Select Top * From MyNotifications Where UserId = @UserId And IsComplete = 0";
+            string sql = "Select Top 1 * From MyNotifications Where UserId = @UserId And IsComplete = 0";
             return db.Query<MyNotification>(sql, new { UserId = userId }).SingleOrDefault();
         }
 
@@ -48,6 +48,15 @@ namespace DotNetNote.Models.Notifications
         {
             string sql = "Update MyNotifications Set IsComplete = 1 Where UserId = @UserId And Id = @Id";
             db.Execute(sql, new { UserId = userId, Id = id });
+        }
+
+        /// <summary>
+        /// 특정 사용자의 모든 알림을 확인으로 처리 
+        /// </summary>
+        public void CompleteNotificationByUserid(int userId)
+        {
+            string sql = "Update MyNotifications Set IsComplete = 1 Where UserId = @UserId";
+            db.Execute(sql, new { UserId = userId });
         }
     }
 }
