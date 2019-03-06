@@ -1,22 +1,15 @@
-﻿using DotNetNote.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace DotNetNote
+namespace DotNetNote.Models
 {
-    public class DashboardContext : DbContext
+    public class DotNetNoteContext : DbContext
     {
-        public DbSet<Twelve> Twelves { get; set; }
-
-        public DashboardContext()
+        public DotNetNoteContext()
         {
             // Empty
         }
 
-        /// <summary>
-        /// 생성자 매개변수에 옵션값 전달
-        /// </summary>
-        public DashboardContext(DbContextOptions<DashboardContext> options)
-            : base(options)
+        public DotNetNoteContext(DbContextOptions<DotNetNoteContext> options) : base(options)
         {
 
         }
@@ -29,5 +22,7 @@ namespace DotNetNote
                 optionsBuilder.UseSqlServer(connectionString);
             }
         }
+
+        public DbSet<Idea> Ideas { get; set; }
     }
 }

@@ -1445,3 +1445,77 @@ Error Number:102,State:1,Class:15
 2019-03-06 09:53:07.889 +09:00 [Information] Executed action "DotNetNote.Controllers.MyNotificationController.IsNotification (DotNetNote)" in 1.0772ms
 2019-03-06 09:53:07.889 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.MyNotificationController.IsNotification (DotNetNote)"'
 2019-03-06 09:53:07.889 +09:00 [Information] Request finished in 2.3248ms 200 application/json; charset=utf-8
+2019-03-06 22:39:35.992 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-03-06 22:39:36.053 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-03-06 22:39:36.156 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.HomeController.Index (DotNetNote)"'
+2019-03-06 22:39:36.165 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.HomeController.Index (DotNetNote)"
+2019-03-06 22:39:36.179 +09:00 [Information] Executing action method "DotNetNote.Controllers.HomeController.Index (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:36.182 +09:00 [Information] HOME - Index 페이지가 로드되었습니다.
+2019-03-06 22:39:37.479 +09:00 [Information] Executed action method "DotNetNote.Controllers.HomeController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1296.6374ms.
+2019-03-06 22:39:37.502 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-03-06 22:39:37.885 +09:00 [Information] Executed ViewResult - view "Index" executed in 395.8923ms.
+2019-03-06 22:39:37.886 +09:00 [Information] Executed action "DotNetNote.Controllers.HomeController.Index (DotNetNote)" in 1720.209ms
+2019-03-06 22:39:37.886 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.HomeController.Index (DotNetNote)"'
+2019-03-06 22:39:37.918 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/jquery/dist/jquery.js  
+2019-03-06 22:39:37.919 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/bootstrap/dist/js/bootstrap.js  
+2019-03-06 22:39:37.927 +09:00 [Information] Request finished in 1940.9619ms 200 text/html; charset=utf-8
+2019-03-06 22:39:37.970 +09:00 [Information] Sending file. Request path: '"/lib_/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\bootstrap\dist\js\bootstrap.js"'
+2019-03-06 22:39:37.971 +09:00 [Information] Request finished in 52.3162ms 200 application/javascript
+2019-03-06 22:39:37.989 +09:00 [Information] Sending file. Request path: '"/lib_/jquery/dist/jquery.js"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\jquery\dist\jquery.js"'
+2019-03-06 22:39:37.990 +09:00 [Information] Request finished in 71.3678ms 200 application/javascript
+2019-03-06 22:39:38.019 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/app/DotNetNote/DotNetNoteApp.js  
+2019-03-06 22:39:38.030 +09:00 [Information] Sending file. Request path: '"/app/DotNetNote/DotNetNoteApp.js"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\app\DotNetNote\DotNetNoteApp.js"'
+2019-03-06 22:39:38.031 +09:00 [Information] Request finished in 11.4834ms 200 application/javascript
+2019-03-06 22:39:38.114 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1  
+2019-03-06 22:39:38.120 +09:00 [Information] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"'
+2019-03-06 22:39:38.121 +09:00 [Information] Request finished in 7.5152ms 200 font/woff2
+2019-03-06 22:39:38.330 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteService/  
+2019-03-06 22:39:38.331 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteCommentService/  
+2019-03-06 22:39:38.334 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteService  
+2019-03-06 22:39:38.335 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.335 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.335 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.336 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteCommentService  
+2019-03-06 22:39:38.336 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.337 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"
+2019-03-06 22:39:38.337 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"
+2019-03-06 22:39:38.337 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:38.337 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:38.337 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteCommentService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"
+2019-03-06 22:39:38.338 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.304ms.
+2019-03-06 22:39:38.338 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2568ms.
+2019-03-06 22:39:38.338 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:38.338 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2473ms.
+2019-03-06 22:39:38.341 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteCommentService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"
+2019-03-06 22:39:38.341 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:38.341 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0057ms.
+2019-03-06 22:39:38.343 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Note, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-06 22:39:38.343 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Note, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-06 22:39:38.343 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.NoteComment, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-06 22:39:38.343 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.NoteComment, DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-03-06 22:39:38.494 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" in 157.0977ms
+2019-03-06 22:39:38.494 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" in 152.5821ms
+2019-03-06 22:39:38.494 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.494 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" in 156.3031ms
+2019-03-06 22:39:38.494 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" in 157.1411ms
+2019-03-06 22:39:38.494 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.494 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.494 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-03-06 22:39:38.495 +09:00 [Information] Request finished in 164.4992ms 200 application/json; charset=utf-8
+2019-03-06 22:39:38.496 +09:00 [Information] Request finished in 165.1079ms 200 application/json; charset=utf-8
+2019-03-06 22:39:38.500 +09:00 [Information] Request finished in 164.4279ms 200 application/json; charset=utf-8
+2019-03-06 22:39:38.500 +09:00 [Information] Request finished in 166.052ms 200 application/json; charset=utf-8
+2019-03-06 22:39:42.221 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/DnnContextTest  
+2019-03-06 22:39:42.239 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)"'
+2019-03-06 22:39:42.240 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"DnnContextTest\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)"
+2019-03-06 22:39:42.249 +09:00 [Information] Executing action method "DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)" - Validation state: Valid
+2019-03-06 22:39:42.317 +09:00 [Information] Entity Framework Core "2.2.2-servicing-10034" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-06 22:39:42.511 +09:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Note]
+FROM [Ideas] AS [i]"
+2019-03-06 22:39:42.531 +09:00 [Information] Executed action method "DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 281.5964ms.
+2019-03-06 22:39:42.534 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-03-06 22:39:42.540 +09:00 [Information] Executed ViewResult - view "Index" executed in 8.6946ms.
+2019-03-06 22:39:42.540 +09:00 [Information] Executed action "DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)" in 299.7094ms
+2019-03-06 22:39:42.540 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.DnnContextTestController.Index (DotNetNote)"'
+2019-03-06 22:39:42.541 +09:00 [Information] Request finished in 319.9595ms 200 text/html; charset=utf-8
