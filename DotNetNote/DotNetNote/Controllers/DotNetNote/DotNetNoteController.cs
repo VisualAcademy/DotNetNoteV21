@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
@@ -20,18 +22,21 @@ namespace DotNetNote.Controllers
         private readonly INoteRepository _repository; // 게시판 리파지터리
         private readonly INoteCommentRepository _commentRepository; // 댓글 리파지터리
         private readonly ILogger<DotNetNoteController> _logger; // 기본 제공 로깅
+        private readonly DotNetNoteContext _context; // 컨텍스트 클래스
 
         public DotNetNoteController(
             IHostingEnvironment environment,
             INoteRepository repository,
             INoteCommentRepository commentRepository,
-            ILogger<DotNetNoteController> logger
+            ILogger<DotNetNoteController> logger,
+            DotNetNoteContext context
             )
         {
             _environment = environment;
             _repository = repository;
             _commentRepository = commentRepository;
             _logger = logger;
+            _context = context;
         }
 
         // 공통 속성: 검색 모드: 검색 모드이면 true, 그렇지 않으면 false.
@@ -114,8 +119,7 @@ namespace DotNetNote.Controllers
             ViewBag.SearchMode  = SearchMode;
             ViewBag.SearchField = SearchField;
             ViewBag.SearchQuery = SearchQuery;
-
-
+            
             // 페이저 컨트롤 적용
             ViewBag.PageModel = new PagerBase
             {
@@ -128,8 +132,7 @@ namespace DotNetNote.Controllers
                 SearchField = SearchField,
                 SearchQuery = SearchQuery
             };
-
-
+            
             return View(notes);
         }
 
@@ -677,5 +680,143 @@ namespace DotNetNote.Controllers
         {
             return View();
         }
+
+        #region 공지사항 모듈
+        /// <summary>
+        /// 로그인 페이지의 메인 공지사항 목록에 사용될 공지사항 목록 조회
+        /// </summary>
+        /// <param name="page">페이지</param>
+        /// <returns>공지사항 목록</returns>
+        //[HttpPost]
+        [AllowAnonymous]
+        public JsonResult MainList(int page = 1)
+        {
+            return Json(new
+            {
+                list = _context.Notes.OrderByDescending(n => n.Id).Skip((page - 1) * 5).Take(5).Select(x => new
+                {
+                    num = x.Id,
+                    title = x.Title,
+                    postDate = x.PostDate.ToString("yyyy.MM.dd")
+                }),
+                count = _context.Notes.Count()
+            });
+        }
+
+        public IActionResult MainListPage()
+        {
+            return View(); 
+        }
+
+        /// <summary>
+        /// 로그인 페이지의 팝업 공지사항 목록에 사용될 공지사항 목록 조회
+        /// </summary>
+        /// <param name="page">페이지</param>
+        /// <param name="keyword">검색 키워드</param>
+        /// <returns>공지사항 목록</returns>
+        [HttpPost]
+        [AllowAnonymous]
+        public JsonResult PopupList(int page = 1, string keyword = "")
+        {
+            int cnt = 0; 
+
+            List<Note> notices;
+            if (string.IsNullOrWhiteSpace(keyword))
+            {
+                notices = _context.Notes.OrderByDescending(n => n.Id).Skip((page - 1) * 5).Take(5).ToList();
+                cnt = _context.Notes.Count();
+            }
+            else
+            {
+                notices = _context.Notes.OrderByDescending(n => n.Id).Where(n => n.Title.Contains(keyword)).Skip((page - 1) * 5).Take(5).ToList();
+                cnt = _context.Notes.Where(n => EF.Functions.Like(n.Title, "N%" + keyword + "%") || n.Title.Contains(keyword)).Count();
+            }
+
+            return Json(new
+            {
+                list = notices.Select(x => new
+                {
+                    num = x.Id,
+                    title = x.Title,
+                    postDate = x.PostDate.ToString("yyyy.MM.dd"),
+                    fileName = x.FileName
+                }),
+                count = cnt
+            });
+        }
+
+        /// <summary>
+        /// 로그인 페이지의 공지사항 상세에 사용될 공지사항 정보 조회
+        /// </summary>
+        /// <param name="num">키</param>
+        /// <param name="keyword">검색 키워드</param>
+        /// <returns>공지사항 정보</returns>
+        [HttpPost]
+        [AllowAnonymous]
+        public JsonResult NoticeView(int num, string keyword = "")
+        {
+            var articleBase = _context.Notes.Where(n => n.Id == num).SingleOrDefault();
+
+            Note prevArticleSet = new Note();
+            Note nextArticleSet = new Note(); 
+            if (string.IsNullOrWhiteSpace(keyword))
+            {
+                prevArticleSet = _context.Notes.Where(n => n.Id < num).FirstOrDefault(); // 이전 
+                nextArticleSet = _context.Notes.Where(n => n.Id > num).FirstOrDefault(); // 다음 
+            }
+            else
+            {
+                prevArticleSet = _context.Notes.Where(n => n.Id < num && n.Title.Contains(keyword)).FirstOrDefault(); // 이전 
+                nextArticleSet = _context.Notes.Where(n => n.Id > num && n.Title.Contains(keyword)).FirstOrDefault(); // 다음 
+            }
+
+            return Json(new
+            {
+                title = articleBase.Title,
+                postDate = articleBase.PostDate.ToString("yyyy.MM.dd"),
+                content = articleBase.Content,
+                fileName = articleBase.FileName,
+                prevNum = (prevArticleSet != null ? prevArticleSet.Id : -1),
+                prevTitle = (prevArticleSet != null ? prevArticleSet.Title : ""),
+                nextNum = (nextArticleSet != null ? nextArticleSet.Id : -1),
+                nextTitle = (nextArticleSet != null ? nextArticleSet.Title : "")
+            });
+        }
+
+        ///// <summary>
+        ///// 로그인 페이지의 공지사항 상세 파일 다운로드
+        ///// </summary>
+        ///// <param name="num">게시물 번호</param>
+        ///// <returns>파일</returns>
+        //[AllowAnonymous]
+        //public ActionResult Download(int num)
+        //{
+        //    string tableID = HttpContext.Application["Notice.TID"].ToString();
+        //    string tableName = tableID.ToUpper();
+        //    string fileName = (new ArticleRepository()).GetFileNameById(tableName, num);
+
+        //    if (Convert.ToBoolean(ConfigurationManager.AppSettings["AZURE_STORAGE_ENABLE"].ToString()))
+        //    {
+        //        //return Redirect($"/BoardDown.aspx?BoardName={boardName}&Num={file.ArticleId}&FileName={file.FileName}&IsSub={file.ArticleId.ToString().PadLeft(8, '0')}");
+        //        // 서브 폴더에서 다운로드: 멀티파일 리스트에서 다운로드할 때 사용 됨 
+        //        AzureBlobFileManager.FileDownFromAzureBlob(ConfigurationManager.AppSettings["AZURE_STORAGE_CONNECTIONSTRING"].ToString(), ConfigurationManager.AppSettings["AZURE_STORAGE_CONTAINERNAME"].ToString(), ConfigurationManager.AppSettings["AZURE_STORAGE_SUBFOLDER"].ToString(), tableName, fileName);
+
+        //        return View();
+        //    }
+        //    else
+        //    {
+        //        // 대상 파일 다운로드
+        //        // FILE_UPLOAD_FOLDER 항목이 지정되어 있지 않으면 프로젝트 루트의 BoardFiles 폴더에 저장, 지정되었으면 해당 폴더에 저장 
+        //        string downloadPath = (ConfigurationManager.AppSettings["FILE_UPLOAD_FOLDER"].ToString() == "") ?
+        //            Path.Combine(Server.MapPath("./BoardFiles"), tableID) + "\\" :
+        //            Path.Combine(HttpContext.Application["BOARD_FILE_PATH"].ToString(), tableID) + "\\";
+
+        //        byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(downloadPath, fileName));
+
+        //        return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+        //    }
+        //}
+        #endregion
+
     }
 }

@@ -29,6 +29,6 @@ Create Table dbo.Notes
     UserId          Int Null,                                   -- (확장...) 사용자 테이블 Id
     CategoryId      Int Null Default 0,                         -- (확장...) 카테고리 테이블 Id
     BoardId         Int Null Default 0,                         -- (확장...) 게시판(Boards) 테이블 Id
-    AplicationId    Int Null Default 0                          -- (확장용) 응용 프로그램 Id
+    ApplicationId    Int Null Default 0                          -- (확장용) 응용 프로그램 Id
 )
 Go

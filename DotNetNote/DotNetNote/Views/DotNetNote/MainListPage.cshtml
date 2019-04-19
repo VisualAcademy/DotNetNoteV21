@@ -1,0 +1,164 @@
+﻿<style>
+#wrap {width:100%; height:100%;}
+#dim { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.3; z-index:9; }
+
+.contents {width:1000px; height:auto; margin:0 auto;}
+
+.mainBoard {padding-top:40px;}
+.mainBoard .util {width:100%; height:40px; background:#f3f3f3; text-align:right; line-height:40px; font-size:16px; font-weight:600; color:#666; vertical-align:middle;}
+.mainBoard .util > span {color:#4db848;}
+.mainBoard .util > .prev {width:13px; height:13px; font-size:0; background:url(/assets/images/btn_prev.png) no-repeat center center; vertical-align:7px; position:relative; margin-right:10px; margin-left:16px;}
+.mainBoard .util > .prev:after {content:"|"; width:1px; height:15px; background:#ddd; position:absolute; top:0px; left:23px;}
+.mainBoard .util > .next {width:13px; height:13px; font-size:0; background:url(/assets/images/btn_next.png) no-repeat center center; vertical-align:7px; margin-left:10px;}
+.mainBoard .util > .btnMore {display:inline-block; width:40px; height:40px; font-size:0; background:url(/assets/images/btn_more.png) no-repeat center center; margin-left:10px; vertical-align:26px;}
+.mainBoard .list {width:100%; height:auto; border-top:2px solid #333; border-bottom:1px solid #333;}
+.mainBoard .list > dt {width:100%; height:120px; padding:18px 0; overflow:hidden;}
+.mainBoard .list > dt .img {width:240px; height:120px; float:left; background:#ddd;}
+.mainBoard .list > dt .text {width:740px; height:120px; overflow:hidden; font-size:13px; color:#777; line-height:18px; float:right;}
+.mainBoard .list > dt .text > strong {display:block; width:100%; height:auto; font-size:16px; color:#333; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:15px;}
+.mainBoard .list > dd {border-top:1px solid #ddd;}
+.mainBoard .list > dd > a {display:block; width:100%; height:49px; line-height:49px;}
+.mainBoard .list > dd > a > .tit {width:88%; height:49px; float:left; font-size:14px; color:#333; line-height:49px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.mainBoard .list > dd > a > .date {width:12%; height:49px; float:right; font-size:13px; color:#999; line-height:49px; text-align:right;}
+
+
+
+#popupLeftClose {width:33px; height:33px; font-size:0; background:url(/assets/images/btn_pop_close.png) no-repeat; position:absolute; top:30px; right:30px;}
+
+/*#popupLeft {width:1000px; height:100%; padding:30px; background:#fff; position:fixed; top:0; left:-1060px; z-index:99; transition: all 0.5s; -webkit-transition: all 0.5s;}*/
+#popupLeft.on {left:0;}
+#popupLeft .contWrap {width:100%; height:auto;}
+#popupLeft .contWrap .title {width:100%; height:auto; font-size:40px; font-weight:600; color:#333; text-align:center; padding-top:74px; position:relative; text-transform:uppercase;}
+#popupLeft .contWrap .title:after {content:""; width:24px; height:1px; background:#333; position:absolute; top:140px; left:50%; margin-left:-12px;}
+#popupLeft .contWrap .searchWrap {width:auto; height:34px; padding:80px 0 20px 686px;}
+#popupLeft .contWrap .searchWrap .inputText.search {width:265px; height:32px; float:left;}
+#popupLeft .contWrap .searchWrap .btnSearch {width:34px; height:34px; font-size:0; background:url(/healthCare/images/btn_search.png) no-repeat; float:left; margin-left:-1px;}
+#popupLeft .table {width:100%; height:auto; border-top:2px solid #333; border-bottom:1px solid #333;}
+#popupLeft .table table {width:100%;}
+#popupLeft .table thead th {background:#f3f3f3; height:59px; font-size:16px; color:#333; text-align:center;}
+#popupLeft .table thead th.white {color:#fff;}
+#popupLeft .table tbody td {border-top:1px solid #ddd; height:59px;}
+#popupLeft .table tbody td.num {font-size:14px; color:#999; text-align:center;}
+#popupLeft .table tbody td.tit a {display:inline-block; width:80%; font-size:14px; color:#333; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:18px;}
+#popupLeft .table tbody td .file {display:block; width:100%; height:100%; font-size:0; background:url(/healthCare/images/icon_file.png) no-repeat center center;}
+#popupLeft .table tbody td.date {font-size:13px; color:#999; text-align:center;}
+#popupLeft .contWrap .view {width:100%; height:auto; border-top:2px solid #333; margin-top:80px; overflow-y:auto; display:none;}
+#popupLeft .contWrap .view .tit {width:auto; height:auto; padding:20px 124px 20px 30px; font-size:14px; color:#333; line-height:18px; position:relative; background:#f3f3f3;}
+#popupLeft .contWrap .view .tit > span {width:124px; height:auto; font-size:13px; color:#999; position:absolute; top:50%; right:0; margin-top:-6px; text-align:center;}
+#popupLeft .contWrap .view .cont {width:auto; height:300px; padding:20px 30px; border-top:1px solid #ddd; font-size:13px; color:#666; line-height:20px; overflow-y:auto;}
+#popupLeft .contWrap .view .fileWrap {width:100%; height:59px; border-top:1px solid #ddd; border-bottom:1px solid #333;}
+#popupLeft .contWrap .view .fileTit {width:120px; height:59px; font-size:14px; color:#333; line-height:59px; float:left; background:#f3f3f3; text-align:center;}
+#popupLeft .contWrap .view .fileCont {width:80%; height:59px; float:left; font-size:13px; line-height:59px; padding-left:15px;}
+#popupLeft .contWrap .view .fileCont > a {display:inline-block; color:#666; text-decoration:underline;}
+#popupLeft .contWrap .view .util {width:100%; height:119px; border-bottom:1px solid #333;}
+#popupLeft .contWrap .view .util > li {width:auto; padding-left:80px; height:59px; border-top:1px solid #ddd;}
+#popupLeft .contWrap .view .util > li > a {display:block; width:100%; height:59px; font-size:14px; color:#333; line-height:59px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#popupLeft .contWrap .view .util > li:first-child {border-top:0; background:url(/assets/images/icon_arr_up.png) no-repeat 34px 26px;}
+#popupLeft .contWrap .view .util > li:last-child {background:url(/assets/images/icon_arr_down.png) no-repeat 34px 26px;}
+#popupLeft .contWrap .view .btnWrap {width:100%; height:40px; margin-top:40px; text-align:right;}
+
+
+</style>
+
+<div id="wrap">
+    <div id="dim"></div>
+
+    <div style="margin-top: 100px;" class="text-center">
+        <h3>공지사항</h3>
+    </div>
+
+    <!-- mainBoard -->
+    <section class="contents mainBoard">
+        <div class="util">
+            <span></span> /
+            <i style="font-style:normal;"></i>
+            <button class="prev">prev</button>
+            <button class="next">next</button>
+            <a href="#" class="btnMore">more</a>
+        </div>
+        <dl class="list"></dl>
+    </section>
+    <!--// mainBoard -->
+    <!-- popupLeft -->
+    <div id="popupLeft">
+        <div class="contWrap">
+            <p class="title">Notice</p>
+            <!-- list -->
+            <div class="tableWrap">
+                <div class="searchWrap">
+                    <input type="text" class="inputText search" />
+                    <button class="btnSearch">검색</button>
+                </div>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width:8%;" />
+                            <col style="width:70%;" />
+                            <col style="width:8%;"  />
+                            <col style="width:8%;"  />
+                            <col style="width:8%;"  />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>TITLE</th>
+                                <th></th>
+                                <th>DATE</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="page"></div>
+            </div>
+            <!--// list -->
+            <!-- view -->
+            <div class="view">
+                <p class="tit">&nbsp;</p>
+                <div class="cont ckEditor">&nbsp;</div>
+                <div class="fileWrap">
+                    <p class="fileTit">Attachment</p>
+                    <p class="fileCont">&nbsp;</p>
+                </div>
+                <ul class="util" style="list-style: none;">
+                    <li class="prev">&nbsp;</li>
+                    <li class="next">&nbsp;</li>
+                </ul>
+                <div class="btnWrap">
+                    <button class="btnBlack">List</button>
+                </div>
+            </div>
+            <!--// view -->
+        </div>
+        <button id="popupLeftClose">팝업닫기</button>
+    </div>
+    <!--// popupLeft -->
+</div>
+
+
+<script src="~/Scripts/DotNetNote.js"></script>
+<script>
+    // 공지사항을 초기화하고 이벤트 핸들러를 설정합니다.
+    loginNotice.renderMainList();
+    loginNotice.renderPopupList();
+    $(".mainBoard > .util > button").click(loginNotice.moveMainList);
+    $(".mainBoard > .util > .btnMore").click(loginNotice.showPopupList);
+    $("#popupLeft .page").on("click", "button", loginNotice.movePopupList);
+    $("#popupLeft .tableWrap .inputText.search").keydown(function (event) {
+        if (event.keyCode == 13) {
+            loginNotice.renderPopupList();
+        }
+    });
+    $("#popupLeft .tableWrap .btnSearch").click(function (event) {
+        loginNotice.renderPopupList();
+    });
+
+
+	$("#popupLeft .contWrap .view .btnWrap button").click(function(){
+		$("#popupLeft .contWrap .tableWrap").show();
+		$("#popupLeft .contWrap .view").hide();
+    });
+
+</script>
+

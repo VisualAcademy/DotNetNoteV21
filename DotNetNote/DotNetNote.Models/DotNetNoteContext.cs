@@ -30,6 +30,14 @@ namespace DotNetNote.Models
             }
         }
 
+        /// <summary>
+        /// 아이디어 관리자
+        /// </summary>
         public DbSet<Idea> Ideas { get; set; }
+
+        /// <summary>
+        /// 게시판
+        /// </summary>
+        public DbSet<Note> Notes { get; set; }
     }
 }

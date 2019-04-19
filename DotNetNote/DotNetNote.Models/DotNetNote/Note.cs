@@ -46,7 +46,7 @@ namespace DotNetNote.Models
         public string Homepage { get; set; }
 
         [Display(Name = "수정일")]
-        public DateTime ModifyDate { get; set; }
+        public DateTime? ModifyDate { get; set; }
 
         [Display(Name = "수정IP")]
         public string ModifyIp { get; set; }
@@ -80,5 +80,11 @@ namespace DotNetNote.Models
 
         [Display(Name = "카테고리")]
         public string Category { get; set; } // = "Free"; // 자유게시판(Free) 기본
+
+        public int? Num { get; set; }
+        public int? UserId { get; set; }
+        public int? CategoryId { get; set; }
+        public int? BoardId { get; set; }
+        public int? ApplicationId { get; set; }
     }
 }
