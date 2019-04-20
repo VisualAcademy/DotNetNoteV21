@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
@@ -796,7 +798,59 @@ namespace DotNetNote.Controllers
                 message = "DELETED"
             });
         }
-        
+
+        /// <summary>
+        /// 새로운 프로젝트를 등록하고 그 결과를 반환합니다.
+        /// </summary>
+        /// <param name="note">Project 개체의 인스턴스</param>
+        /// <returns>등록결과</returns>
+        [HttpPost]
+        [Route("api/DotNetNote/PostNote")]
+        [AllowAnonymous]
+        public IActionResult PostNote([FromBody]Note note)
+        {
+            if (ModelState.IsValid)
+            {
+                if (note.Id == -1)
+                {
+                    // 입력
+                    note.Id = 0;
+
+                    _repository.Add(note); 
+
+                    // 201 응답을 생성합니다.
+                    var response = new HttpResponseMessage(HttpStatusCode.Created)
+                    {
+                        Content = new StringContent(note.Id.ToString())
+                    };
+
+                    return Created("", "");
+
+                }
+                else
+                {
+                    int r = _repository.UpdateNote(note);
+
+                    if (r < 1)
+                    {
+                        return Json(new
+                        {
+                            modified = false,
+                            msg = "수정되지 않았습니다."
+                        });
+                    }
+                    return Created("", "");
+                }
+            }
+            else
+            {
+                //return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState); // ASP.NET 
+                HttpRequestMessage request = new HttpRequestMessage();
+                //return request.CreateResponse(HttpStatusCode.BadRequest); // ASP.NET Core
+                return BadRequest(ModelState);
+            }
+        }
+
         ///// <summary>
         ///// 로그인 페이지의 공지사항 상세 파일 다운로드
         ///// </summary>

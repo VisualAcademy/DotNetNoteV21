@@ -127,7 +127,7 @@ var loginNotice = (function () {
                                 html += "<td>&nbsp;</td>";
                             }
                             html += "<td class='text-center'>" + list[i].postDate + "</td>";
-                            html += "<td class='text-right'>" + "수정, <a href='javascript:loginNotice.deleteArticle(" + list[i].num + ");'>삭제</a></td>";
+                            html += "<td class='text-right'>" + "<a href='javascript:loginNotice.modifyArticle(" + list[i].num + ");'>수정</a> <a href='javascript:loginNotice.deleteArticle(" + list[i].num + ");'>삭제</a></td>";
                             html += "</tr>";
                         }
                         listBase.html(html);
@@ -239,7 +239,7 @@ var loginNotice = (function () {
          */
         showPopupView: function (num, clearFilter) {
 
-            if (clearFilter != null && clearFilter === true) {
+            if (clearFilter !== null && clearFilter === true) {
                 $("#txtSearch").val("");
             }
 
@@ -306,7 +306,7 @@ var loginNotice = (function () {
                         dataType: "json",
                         success: function (data, textStatus, jqXHR) {
 
-                            console.log(data.message); 
+                            console.log(data.message);
                             loginNotice.renderPopupList(1); // 리스트 출력
 
                         },
@@ -320,6 +320,45 @@ var loginNotice = (function () {
             }
             else {
                 return;
+            }
+
+        },
+        /**
+         * 선택한 아티클을 수정합니다. 
+         * 
+         * @author PARK YONGJUNE
+         * @date 2019. 04. 20.
+         * @memberOf loginNotice
+         * @param {number} num - 아티클 수정
+         */
+        modifyArticle: function (num) {
+
+            $("#divId").show();
+            $("#btnSave").text("수정");
+            $("#dnnCreateForm").modal('show');
+
+            try {
+                $.ajax({
+                    url: "/DotNetNote/NoticeView",
+                    type: "POST",
+                    data: "num=" + num + "&keyword=" + encodeURI($("#txtSearch").val()),
+                    cache: false,
+                    dataType: "json",
+                    success: function (data, textStatus, jqXHR) {
+
+                        $("#id").val(num);
+                        $("#name").val(data.name);
+                        $("#title").val(data.title);
+                        $("#content").val(data.content);
+                        $("#password").val("");
+
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("게시판 상세정보를 가져오던 중, 알 수 없는 오류가 발생했습니다.");
+                    }
+                });
+            } catch (e) {
+                console.log("loginNotice.modifyArticle: " + e);
             }
 
         }
