@@ -9761,3 +9761,48 @@ ORDER BY [n].[Id]"
 2019-04-21 03:09:05.502 +09:00 [Information] Executed action "DotNetNote.Controllers.DotNetNoteController.PostNote (DotNetNote)" in 8242.4877ms
 2019-04-21 03:09:05.502 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.DotNetNoteController.PostNote (DotNetNote)"'
 2019-04-21 03:09:05.524 +09:00 [Information] Request finished in 8283.3931ms 200 application/json; charset=utf-8
+2019-04-21 03:11:17.325 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/DotNetNote/NoticeView application/x-www-form-urlencoded; charset=UTF-8 17
+2019-04-21 03:11:17.378 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-04-21 03:11:17.403 +09:00 [Information] CORS policy execution successful.
+2019-04-21 03:11:17.473 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)"'
+2019-04-21 03:11:17.495 +09:00 [Information] Route matched with "{action = \"NoticeView\", controller = \"DotNetNote\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)"
+2019-04-21 03:11:17.550 +09:00 [Information] Executing action method "DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)" with arguments (["8002", ""]) - Validation state: Valid
+2019-04-21 03:11:17.606 +09:00 [Information] Entity Framework Core "2.2.3-servicing-35854" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-21 03:11:18.823 +09:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__num_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [n].[Id], [n].[AnswerNum], [n].[ApplicationId], [n].[BoardId], [n].[Category], [n].[CategoryId], [n].[CommentCount], [n].[Content], [n].[DownCount], [n].[Email], [n].[Encoding], [n].[FileName], [n].[FileSize], [n].[Homepage], [n].[ModifyDate], [n].[ModifyIp], [n].[Name], [n].[Num], [n].[ParentNum], [n].[Password], [n].[PostDate], [n].[PostIp], [n].[ReadCount], [n].[Ref], [n].[RefOrder], [n].[Step], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[Id] = @__num_0"
+2019-04-21 03:11:18.871 +09:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__num_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[AnswerNum], [n].[ApplicationId], [n].[BoardId], [n].[Category], [n].[CategoryId], [n].[CommentCount], [n].[Content], [n].[DownCount], [n].[Email], [n].[Encoding], [n].[FileName], [n].[FileSize], [n].[Homepage], [n].[ModifyDate], [n].[ModifyIp], [n].[Name], [n].[Num], [n].[ParentNum], [n].[Password], [n].[PostDate], [n].[PostIp], [n].[ReadCount], [n].[Ref], [n].[RefOrder], [n].[Step], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[Id] < @__num_0
+ORDER BY [n].[Id] DESC"
+2019-04-21 03:11:18.883 +09:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__num_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[AnswerNum], [n].[ApplicationId], [n].[BoardId], [n].[Category], [n].[CategoryId], [n].[CommentCount], [n].[Content], [n].[DownCount], [n].[Email], [n].[Encoding], [n].[FileName], [n].[FileSize], [n].[Homepage], [n].[ModifyDate], [n].[ModifyIp], [n].[Name], [n].[Num], [n].[ParentNum], [n].[Password], [n].[PostDate], [n].[PostIp], [n].[ReadCount], [n].[Ref], [n].[RefOrder], [n].[Step], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[Id] > @__num_0
+ORDER BY [n].[Id]"
+2019-04-21 03:11:18.886 +09:00 [Information] Executed action method "DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1333.3402ms.
+2019-04-21 03:11:18.892 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType9`8[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-21 03:11:19.038 +09:00 [Information] Executed action "DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)" in 1538.942ms
+2019-04-21 03:11:19.038 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.DotNetNoteController.NoticeView (DotNetNote)"'
+2019-04-21 03:11:19.074 +09:00 [Information] Request finished in 1754.4813ms 200 application/json; charset=utf-8
+2019-04-21 05:31:17.777 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/DotNetNote/PopupList application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-21 05:31:17.779 +09:00 [Information] CORS policy execution successful.
+2019-04-21 05:31:17.802 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)"'
+2019-04-21 05:31:17.804 +09:00 [Information] Route matched with "{action = \"PopupList\", controller = \"DotNetNote\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)"
+2019-04-21 05:31:17.806 +09:00 [Information] Executing action method "DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)" with arguments (["2", ""]) - Validation state: Valid
+2019-04-21 05:31:17.810 +09:00 [Information] Entity Framework Core "2.2.3-servicing-35854" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-21 05:31:18.983 +09:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[AnswerNum], [n].[ApplicationId], [n].[BoardId], [n].[Category], [n].[CategoryId], [n].[CommentCount], [n].[Content], [n].[DownCount], [n].[Email], [n].[Encoding], [n].[FileName], [n].[FileSize], [n].[Homepage], [n].[ModifyDate], [n].[ModifyIp], [n].[Name], [n].[Num], [n].[ParentNum], [n].[Password], [n].[PostDate], [n].[PostIp], [n].[ReadCount], [n].[Ref], [n].[RefOrder], [n].[Step], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY"
+2019-04-21 05:31:19.002 +09:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Notes] AS [n]"
+2019-04-21 05:31:19.004 +09:00 [Information] Executed action method "DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1197.4907ms.
+2019-04-21 05:31:19.004 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType8`4[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-21 05:31:19.022 +09:00 [Information] Executed action "DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)" in 1217.944ms
+2019-04-21 05:31:19.022 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.DotNetNoteController.PopupList (DotNetNote)"'
+2019-04-21 05:31:19.028 +09:00 [Information] Request finished in 1250.4676ms 200 application/json; charset=utf-8

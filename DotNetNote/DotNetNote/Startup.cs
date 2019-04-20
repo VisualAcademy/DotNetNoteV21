@@ -251,10 +251,12 @@ namespace DotNetNote
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            // ============================================================================== // 
             // 새로운 DbContext 추가
             services.AddEntityFrameworkSqlServer().AddDbContext<DotNetNoteContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            // ============================================================================== // 
 
             // 의존성 주입
             services.AddTransient<ITwelveRepository, TwelveRepository>();

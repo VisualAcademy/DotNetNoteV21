@@ -526,15 +526,20 @@
     $(".mainBoard > .util > button").click(loginNotice.moveMainList);
     $(".mainBoard > .util > .btnMore").click(loginNotice.showPopupList);
     $("#dnnMainIndex .page").on("click", "button", loginNotice.movePopupList);
+
+    // [2] 검색 버튼 이벤트 처리기
+    $("#btnSearch").click(function (event) {
+        loginNotice.renderPopupList();
+    });
+
+    // [3] 검색 텍스트박스 엔터 이벤트 처리기 
     $("#txtSearch").keydown(function (event) {
         if (event.keyCode == 13) {
             loginNotice.renderPopupList();
         }
     });
-    $("#btnSearch").click(function (event) {
-        loginNotice.renderPopupList();
-    });
 
+    // 
     $("#dnnMainIndex .contWrap .view .btnWrap button").click(function () {
         $("#divDotNetNoteIndex").show();
         $("#divDotNetNoteView").hide();
