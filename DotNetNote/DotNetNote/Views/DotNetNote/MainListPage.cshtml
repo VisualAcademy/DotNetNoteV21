@@ -1,57 +1,363 @@
 ﻿<style>
-#wrap {width:100%; height:100%;}
-#dim { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.3; z-index:9; }
+    #wrap {
+        width: 100%;
+        height: 100%;
+    }
 
-.contents {width:1000px; height:auto; margin:0 auto;}
+    #dim {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.3;
+        z-index: 9;
+    }
 
-.mainBoard {padding-top:40px;}
-.mainBoard .util {width:100%; height:40px; background:#f3f3f3; text-align:right; line-height:40px; font-size:16px; font-weight:600; color:#666; vertical-align:middle;}
-.mainBoard .util > span {color:#4db848;}
-.mainBoard .util > .prev {width:13px; height:13px; font-size:0; background:url(/assets/images/btn_prev.png) no-repeat center center; vertical-align:7px; position:relative; margin-right:10px; margin-left:16px;}
-.mainBoard .util > .prev:after {content:"|"; width:1px; height:15px; background:#ddd; position:absolute; top:0px; left:23px;}
-.mainBoard .util > .next {width:13px; height:13px; font-size:0; background:url(/assets/images/btn_next.png) no-repeat center center; vertical-align:7px; margin-left:10px;}
-.mainBoard .util > .btnMore {display:inline-block; width:40px; height:40px; font-size:0; background:url(/assets/images/btn_more.png) no-repeat center center; margin-left:10px; vertical-align:26px;}
-.mainBoard .list {width:100%; height:auto; border-top:2px solid #333; border-bottom:1px solid #333;}
-.mainBoard .list > dt {width:100%; height:120px; padding:18px 0; overflow:hidden;}
-.mainBoard .list > dt .img {width:240px; height:120px; float:left; background:#ddd;}
-.mainBoard .list > dt .text {width:740px; height:120px; overflow:hidden; font-size:13px; color:#777; line-height:18px; float:right;}
-.mainBoard .list > dt .text > strong {display:block; width:100%; height:auto; font-size:16px; color:#333; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:15px;}
-.mainBoard .list > dd {border-top:1px solid #ddd;}
-.mainBoard .list > dd > a {display:block; width:100%; height:49px; line-height:49px;}
-.mainBoard .list > dd > a > .tit {width:88%; height:49px; float:left; font-size:14px; color:#333; line-height:49px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.mainBoard .list > dd > a > .date {width:12%; height:49px; float:right; font-size:13px; color:#999; line-height:49px; text-align:right;}
+    .contents {
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .mainBoard {
+        padding-top: 40px;
+    }
+
+        .mainBoard .util {
+            width: 100%;
+            height: 40px;
+            background: #f3f3f3;
+            text-align: right;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            vertical-align: middle;
+        }
+
+            .mainBoard .util > span {
+                color: #4db848;
+            }
+
+            .mainBoard .util > .prev {
+                width: 13px;
+                height: 13px;
+                font-size: 0;
+                background: url(/assets/images/btn_prev.png) no-repeat center center;
+                vertical-align: 7px;
+                position: relative;
+                margin-right: 10px;
+                margin-left: 16px;
+            }
+
+                .mainBoard .util > .prev:after {
+                    content: "|";
+                    width: 1px;
+                    height: 15px;
+                    background: #ddd;
+                    position: absolute;
+                    top: 0px;
+                    left: 23px;
+                }
+
+            .mainBoard .util > .next {
+                width: 13px;
+                height: 13px;
+                font-size: 0;
+                background: url(/assets/images/btn_next.png) no-repeat center center;
+                vertical-align: 7px;
+                margin-left: 10px;
+            }
+
+            .mainBoard .util > .btnMore {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                font-size: 0;
+                background: url(/assets/images/btn_more.png) no-repeat center center;
+                margin-left: 10px;
+                vertical-align: 26px;
+            }
+
+        .mainBoard .list {
+            width: 100%;
+            height: auto;
+            border-top: 2px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+            .mainBoard .list > dt {
+                width: 100%;
+                height: 120px;
+                padding: 18px 0;
+                overflow: hidden;
+            }
+
+                .mainBoard .list > dt .img {
+                    width: 240px;
+                    height: 120px;
+                    float: left;
+                    background: #ddd;
+                }
+
+                .mainBoard .list > dt .text {
+                    width: 740px;
+                    height: 120px;
+                    overflow: hidden;
+                    font-size: 13px;
+                    color: #777;
+                    line-height: 18px;
+                    float: right;
+                }
+
+                    .mainBoard .list > dt .text > strong {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        font-size: 16px;
+                        color: #333;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        margin-bottom: 15px;
+                    }
+
+            .mainBoard .list > dd {
+                border-top: 1px solid #ddd;
+            }
+
+                .mainBoard .list > dd > a {
+                    display: block;
+                    width: 100%;
+                    height: 49px;
+                    line-height: 49px;
+                }
+
+                    .mainBoard .list > dd > a > .tit {
+                        width: 88%;
+                        height: 49px;
+                        float: left;
+                        font-size: 14px;
+                        color: #333;
+                        line-height: 49px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .mainBoard .list > dd > a > .date {
+                        width: 12%;
+                        height: 49px;
+                        float: right;
+                        font-size: 13px;
+                        color: #999;
+                        line-height: 49px;
+                        text-align: right;
+                    }
 
 
 
-#popupLeftClose {width:33px; height:33px; font-size:0; background:url(/assets/images/btn_pop_close.png) no-repeat; position:absolute; top:30px; right:30px;}
+    #dnnMainIndexClose {
+        width: 33px;
+        height: 33px;
+        font-size: 0;
+        background: url(/assets/images/btn_pop_close.png) no-repeat;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
 
-#popupLeft.on {left:0;}
-#popupLeft .contWrap {width:100%; height:auto;}
-#popupLeft .contWrap .title {width:100%; height:auto; font-size:40px; font-weight:600; color:#333; text-align:center; padding-top:74px; position:relative; text-transform:uppercase;}
-#popupLeft .table {width:100%; height:auto; border-top:2px solid #333; border-bottom:1px solid #333;}
-#popupLeft .table table {width:100%;}
-#popupLeft .table thead th {background:#f3f3f3; height:59px; font-size:16px; color:#333; text-align:center;}
-#popupLeft .table thead th.white {color:#fff;}
-#popupLeft .table tbody td {border-top:1px solid #ddd; height:59px;}
-#popupLeft .table tbody td.num {font-size:14px; color:#999; text-align:center;}
-#popupLeft .table tbody td.tit a {display:inline-block; width:80%; font-size:14px; color:#333; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:18px;}
-#popupLeft .table tbody td .file {display:block; width:100%; height:100%; font-size:0; background:url(/healthCare/images/icon_file.png) no-repeat center center;}
-#popupLeft .table tbody td.date {font-size:13px; color:#999; text-align:center;}
-#popupLeft .contWrap .view {width:100%; height:auto; border-top:2px solid #333; margin-top:40px; overflow-y:auto; display:none;}
-#popupLeft .contWrap .view .tit {width:auto; height:auto; padding:20px 124px 20px 30px; font-size:14px; color:#333; line-height:18px; position:relative; background:#f3f3f3;}
-#popupLeft .contWrap .view .tit > span {width:124px; height:auto; font-size:13px; color:#999; position:absolute; top:50%; right:0; margin-top:-6px; text-align:center;}
-#popupLeft .contWrap .view .cont {width:auto; height:300px; padding:20px 30px; border-top:1px solid #ddd; font-size:13px; color:#666; line-height:20px; overflow-y:auto;}
-#popupLeft .contWrap .view .fileWrap {width:100%; height:59px; border-top:1px solid #ddd; border-bottom:1px solid #333;}
-#popupLeft .contWrap .view .fileTit {width:120px; height:59px; font-size:14px; color:#333; line-height:59px; float:left; text-align:center; }
-#popupLeft .contWrap .view .fileCont {width:80%; height:59px; float:left; font-size:13px; line-height:59px; padding-left:15px;}
-#popupLeft .contWrap .view .fileCont > a {display:inline-block; color:#666; text-decoration:underline;}
-#popupLeft .contWrap .view .util {width:100%; height:119px; border-bottom:1px solid #333;}
-#popupLeft .contWrap .view .util > li {width:auto; padding-left:80px; height:59px; border-top:1px solid #ddd;}
-#popupLeft .contWrap .view .util > li > a {display:block; width:100%; height:59px; font-size:14px; color:#333; line-height:59px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-#popupLeft .contWrap .view .util > li:first-child {border-top:0; background:url(/assets/images/icon_arr_up.png) no-repeat 34px 26px;}
-#popupLeft .contWrap .view .util > li:last-child {background:url(/assets/images/icon_arr_down.png) no-repeat 34px 26px;}
+    #dnnMainIndex.on {
+        left: 0;
+    }
 
+    #dnnMainIndex .contWrap {
+        width: 100%;
+        height: auto;
+    }
 
+        #dnnMainIndex .contWrap .title {
+            width: 100%;
+            height: auto;
+            font-size: 40px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            padding-top: 74px;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+    #dnnMainIndex .table {
+        width: 100%;
+        height: auto;
+        border-top: 2px solid #333;
+        border-bottom: 1px solid #333;
+    }
+
+        #dnnMainIndex .table table {
+            width: 100%;
+        }
+
+        #dnnMainIndex .table thead th {
+            background: #f3f3f3;
+            height: 59px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+
+            #dnnMainIndex .table thead th.white {
+                color: #fff;
+            }
+
+        #dnnMainIndex .table tbody td {
+            border-top: 1px solid #ddd;
+            height: 59px;
+        }
+
+            #dnnMainIndex .table tbody td.num {
+                font-size: 14px;
+                color: #999;
+                text-align: center;
+            }
+
+            #dnnMainIndex .table tbody td.tit a {
+                display: inline-block;
+                width: 80%;
+                font-size: 14px;
+                color: #333;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 18px;
+            }
+
+            #dnnMainIndex .table tbody td .file {
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                background: url(/healthCare/images/icon_file.png) no-repeat center center;
+            }
+
+            #dnnMainIndex .table tbody td.date {
+                font-size: 13px;
+                color: #999;
+                text-align: center;
+            }
+
+    #dnnMainIndex .contWrap .view {
+        width: 100%;
+        height: auto;
+        border-top: 2px solid #333;
+        margin-top: 40px;
+        overflow-y: auto;
+        display: none;
+    }
+
+        #dnnMainIndex .contWrap .view .tit {
+            width: auto;
+            height: auto;
+            padding: 20px 124px 20px 30px;
+            font-size: 14px;
+            color: #333;
+            line-height: 18px;
+            position: relative;
+            background: #f3f3f3;
+        }
+
+            #dnnMainIndex .contWrap .view .tit > span {
+                width: 124px;
+                height: auto;
+                font-size: 13px;
+                color: #999;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-top: -6px;
+                text-align: center;
+            }
+
+        #dnnMainIndex .contWrap .view .cont {
+            width: auto;
+            height: 300px;
+            padding: 20px 30px;
+            border-top: 1px solid #ddd;
+            font-size: 13px;
+            color: #666;
+            line-height: 20px;
+            overflow-y: auto;
+        }
+
+        #dnnMainIndex .contWrap .view .fileWrap {
+            width: 100%;
+            height: 59px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #333;
+        }
+
+        #dnnMainIndex .contWrap .view .fileTit {
+            width: 120px;
+            height: 59px;
+            font-size: 14px;
+            color: #333;
+            line-height: 59px;
+            float: left;
+            text-align: center;
+        }
+
+        #dnnMainIndex .contWrap .view .fileCont {
+            width: 80%;
+            height: 59px;
+            float: left;
+            font-size: 13px;
+            line-height: 59px;
+            padding-left: 15px;
+        }
+
+            #dnnMainIndex .contWrap .view .fileCont > a {
+                display: inline-block;
+                color: #666;
+                text-decoration: underline;
+            }
+
+        #dnnMainIndex .contWrap .view .util {
+            width: 100%;
+            height: 119px;
+            border-bottom: 1px solid #333;
+        }
+
+            #dnnMainIndex .contWrap .view .util > li {
+                width: auto;
+                padding-left: 80px;
+                height: 59px;
+                border-top: 1px solid #ddd;
+            }
+
+                #dnnMainIndex .contWrap .view .util > li > a {
+                    display: block;
+                    width: 100%;
+                    height: 59px;
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 59px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                #dnnMainIndex .contWrap .view .util > li:first-child {
+                    border-top: 0;
+                    background: url(/assets/images/icon_arr_up.png) no-repeat 34px 26px;
+                }
+
+                #dnnMainIndex .contWrap .view .util > li:last-child {
+                    background: url(/assets/images/icon_arr_down.png) no-repeat 34px 26px;
+                }
 </style>
 
 <div id="wrap">
@@ -73,12 +379,12 @@
         <dl class="list"></dl>
     </section>
     <!--// mainBoard -->
-    <!-- popupLeft -->
-    <div id="popupLeft">
+    <!-- dnnMainIndex -->
+    <div id="dnnMainIndex">
         <div class="contWrap">
             <p class="title">Notice</p>
             <!-- list -->
-            <div class="tableWrap">
+            <div class="tableWrap" id="divDotNetNoteIndex">
                 <div class="text-right form-inline">
                     <div class="form-group">
                         <input type="text" class="form-control" style="display: inline;" id="txtSearch" />
@@ -90,9 +396,9 @@
                         <colgroup>
                             <col style="width:8%;" />
                             <col style="width:66%;" />
-                            <col style="width:8%;"  />
-                            <col style="width:8%;"  />
-                            <col style="width:8%;"  />
+                            <col style="width:8%;" />
+                            <col style="width:8%;" />
+                            <col style="width:8%;" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -107,10 +413,23 @@
                     </table>
                 </div>
                 <div class="page mePager"></div>
+                <div class="text-right">
+                    <input type="button" id="btnAdd" name="btnAdd" value="추가(레이어)" class="btn btn-primary" />
+                    <input type="button" id="btnAddWithPopup" name="btnAddWithPopup" value="추가(팝업)" class="btn btn-primary" />
+                </div>
+                <div id="pnlInsert" style="display: none;">
+                    제목:
+                    내용:
+                    작성자:
+                    <hr />
+                    <div class="text-right">
+                        <input type="button" id="btnCancel" name="btnCancel" value="취소" class="btn btn-secondary" />
+                    </div>
+                </div>
             </div>
             <!--// list -->
             <!-- view -->
-            <div class="view">
+            <div class="view" id="divDotNetNoteView">
                 <div class="tit">&nbsp;</div>
                 <div class="cont">&nbsp;</div>
                 <div class="fileWrap">
@@ -127,9 +446,32 @@
             </div>
             <!--// view -->
         </div>
-        <button id="popupLeftClose">팝업닫기</button>
     </div>
-    <!--// popupLeft -->
+    <!--// dnnMainIndex -->
+</div>
+
+<link href="~/lib/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/bootstrap3/js/bootstrap.js"></script>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
@@ -140,7 +482,7 @@
     loginNotice.renderPopupList();
     $(".mainBoard > .util > button").click(loginNotice.moveMainList);
     $(".mainBoard > .util > .btnMore").click(loginNotice.showPopupList);
-    $("#popupLeft .page").on("click", "button", loginNotice.movePopupList);
+    $("#dnnMainIndex .page").on("click", "button", loginNotice.movePopupList);
     $("#txtSearch").keydown(function (event) {
         if (event.keyCode == 13) {
             loginNotice.renderPopupList();
@@ -150,11 +492,19 @@
         loginNotice.renderPopupList();
     });
 
+    $("#dnnMainIndex .contWrap .view .btnWrap button").click(function () {
+        $("#divDotNetNoteIndex").show();
+        $("#divDotNetNoteView").hide();
+    });
 
-	$("#popupLeft .contWrap .view .btnWrap button").click(function(){
-		$("#popupLeft .contWrap .tableWrap").show();
-		$("#popupLeft .contWrap .view").hide();
+    $("#btnAdd").click(function () {
+        $("#pnlInsert").show();
+    });
+    $("#btnAddWithPopup").click(function () {
+        $("#myModal").modal('show');
+    });
+    $("#btnCancel").click(function () {
+        $("#pnlInsert").hide();
     });
 
 </script>
-

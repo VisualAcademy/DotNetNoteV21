@@ -114,7 +114,7 @@ var loginNotice = (function () {
                         var startNum = (count - (popupPage - 1) * 5);
 
                         // 목록 생성
-                        var listBase = $("#popupLeft .tableWrap tbody");
+                        var listBase = $("#dnnMainIndex .tableWrap tbody");
                         var html = "";
                         listBase.html("");
                         for (var i = 0; i < list.length; i++) {
@@ -149,7 +149,7 @@ var loginNotice = (function () {
                         }
                         html += "<button class='next'>다음</button> <button class='next2 last'>끝</button>";
 
-                        $("#popupLeft .page").html(html);
+                        $("#dnnMainIndex .page").html(html);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.log("공지사항 목록을 가져오던 중, 알 수 없는 오류가 발생했습니다.");
@@ -222,10 +222,10 @@ var loginNotice = (function () {
          * @param {object} event - event 개체
          */
         showPopupList: function (event) {
-            $("#popupLeft .tableWrap").css("display", "block");
-            $("#popupLeft .view").css("display", "none");
+            $("#divDotNetNoteIndex").css("display", "block");
+            $("#divDotNetNoteView").css("display", "none");
 
-            $("#popupLeft").addClass("on");
+            $("#dnnMainIndex").addClass("on");
             $("#dim").show();
         },
         /**
@@ -243,8 +243,8 @@ var loginNotice = (function () {
                 $("#txtSearch").val("");
             }
 
-            $("#popupLeft .tableWrap").css("display", "none");
-            $("#popupLeft .view").css("display", "block");
+            $("#divDotNetNoteIndex").css("display", "none");
+            $("#divDotNetNoteView").css("display", "block");
 
             try {
                 $.ajax({
@@ -254,25 +254,25 @@ var loginNotice = (function () {
                     cache: false,
                     dataType: "json",
                     success: function (data, textStatus, jqXHR) {
-                        $("#popupLeft .view > .tit").html(data.title + "<span>" + data.postDate + "</span>");
-                        $("#popupLeft .view > .cont").html(data.content);
+                        $("#dnnMainIndex .view > .tit").html(data.title + "<span>" + data.postDate + "</span>");
+                        $("#dnnMainIndex .view > .cont").html(data.content);
 
                         if (data.fileName != null && data.fileName.length > 0) {
-                            $("#popupLeft .view > .fileWrap > .fileCont").html("<a href='/Login/Download/?num=" + num + "'>" + data.fileName + "</a>");
+                            $("#dnnMainIndex .view > .fileWrap > .fileCont").html("<a href='/Login/Download/?num=" + num + "'>" + data.fileName + "</a>");
                         } else {
-                            $("#popupLeft .view > .fileWrap > .fileCont").html("<a href='#'>N/A</a>");
+                            $("#dnnMainIndex .view > .fileWrap > .fileCont").html("<a href='#'>N/A</a>");
                         }
 
                         if (data.nextTitle === "") {
-                            $("#popupLeft .view > .util > .next").html("<a href='#'>Next article does not exist.</a>");
+                            $("#dnnMainIndex .view > .util > .next").html("<a href='#'>Next article does not exist.</a>");
                         } else {
-                            $("#popupLeft .view > .util > .next").html("<a href='javascript:loginNotice.showPopupView(" + data.nextNum + ");'>" + data.nextTitle + "</a>");
+                            $("#dnnMainIndex .view > .util > .next").html("<a href='javascript:loginNotice.showPopupView(" + data.nextNum + ");'>" + data.nextTitle + "</a>");
                         }
 
                         if (data.prevTitle === "") {
-                            $("#popupLeft .view > .util > .prev").html("<a href='#'>Prev. article does not exist.</a>");
+                            $("#dnnMainIndex .view > .util > .prev").html("<a href='#'>Prev. article does not exist.</a>");
                         } else {
-                            $("#popupLeft .view > .util > .prev").html("<a href='javascript:loginNotice.showPopupView(" + data.prevNum + ");'>" + data.prevTitle + "</a>");
+                            $("#dnnMainIndex .view > .util > .prev").html("<a href='javascript:loginNotice.showPopupView(" + data.prevNum + ");'>" + data.prevTitle + "</a>");
                         }
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
@@ -283,7 +283,7 @@ var loginNotice = (function () {
                 console.log("loginNotice.showPopupView: " + e);
             }
 
-            //$("#popupLeft").addClass("on");
+            //$("#dnnMainIndex").addClass("on");
             //$("#dim").show();
         },
         /**
