@@ -127,7 +127,7 @@ var loginNotice = (function () {
                                 html += "<td>&nbsp;</td>";
                             }
                             html += "<td class='text-center'>" + list[i].postDate + "</td>";
-                            html += "<td class='text-right'>" + "수정, 삭제</td>";
+                            html += "<td class='text-right'>" + "수정, <a href='javascript:loginNotice.deleteArticle(" + list[i].num + ");'>삭제</a></td>";
                             html += "</tr>";
                         }
                         listBase.html(html);
@@ -285,6 +285,43 @@ var loginNotice = (function () {
 
             //$("#popupLeft").addClass("on");
             //$("#dim").show();
+        },
+        /**
+         * 선택한 아티클을 삭제합니다. 
+         * 
+         * @author PARK YONGJUNE
+         * @date 2019. 04. 20.
+         * @memberOf loginNotice
+         * @param {number} num - 아티클 삭제
+         */
+        deleteArticle: function (num) {
+
+            if (window.confirm("선택한 항목을 삭제하시겠습니까?")) {
+                try {
+                    $.ajax({
+                        url: "/DotNetNote/DeleteArticleById",
+                        type: "POST",
+                        data: "id=" + num,
+                        cache: false,
+                        dataType: "json",
+                        success: function (data, textStatus, jqXHR) {
+
+                            console.log(data.message); 
+                            loginNotice.renderPopupList(1); // 리스트 출력
+
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            console.log("공지사항 삭제 중, 알 수 없는 오류가 발생했습니다.");
+                        }
+                    });
+                } catch (e) {
+                    console.log("loginNotice.deleteArticle: " + e);
+                }
+            }
+            else {
+                return;
+            }
+
         }
-    }
+    };
 })();

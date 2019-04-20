@@ -783,6 +783,20 @@ namespace DotNetNote.Controllers
             });
         }
 
+        [HttpPost]
+        [AllowAnonymous]
+        public JsonResult DeleteArticleById(int id)
+        {
+            var deleteArticle = _context.Notes.Where(n => n.Id == id).SingleOrDefault();
+            _context.Entry(deleteArticle).State = EntityState.Deleted;
+            _context.SaveChanges();
+
+            return Json(new
+            {
+                message = "DELETED"
+            });
+        }
+        
         ///// <summary>
         ///// 로그인 페이지의 공지사항 상세 파일 다운로드
         ///// </summary>
