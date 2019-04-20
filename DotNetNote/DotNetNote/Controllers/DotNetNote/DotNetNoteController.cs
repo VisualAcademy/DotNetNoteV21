@@ -761,13 +761,13 @@ namespace DotNetNote.Controllers
             Note nextArticleSet = new Note(); 
             if (string.IsNullOrWhiteSpace(keyword))
             {
-                prevArticleSet = _context.Notes.Where(n => n.Id < num).FirstOrDefault(); // 이전 
-                nextArticleSet = _context.Notes.Where(n => n.Id > num).FirstOrDefault(); // 다음 
+                prevArticleSet = _context.Notes.Where(n => n.Id < num).OrderByDescending(n => n.Id).FirstOrDefault(); // 이전 
+                nextArticleSet = _context.Notes.Where(n => n.Id > num).OrderBy(n => n.Id).FirstOrDefault(); // 다음 
             }
             else
             {
-                prevArticleSet = _context.Notes.Where(n => n.Id < num && n.Title.Contains(keyword)).FirstOrDefault(); // 이전 
-                nextArticleSet = _context.Notes.Where(n => n.Id > num && n.Title.Contains(keyword)).FirstOrDefault(); // 다음 
+                prevArticleSet = _context.Notes.Where(n => n.Id < num && n.Title.Contains(keyword)).OrderByDescending(n => n.Id).FirstOrDefault(); // 이전 
+                nextArticleSet = _context.Notes.Where(n => n.Id > num && n.Title.Contains(keyword)).OrderBy(n => n.Id).FirstOrDefault(); // 다음 
             }
 
             return Json(new

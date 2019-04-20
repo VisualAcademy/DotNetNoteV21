@@ -101,7 +101,7 @@ var loginNotice = (function () {
                 $.ajax({
                     url: "/DotNetNote/PopupList",
                     type: "POST",
-                    data: "page=" + page + "&keyword=" + encodeURI($("#popupLeft .tableWrap .inputText.search").val()),
+                    data: "page=" + page + "&keyword=" + encodeURI($("#txtSearch").val()),
                     cache: false,
                     dataType: "json",
                     success: function (data, textStatus, jqXHR) {
@@ -127,7 +127,7 @@ var loginNotice = (function () {
                                 html += "<td>&nbsp;</td>";
                             }
                             html += "<td class='text-center'>" + list[i].postDate + "</td>";
-                            html += "<td class='text-right'>" + list[i].num + "수정, 삭제</td>";
+                            html += "<td class='text-right'>" + "수정, 삭제</td>";
                             html += "</tr>";
                         }
                         listBase.html(html);
@@ -135,7 +135,7 @@ var loginNotice = (function () {
                         // 페이징 처리
                         var pgStart = Math.floor((popupPage - 1) / 5) * 5 + 1;
 
-                        html = "<button class='prev2'>처음으로</button> <button class='prev'>이전</button> ";
+                        html = "<button class='prev2 first'>처음</button> <button class='prev'>이전</button> ";
                         for (var i = 0; i < 5; i++) {
                             var cur = pgStart + i;
                             if (cur > popupCount) {
@@ -147,7 +147,7 @@ var loginNotice = (function () {
                                 html += "<a href='javascript:loginNotice.renderPopupList(" + cur + ");'>" + cur + "</a> ";
                             }
                         }
-                        html += "<button class='next'>다음</button> <button class='next2'>마지막으로</button>";
+                        html += "<button class='next'>다음</button> <button class='next2 last'>끝</button>";
 
                         $("#popupLeft .page").html(html);
                     },
@@ -240,7 +240,7 @@ var loginNotice = (function () {
         showPopupView: function (num, clearFilter) {
 
             if (clearFilter != null && clearFilter === true) {
-                $("#popupLeft .tableWrap .inputText.search").val("");
+                $("#txtSearch").val("");
             }
 
             $("#popupLeft .tableWrap").css("display", "none");
@@ -250,7 +250,7 @@ var loginNotice = (function () {
                 $.ajax({
                     url: "/DotNetNote/NoticeView",
                     type: "POST",
-                    data: "num=" + num + "&keyword=" + encodeURI($("#popupLeft .tableWrap .inputText.search").val()),
+                    data: "num=" + num + "&keyword=" + encodeURI($("#txtSearch").val()),
                     cache: false,
                     dataType: "json",
                     success: function (data, textStatus, jqXHR) {
@@ -263,13 +263,13 @@ var loginNotice = (function () {
                             $("#popupLeft .view > .fileWrap > .fileCont").html("<a href='#'>N/A</a>");
                         }
 
-                        if (data.nextTitle == "") {
+                        if (data.nextTitle === "") {
                             $("#popupLeft .view > .util > .next").html("<a href='#'>Next article does not exist.</a>");
                         } else {
                             $("#popupLeft .view > .util > .next").html("<a href='javascript:loginNotice.showPopupView(" + data.nextNum + ");'>" + data.nextTitle + "</a>");
                         }
 
-                        if (data.prevTitle == "") {
+                        if (data.prevTitle === "") {
                             $("#popupLeft .view > .util > .prev").html("<a href='#'>Prev. article does not exist.</a>");
                         } else {
                             $("#popupLeft .view > .util > .prev").html("<a href='javascript:loginNotice.showPopupView(" + data.prevNum + ");'>" + data.prevTitle + "</a>");
