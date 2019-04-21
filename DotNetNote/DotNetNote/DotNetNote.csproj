@@ -275,6 +275,7 @@
     <None Include="Views\Todo\Details.cshtml" />
     <None Include="Views\Todo\Edit.cshtml" />
     <None Include="Views\Todo\Index.cshtml" />
+    <None Include="Views\Urls\Index.cshtml" />
     <None Include="Views\UseMvcDemo\HtmlOnly.cshtml" />
     <None Include="Views\UseMvcDemo\UsingModelDemo.cshtml" />
     <None Include="Views\User\CheckUsername.cshtml" />
