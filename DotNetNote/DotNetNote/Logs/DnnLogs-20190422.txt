@@ -443,3 +443,438 @@ FROM [Urls] AS [u]"
 2019-04-22 02:04:47.763 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 601.2306ms
 2019-04-22 02:04:47.764 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
 2019-04-22 02:04:47.765 +09:00 [Information] Request finished in 617.3204ms 200 application/json; charset=utf-8
+2019-04-22 02:15:37.858 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/css/DotNetNote.Urls.css?abcd  
+2019-04-22 02:15:37.908 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-04-22 02:15:37.921 +09:00 [Information] The file "/css/DotNetNote.Urls.css" was not modified
+2019-04-22 02:15:39.055 +09:00 [Information] Request finished in 1202.526ms 304 text/css
+2019-04-22 02:19:08.531 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/  
+2019-04-22 02:19:08.595 +09:00 [Warning] Failed to determine the https port for redirect.
+2019-04-22 02:19:08.706 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.HomeController.Index (DotNetNote)"'
+2019-04-22 02:19:08.716 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.HomeController.Index (DotNetNote)"
+2019-04-22 02:19:08.731 +09:00 [Information] Executing action method "DotNetNote.Controllers.HomeController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:08.734 +09:00 [Information] HOME - Index 페이지가 로드되었습니다.
+2019-04-22 02:19:09.670 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls  
+2019-04-22 02:19:09.674 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:09.676 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:19:09.676 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:09.680 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.4638ms.
+2019-04-22 02:19:09.709 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:19:09.943 +09:00 [Information] Executed ViewResult - view "Index" executed in 250.9781ms.
+2019-04-22 02:19:09.943 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 267.3123ms
+2019-04-22 02:19:09.944 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:09.945 +09:00 [Information] Executed action method "DotNetNote.Controllers.HomeController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1213.4755ms.
+2019-04-22 02:19:09.948 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:19:09.969 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/css/DotNetNote.Urls.css  
+2019-04-22 02:19:09.969 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/bootstrap/dist/css/bootstrap.css  
+2019-04-22 02:19:09.969 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/js/DotNetNote.Urls.js  
+2019-04-22 02:19:09.975 +09:00 [Information] The file "/js/DotNetNote.Urls.js" was not modified
+2019-04-22 02:19:09.981 +09:00 [Information] Request finished in 11.7499ms 304 application/javascript
+2019-04-22 02:19:09.987 +09:00 [Information] Sending file. Request path: '"/css/DotNetNote.Urls.css"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\css\DotNetNote.Urls.css"'
+2019-04-22 02:19:09.988 +09:00 [Information] Request finished in 19.2008ms 200 text/css
+2019-04-22 02:19:09.988 +09:00 [Information] Request finished in 318.1814ms 200 text/html; charset=utf-8
+2019-04-22 02:19:09.995 +09:00 [Information] Sending file. Request path: '"/lib_/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\bootstrap\dist\css\bootstrap.css"'
+2019-04-22 02:19:09.995 +09:00 [Information] Request finished in 26.5605ms 200 text/css
+2019-04-22 02:19:10.121 +09:00 [Information] Executed ViewResult - view "Index" executed in 175.5721ms.
+2019-04-22 02:19:10.121 +09:00 [Information] Executed action "DotNetNote.Controllers.HomeController.Index (DotNetNote)" in 1404.6ms
+2019-04-22 02:19:10.121 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.HomeController.Index (DotNetNote)"'
+2019-04-22 02:19:10.122 +09:00 [Information] Request finished in 1596.7541ms 200 text/html; charset=utf-8
+2019-04-22 02:19:10.320 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/bootstrap/dist/css/bootstrap.css.map  
+2019-04-22 02:19:10.322 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:19:10.324 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:19:10.330 +09:00 [Information] Sending file. Request path: '"/lib_/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\bootstrap\dist\css\bootstrap.css.map"'
+2019-04-22 02:19:10.331 +09:00 [Information] Request finished in 11.1461ms 200 text/plain
+2019-04-22 02:19:10.343 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:10.356 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:19:10.369 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:19:10.373 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:19:10.374 +09:00 [Information] Request finished in 5.0777ms 200 image/x-icon
+2019-04-22 02:19:10.416 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:19:10.571 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteService/  
+2019-04-22 02:19:10.572 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.572 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteCommentService/  
+2019-04-22 02:19:10.572 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.573 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"
+2019-04-22 02:19:10.573 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteCommentService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"
+2019-04-22 02:19:10.573 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:10.574 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:10.574 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.251ms.
+2019-04-22 02:19:10.574 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2099ms.
+2019-04-22 02:19:10.575 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteService  
+2019-04-22 02:19:10.576 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/api/NoteCommentService  
+2019-04-22 02:19:10.579 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.NoteComment, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-04-22 02:19:10.579 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Note, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-04-22 02:19:10.591 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.591 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.591 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"
+2019-04-22 02:19:10.591 +09:00 [Information] Route matched with "{action = \"Get\", controller = \"NoteCommentService\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"
+2019-04-22 02:19:10.591 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:10.591 +09:00 [Information] Executing action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:10.591 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0372ms.
+2019-04-22 02:19:10.591 +09:00 [Information] Executed action method "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0078ms.
+2019-04-22 02:19:10.592 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.NoteComment, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-04-22 02:19:10.592 +09:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[DotNetNote.Models.Note, DotNetNote.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-04-22 02:19:10.654 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:19:10.741 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" in 149.841ms
+2019-04-22 02:19:10.741 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)" in 167.7795ms
+2019-04-22 02:19:10.741 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.741 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteCommentServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.742 +09:00 [Information] Request finished in 170.3646ms 200 application/json; charset=utf-8
+2019-04-22 02:19:10.747 +09:00 [Information] Request finished in 171.4918ms 200 application/json; charset=utf-8
+2019-04-22 02:19:10.787 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" in 196.0544ms
+2019-04-22 02:19:10.787 +09:00 [Information] Executed action "DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)" in 214.0429ms
+2019-04-22 02:19:10.787 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.787 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.NoteServiceController.Get (DotNetNote)"'
+2019-04-22 02:19:10.788 +09:00 [Information] Request finished in 213.0835ms 200 application/json; charset=utf-8
+2019-04-22 02:19:10.788 +09:00 [Information] Request finished in 217.019ms 200 application/json; charset=utf-8
+2019-04-22 02:19:11.021 +09:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:19:11.102 +09:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:19:11.106 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 689.5118ms.
+2019-04-22 02:19:11.108 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:19:11.121 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 765.3826ms
+2019-04-22 02:19:11.122 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:11.123 +09:00 [Information] Request finished in 800.7593ms 200 application/json; charset=utf-8
+2019-04-22 02:19:27.088 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls  
+2019-04-22 02:19:27.089 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:27.089 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:19:27.089 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:27.089 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0905ms.
+2019-04-22 02:19:28.739 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:19:28.755 +09:00 [Information] Executed ViewResult - view "Index" executed in 1665.3181ms.
+2019-04-22 02:19:28.755 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 1665.7451ms
+2019-04-22 02:19:28.755 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:28.756 +09:00 [Information] Request finished in 1667.5095ms 200 text/html; charset=utf-8
+2019-04-22 02:19:29.054 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:19:29.054 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:19:29.056 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:29.056 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:19:29.057 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:19:29.059 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:19:29.066 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:19:29.067 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:19:29.067 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 9.3659ms.
+2019-04-22 02:19:29.067 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:19:29.067 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 10.7893ms
+2019-04-22 02:19:29.067 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:29.068 +09:00 [Information] Request finished in 13.997ms 200 application/json; charset=utf-8
+2019-04-22 02:19:29.082 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:19:29.082 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:19:29.083 +09:00 [Information] Request finished in 1.2435ms 200 image/x-icon
+2019-04-22 02:19:32.815 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls  
+2019-04-22 02:19:32.816 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:32.816 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:19:32.816 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:32.816 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0105ms.
+2019-04-22 02:19:32.816 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:19:32.818 +09:00 [Information] Executed ViewResult - view "Index" executed in 1.9499ms.
+2019-04-22 02:19:32.818 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 2.1978ms
+2019-04-22 02:19:32.818 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:32.819 +09:00 [Information] Request finished in 4.1377ms 200 text/html; charset=utf-8
+2019-04-22 02:19:33.065 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:19:33.066 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:19:33.066 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:33.066 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:19:33.066 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:19:33.067 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:19:33.068 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:19:33.068 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:19:33.069 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 2.2967ms.
+2019-04-22 02:19:33.069 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:19:33.069 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 3.0511ms
+2019-04-22 02:19:33.069 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:33.070 +09:00 [Information] Request finished in 4.7022ms 200 application/json; charset=utf-8
+2019-04-22 02:19:33.094 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:19:33.095 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:19:33.095 +09:00 [Information] Request finished in 1.2371ms 200 image/x-icon
+2019-04-22 02:19:36.622 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:19:36.622 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:36.623 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:19:36.623 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:19:36.623 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0086ms.
+2019-04-22 02:19:36.623 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:19:36.624 +09:00 [Information] Executed ViewResult - view "Index" executed in 1.6783ms.
+2019-04-22 02:19:36.625 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 1.9151ms
+2019-04-22 02:19:36.625 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:19:36.625 +09:00 [Information] Request finished in 3.3963ms 200 text/html; charset=utf-8
+2019-04-22 02:19:36.876 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:19:36.876 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:19:36.876 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:36.876 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:19:36.877 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:19:36.877 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:19:36.878 +09:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:19:36.879 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:19:36.879 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 2.1046ms.
+2019-04-22 02:19:36.879 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:19:36.879 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.7973ms
+2019-04-22 02:19:36.879 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:19:36.880 +09:00 [Information] Request finished in 4.4506ms 200 application/json; charset=utf-8
+2019-04-22 02:20:02.885 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:20:02.885 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:20:02.885 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:20:02.885 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:20:02.885 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0084ms.
+2019-04-22 02:20:03.083 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:20:03.098 +09:00 [Information] Executed ViewResult - view "Index" executed in 212.0435ms.
+2019-04-22 02:20:03.098 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 212.2584ms
+2019-04-22 02:20:03.098 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:20:03.099 +09:00 [Information] Request finished in 213.9473ms 200 text/html; charset=utf-8
+2019-04-22 02:20:03.351 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:20:03.352 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:20:03.352 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:20:03.352 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:20:03.352 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:20:03.353 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:20:03.354 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:20:03.354 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:20:03.354 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1.9403ms.
+2019-04-22 02:20:03.354 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:20:03.354 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.5299ms
+2019-04-22 02:20:03.355 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:20:03.355 +09:00 [Information] Request finished in 3.8298ms 200 application/json; charset=utf-8
+2019-04-22 02:20:03.382 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:20:03.383 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:20:03.384 +09:00 [Information] Request finished in 1.4903ms 200 image/x-icon
+2019-04-22 02:22:43.905 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:22:43.905 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:22:43.906 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:22:43.906 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:22:43.906 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0115ms.
+2019-04-22 02:22:44.116 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:22:44.129 +09:00 [Information] Executed ViewResult - view "Index" executed in 222.6293ms.
+2019-04-22 02:22:44.129 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 222.9257ms
+2019-04-22 02:22:44.129 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:22:44.130 +09:00 [Information] Request finished in 224.828ms 200 text/html; charset=utf-8
+2019-04-22 02:22:44.146 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/css/DotNetNote.Urls.css  
+2019-04-22 02:22:44.146 +09:00 [Information] The file "/css/DotNetNote.Urls.css" was not modified
+2019-04-22 02:22:44.147 +09:00 [Information] Request finished in 1.279ms 304 text/css
+2019-04-22 02:22:44.309 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:22:44.310 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:22:44.311 +09:00 [Information] Request finished in 1.7088ms 200 image/x-icon
+2019-04-22 02:23:36.284 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:23:36.285 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:23:36.285 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:23:36.285 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:23:36.285 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0094ms.
+2019-04-22 02:23:36.485 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:23:36.498 +09:00 [Information] Executed ViewResult - view "Index" executed in 213.5239ms.
+2019-04-22 02:23:36.498 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 213.8092ms
+2019-04-22 02:23:36.499 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:23:36.499 +09:00 [Information] Request finished in 215.5592ms 200 text/html; charset=utf-8
+2019-04-22 02:23:36.514 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/bootstrap/dist/js/bootstrap.bundle.js  
+2019-04-22 02:23:36.515 +09:00 [Information] Sending file. Request path: '"/lib_/bootstrap/dist/js/bootstrap.bundle.js"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\bootstrap\dist\js\bootstrap.bundle.js"'
+2019-04-22 02:23:36.516 +09:00 [Information] Request finished in 2.3755ms 200 application/javascript
+2019-04-22 02:23:36.622 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/lib_/bootstrap/dist/js/bootstrap.bundle.js.map  
+2019-04-22 02:23:36.633 +09:00 [Information] Sending file. Request path: '"/lib_/bootstrap/dist/js/bootstrap.bundle.js.map"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\lib_\bootstrap\dist\js\bootstrap.bundle.js.map"'
+2019-04-22 02:23:36.633 +09:00 [Information] Request finished in 11.9161ms 200 text/plain
+2019-04-22 02:23:36.679 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:23:36.680 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:23:36.681 +09:00 [Information] Request finished in 1.7281ms 200 image/x-icon
+2019-04-22 02:23:49.012 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:23:49.012 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:23:49.013 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:23:49.013 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:23:49.013 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0084ms.
+2019-04-22 02:23:49.204 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:23:49.216 +09:00 [Information] Executed ViewResult - view "Index" executed in 203.6269ms.
+2019-04-22 02:23:49.217 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 203.9352ms
+2019-04-22 02:23:49.217 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:23:49.217 +09:00 [Information] Request finished in 205.4178ms 200 text/html; charset=utf-8
+2019-04-22 02:23:49.400 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:23:49.400 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:23:49.401 +09:00 [Information] Request finished in 1.4736ms 200 image/x-icon
+2019-04-22 02:24:28.477 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:24:28.478 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:28.478 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:24:28.478 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:24:28.478 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0082ms.
+2019-04-22 02:24:28.676 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:24:28.690 +09:00 [Information] Executed ViewResult - view "Index" executed in 211.3108ms.
+2019-04-22 02:24:28.690 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 211.5753ms
+2019-04-22 02:24:28.690 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:28.690 +09:00 [Information] Request finished in 213.0265ms 200 text/html; charset=utf-8
+2019-04-22 02:24:28.708 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/js/DotNetNote.Urls.js  
+2019-04-22 02:24:28.708 +09:00 [Information] The file "/js/DotNetNote.Urls.js" was not modified
+2019-04-22 02:24:28.709 +09:00 [Information] Request finished in 1.0072ms 304 application/javascript
+2019-04-22 02:24:28.853 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:24:28.854 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:24:28.854 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:28.854 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:24:28.854 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:24:28.855 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:24:28.856 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:24:28.857 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:24:28.857 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 2.1872ms.
+2019-04-22 02:24:28.857 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:24:28.857 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.9161ms
+2019-04-22 02:24:28.857 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:28.857 +09:00 [Information] Request finished in 4.3549ms 200 application/json; charset=utf-8
+2019-04-22 02:24:28.869 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:24:28.869 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:24:28.870 +09:00 [Information] Request finished in 1.3331ms 200 image/x-icon
+2019-04-22 02:24:48.996 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:24:48.997 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:48.997 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:24:48.997 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:24:48.997 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.009ms.
+2019-04-22 02:24:49.191 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:24:49.207 +09:00 [Information] Executed ViewResult - view "Index" executed in 209.7002ms.
+2019-04-22 02:24:49.207 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 210.0075ms
+2019-04-22 02:24:49.207 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:49.208 +09:00 [Information] Request finished in 211.6077ms 200 text/html; charset=utf-8
+2019-04-22 02:24:49.492 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:24:49.492 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:24:49.492 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:49.492 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:24:49.493 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:24:49.493 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:24:49.494 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:24:49.494 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:24:49.495 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1.9005ms.
+2019-04-22 02:24:49.495 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:24:49.495 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.4928ms
+2019-04-22 02:24:49.495 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:49.495 +09:00 [Information] Request finished in 3.9483ms 200 application/json; charset=utf-8
+2019-04-22 02:24:49.522 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:24:49.523 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:24:49.523 +09:00 [Information] Request finished in 1.4432ms 200 image/x-icon
+2019-04-22 02:24:54.696 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:24:54.697 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:54.697 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:24:54.697 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:24:54.697 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0078ms.
+2019-04-22 02:24:54.885 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:24:54.898 +09:00 [Information] Executed ViewResult - view "Index" executed in 201.4915ms.
+2019-04-22 02:24:54.898 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 201.7268ms
+2019-04-22 02:24:54.899 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:24:54.899 +09:00 [Information] Request finished in 203.2075ms 200 text/html; charset=utf-8
+2019-04-22 02:24:55.144 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:24:55.144 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:24:55.145 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:55.145 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:24:55.145 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:24:55.146 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:24:55.147 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:24:55.147 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:24:55.147 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 2.0927ms.
+2019-04-22 02:24:55.147 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:24:55.147 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.7307ms
+2019-04-22 02:24:55.147 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:24:55.148 +09:00 [Information] Request finished in 4.1103ms 200 application/json; charset=utf-8
+2019-04-22 02:24:55.175 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:24:55.176 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:24:55.176 +09:00 [Information] Request finished in 1.3012ms 200 image/x-icon
+2019-04-22 02:25:09.177 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:25:09.178 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:25:09.178 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:25:09.178 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:25:09.178 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0087ms.
+2019-04-22 02:25:09.369 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:25:09.383 +09:00 [Information] Executed ViewResult - view "Index" executed in 204.8467ms.
+2019-04-22 02:25:09.383 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 205.0618ms
+2019-04-22 02:25:09.383 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:25:09.384 +09:00 [Information] Request finished in 206.6795ms 200 text/html; charset=utf-8
+2019-04-22 02:25:09.401 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/css/DotNetNote.Urls.css  
+2019-04-22 02:25:09.401 +09:00 [Information] The file "/css/DotNetNote.Urls.css" was not modified
+2019-04-22 02:25:09.402 +09:00 [Information] Request finished in 1.083ms 304 text/css
+2019-04-22 02:25:09.545 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:25:09.546 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:25:09.546 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:25:09.546 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:25:09.546 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:25:09.547 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:25:09.548 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:25:09.548 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:25:09.548 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1.7624ms.
+2019-04-22 02:25:09.548 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:25:09.548 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.3021ms
+2019-04-22 02:25:09.548 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:25:09.549 +09:00 [Information] Request finished in 3.7128ms 200 application/json; charset=utf-8
+2019-04-22 02:25:09.576 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:25:09.577 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:25:09.578 +09:00 [Information] Request finished in 1.4368ms 200 image/x-icon
+2019-04-22 02:25:26.758 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/Urls?  
+2019-04-22 02:25:26.759 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:25:26.759 +09:00 [Information] Route matched with "{action = \"Index\", controller = \"Urls\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)"
+2019-04-22 02:25:26.759 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" - Validation state: Valid
+2019-04-22 02:25:26.759 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsController.Index (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0109ms.
+2019-04-22 02:25:26.970 +09:00 [Information] Executing ViewResult, running view "Index".
+2019-04-22 02:25:26.986 +09:00 [Information] Executed ViewResult - view "Index" executed in 226.8833ms.
+2019-04-22 02:25:26.986 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsController.Index (DotNetNote)" in 227.2285ms
+2019-04-22 02:25:26.986 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsController.Index (DotNetNote)"'
+2019-04-22 02:25:26.987 +09:00 [Information] Request finished in 229.0636ms 200 text/html; charset=utf-8
+2019-04-22 02:25:27.149 +09:00 [Information] Request starting HTTP/1.1 POST http://localhost:65047/UrlsServices/UrlIndex application/x-www-form-urlencoded; charset=UTF-8 15
+2019-04-22 02:25:27.149 +09:00 [Information] CORS policy execution successful.
+2019-04-22 02:25:27.149 +09:00 [Information] Executing endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:25:27.149 +09:00 [Information] Route matched with "{action = \"UrlIndex\", controller = \"UrlsServices\", page = \"\", area = \"\"}". Executing action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"
+2019-04-22 02:25:27.150 +09:00 [Information] Executing action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" with arguments (["1", ""]) - Validation state: Valid
+2019-04-22 02:25:27.150 +09:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"DotNetNoteContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-04-22 02:25:27.151 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Content], [n].[Created], [n].[SiteUrl], [n].[UserName]
+FROM [Urls] AS [n]
+ORDER BY [n].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2019-04-22 02:25:27.152 +09:00 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Urls] AS [u]"
+2019-04-22 02:25:27.152 +09:00 [Information] Executed action method "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)", returned result "Microsoft.AspNetCore.Mvc.JsonResult" in 1.9702ms.
+2019-04-22 02:25:27.152 +09:00 [Information] Executing JsonResult, writing value of type '"<>f__AnonymousType6`2[[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType13`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], DotNetNote, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2019-04-22 02:25:27.152 +09:00 [Information] Executed action "DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)" in 2.4692ms
+2019-04-22 02:25:27.152 +09:00 [Information] Executed endpoint '"DotNetNote.Controllers.UrlsServicesController.UrlIndex (DotNetNote)"'
+2019-04-22 02:25:27.152 +09:00 [Information] Request finished in 3.8709ms 200 application/json; charset=utf-8
+2019-04-22 02:25:27.161 +09:00 [Information] Request starting HTTP/1.1 GET http://localhost:65047/favicon.ico  
+2019-04-22 02:25:27.161 +09:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\DotNetNote2019\DotNetNote\DotNetNote\DotNetNote\wwwroot\favicon.ico"'
+2019-04-22 02:25:27.162 +09:00 [Information] Request finished in 0.9991ms 200 image/x-icon
