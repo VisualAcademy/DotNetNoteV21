@@ -395,6 +395,7 @@ namespace DotNetNote
             services.AddSingleton<IMyNotificationRepository>(new MyNotificationRepository(Configuration["ConnectionString"]));
             // </Notifications>
 
+            services.AddTransient<IUrlRepository, UrlRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
