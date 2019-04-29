@@ -94,7 +94,7 @@
     <div class="modal-dialog modal-primary modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">데이터 등록하기</h5>
+                <h5 class="modal-title">데이터 <span id="lblSaveOrUpdate">등록</span>하기</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -168,6 +168,8 @@
         $("#id").val(-1);
         $("#divId").hide(); // 번호 영역은 숨기고 -1 전달하기
         $("#btnSave").text("등록");
+        $("#lblSaveOrUpdate").text("등록");
+        $("#frmDotNetNoteCreate")[0].reset(); // 폼의 내용을 리셋
         $("#dnnCreateForm").modal('show'); // 입력 및 수정 폼 모달 창 열기
     });
 

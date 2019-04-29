@@ -71,12 +71,12 @@ var urlManager = (function () {
                         var pgStart = Math.floor((popupPage - 1) / 5) * 5 + 1;
 
                         html = "<button class='prev2 first'>처음</button> <button class='prev'>이전</button> ";
-                        for (var i = 0; i < 5; i++) {
-                            var cur = pgStart + i;
+                        for (var j = 0; i < 5; j++) {
+                            var cur = pgStart + j;
                             if (cur > popupCount) {
                                 break;
                             }
-                            if (popupPage == cur) {
+                            if (popupPage === cur) {
                                 html += "<a href='#' class='on'>" + cur + "</a> ";
                             } else {
                                 html += "<a href='javascript:urlManager.renderUrlList(" + cur + ");'>" + cur + "</a> ";
@@ -246,6 +246,7 @@ var urlManager = (function () {
 
             $("#divId").show();
             $("#btnSave").text("수정");
+            $("#lblSaveOrUpdate").text("수정");
             $("#dnnCreateForm").modal('show');
 
             try {
