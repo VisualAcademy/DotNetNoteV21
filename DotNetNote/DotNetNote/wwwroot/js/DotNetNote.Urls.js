@@ -71,7 +71,7 @@ var urlManager = (function () {
                         var pgStart = Math.floor((popupPage - 1) / 5) * 5 + 1;
 
                         html = "<button class='prev2 first'>처음</button> <button class='prev'>이전</button> ";
-                        for (var j = 0; i < 5; j++) {
+                        for (var j = 0; j < 5; j++) {
                             var cur = pgStart + j;
                             if (cur > popupCount) {
                                 break;
