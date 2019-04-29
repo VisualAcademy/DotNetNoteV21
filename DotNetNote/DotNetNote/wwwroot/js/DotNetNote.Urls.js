@@ -45,7 +45,7 @@ var urlManager = (function () {
                         var list = data.list;
                         var count = data.count;
 
-                        console.log(list);
+                        // console.log(list);
 
                         // 페이지 정보
                         popupPage = page;
@@ -61,8 +61,8 @@ var urlManager = (function () {
                             html += "<td class='num'>" + (startNum - i) + "</td>";
                             html += "<td class='tit'><a href='javascript:urlManager.showPopupView(" + list[i].id + ");'>" + list[i].siteUrl + "</a></td>";
                             html += "<td class='text-center'>" + list[i].created + "</td>";
-                            html += "<td class='text-center'>" + list[i].userName + "</td>";
-                            html += "<td class='text-right'>" + "<a href='javascript:urlManager.modifyArticle(" + list[i].id + ");'>수정</a> <a href='javascript:urlManager.deleteArticle(" + list[i].id + ");'>삭제</a></td>";
+                            html += "<td class='text-center d-none d-sm-table-cell'>" + list[i].userName + "</td>";
+                            html += "<td class='text-right text-nowrap'>" + "<a href='javascript:urlManager.modifyArticle(" + list[i].id + ");'>수정</a> <a href='javascript:urlManager.deleteArticle(" + list[i].id + ");'>삭제</a></td>";
                             html += "</tr>";
                         }
                         listBase.html(html);
