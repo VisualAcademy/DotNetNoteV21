@@ -559,6 +559,8 @@ namespace DotNetNote
                 });
             });
 
+            //// MVC 기본 라우트를 사용하는 미들웨어: 가장 빠르게 MVC 웹 설정하는 방법
+            //app.UseMvcWithDefaultRoute();
 
             var isMvc = true; // true면 ASP.NET Core, false면 Angular
             if (isMvc)
