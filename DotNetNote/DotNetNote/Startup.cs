@@ -513,6 +513,7 @@ namespace DotNetNote
 
 
             app.UseHttpsRedirection();
+            app.UseStatusCodePages(); 
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
@@ -524,7 +525,7 @@ namespace DotNetNote
             #endregion
 
 
-            // 31.8.4. Serilog
+            // 31.8.4. Serilog를 사용하여 로그 파일 기록하기 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 //.WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "DnnLogs-{Date}.txt"))
@@ -536,14 +537,13 @@ namespace DotNetNote
             //[!] CORS
             //app.UseCors(options => options.WithOrigins(
             //    "http://dotnetnote.azurewebsites.net/api/values"));
-            app.UseCors(
-                options => options.AllowAnyOrigin().WithMethods("GET"));
-
-
+            app.UseCors(options => options.AllowAnyOrigin().WithMethods("GET"));
+            
             //[CORS] CORS 설정
             //app.UseCors("AllowAnyOrigin");
 
-            // 로그아웃 처리
+
+            // [!] 로그아웃 처리 
             app.UseRouter(routes =>
             {
                 // ~/Logout 경로 요청하면 자동으로 로그아웃
@@ -559,9 +559,12 @@ namespace DotNetNote
                 });
             });
 
-            //// MVC 기본 라우트를 사용하는 미들웨어: 가장 빠르게 MVC 웹 설정하는 방법
+
+            //// [!] MVC 기본 라우트를 사용하는 미들웨어: 가장 빠르게 MVC 웹 설정하는 방법
             //app.UseMvcWithDefaultRoute();
 
+
+            // [!] ASP.NET Core를 메인으로 실행할건지 Angular를 메인으로 실행할건지 결정 
             var isMvc = true; // true면 ASP.NET Core, false면 Angular
             if (isMvc)
             {
@@ -602,10 +605,11 @@ namespace DotNetNote
                 });
             }
 
-            //[!] 인라인 미들웨어
+
+            // [!] 인라인 미들웨어
             app.Run(async (context) =>
             {
-                // 한글 출력
+                // 한글 출력을 지원하려면 아래 한 줄을 추가
                 context.Response.Headers["Content-Type"] = "text/html; charset=utf-8";
                 await context.Response.WriteAsync("안녕하세요.", System.Text.Encoding.UTF8);
             });
