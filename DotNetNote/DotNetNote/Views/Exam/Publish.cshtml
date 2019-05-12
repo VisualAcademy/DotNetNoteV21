@@ -7,7 +7,7 @@
 <form asp-action="Grade">
     @foreach (var question in Model.Questions)
     {
-        Html.RenderPartial("_Question", question); 
+        await Html.RenderPartialAsync("_Question", question); 
     }
     <input type="submit" value="Submit" />
 </form>

@@ -150,7 +150,7 @@
     </tr>
     <tr>
         <td class="text-center">
-            @Html.Partial("_AdvancedPagingWithCss", ViewBag.PageModel as PagerBase)            
+            @await Html.PartialAsync("_AdvancedPagingWithCss", ViewBag.PageModel as PagerBase)            
         </td>
     </tr>
     <tr>
@@ -160,7 +160,8 @@
     </tr>
     <tr>
         <td style="text-align:center;">
-            @Html.Partial("_SearchForm")
+            @*@Html.Partial("_SearchForm")*@
+            @await Html.PartialAsync("_SearchForm")
             <br />
             @if (ViewBag.SearchMode)
             {

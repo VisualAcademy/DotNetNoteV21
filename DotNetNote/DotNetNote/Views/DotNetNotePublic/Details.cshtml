@@ -97,8 +97,7 @@
         </tr>
         <tr>
             <td colspan="4">
-                @Html.Partial("_BoardCommentControl",
-                    (NoteCommentViewModel)ViewBag.CommentListAndId)
+                @await Html.PartialAsync("_BoardCommentControl", (NoteCommentViewModel)ViewBag.CommentListAndId)
             </td>
         </tr>
     </tbody>

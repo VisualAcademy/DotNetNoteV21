@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
     Layout = null;
 }
 
@@ -6,27 +6,29 @@
 @*@inject DotNetNote.Services.ITransientGuidService TS
 
 
-@inject DotNetNote.Services.IScopedGuidService SS
+    @inject DotNetNote.Services.IScopedGuidService SS
 
 
-@inject DotNetNote.Services.ISingletonGuidService SI
+    @inject DotNetNote.Services.ISingletonGuidService SI
 
 
 
 
-@TS.GetGuid()
+    @TS.GetGuid()
+
+    <hr />
+
+    @SS.GetGuid()
+
+    <hr />
+
+    @SI.GetGuid()*@
+
+
+@*@Html.Partial("AtInjectComparePartial")*@
+@await Html.PartialAsync("AtInjectComparePartial")
 
 <hr />
 
-@SS.GetGuid()
-
-<hr />
-
-@SI.GetGuid()*@
-
-
-@Html.Partial("AtInjectComparePartial")
-
-<hr />
-
-@Html.Partial("AtInjectComparePartial")
+@*@Html.Partial("AtInjectComparePartial")*@
+@await Html.PartialAsync("AtInjectComparePartial")

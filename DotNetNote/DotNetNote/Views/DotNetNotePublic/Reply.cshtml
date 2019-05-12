@@ -11,7 +11,7 @@
     <div class="col-md-offset-2 col-md-8 col-md-offset-2">
         <form asp-controller="DotNetNote" asp-action="Reply" 
               enctype="multipart/form-data" method="post">
-            @Html.Partial("_BoardEditorForm")
+            @await Html.PartialAsync("_BoardEditorForm")
         </form>
     </div>
 </div>

@@ -9,6 +9,6 @@
 
     @foreach (var choice in Model.Choices)
     {
-        Html.RenderPartial("_Choice", choice);<br />
+        await Html.RenderPartialAsync("_Choice", choice);<br />
     }
 </div>

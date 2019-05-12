@@ -13,6 +13,5 @@
 
 @foreach (var question in Model.Exam.Questions)
 {
-    Html.RenderPartial("_Question", question);
+    await Html.RenderPartialAsync("_Question", question);
 }
-
