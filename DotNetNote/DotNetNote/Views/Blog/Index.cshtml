@@ -72,7 +72,7 @@
                             </td>
                             <td style="text-align:center;">
                                 @Html.Raw(BoardLibrary.FuncFileDownSingle(
-                                    item.Id, item.FileName
+                                    item.Id, (item.FileName ?? "")
                                     , item.FileSize.ToString()))
                             </td>
                             <td style="text-align:center;">
@@ -107,19 +107,16 @@
 
                             <td>
                                 @Html.Raw(BoardLibrary.FuncStep(item.Step))
-                                <a asp-controller="Blog" asp-action="Details"
-                                   asp-route-id="@item.Id">
+                                <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">
                                     @StringLibrary.CutStringUnicode(item.Title, 30)
                                 </a>
                                 <small>
-                                    @Html.Raw(BoardLibrary.ShowCommentCount(
-                                        item.CommentCount))
+                                    @Html.Raw(BoardLibrary.ShowCommentCount(item.CommentCount))
                                 </small>
                                 @Html.Raw(BoardLibrary.FuncNew(item.PostDate))
                             </td>
                             <td style="text-align:center;">
-                                @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id
-                                    , item.FileName, item.FileSize.ToString()))
+                                @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id, item.FileName ?? "", item.FileSize.ToString()))
                             </td>
                             <td style="text-align:center;">
                                 @Html.DisplayFor(modelItem => item.Name)

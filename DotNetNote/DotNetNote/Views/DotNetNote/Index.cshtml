@@ -119,7 +119,7 @@
                         </td>
                             <td style="text-align:center;">
                                 @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id
-                                    , item.FileName, item.FileSize.ToString()))
+                                    , (item.FileName ?? ""), item.FileSize.ToString()))
                             </td>
                             <td style="text-align:center;">
                                 @Html.DisplayFor(modelItem => item.Name)
@@ -150,7 +150,7 @@
     </tr>
     <tr>
         <td class="text-center">
-            @Html.Partial("_AdvancedPagingWithCss", ViewBag.PageModel as PagerBase)
+            @Html.Partial("_AdvancedPagingWithCss", ViewBag.PageModel as PagerBase)            
         </td>
     </tr>
     <tr>

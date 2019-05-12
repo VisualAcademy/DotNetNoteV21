@@ -605,6 +605,17 @@ namespace DotNetNote
                 });
             }
 
+            #region 인라인 미들웨어
+            // [!] 인라인 미들웨어 실행 후 다음 미들웨어로 파이프라인 이동
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path.Value.StartsWith("/EasterEgg"))
+                {
+                    await context.Response.WriteAsync("Hello~ Easter Egg");
+                }
+
+                await next();
+            });
 
             // [!] 인라인 미들웨어
             app.Run(async (context) =>
@@ -612,7 +623,8 @@ namespace DotNetNote
                 // 한글 출력을 지원하려면 아래 한 줄을 추가
                 context.Response.Headers["Content-Type"] = "text/html; charset=utf-8";
                 await context.Response.WriteAsync("안녕하세요.", System.Text.Encoding.UTF8);
-            });
+            }); 
+            #endregion
         }
     }
 }
