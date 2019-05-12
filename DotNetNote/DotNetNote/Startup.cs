@@ -49,8 +49,7 @@ namespace DotNetNote
         public void ConfigureServices(IServiceCollection services)
         {
             //[!] Configuration: JSON 파일의 데이터를 POCO 클래스에 주입
-            services.Configure<DotNetNoteSettings>(
-                Configuration.GetSection("DotNetNoteSettings"));
+            services.Configure<DotNetNoteSettings>(Configuration.GetSection("DotNetNoteSettings"));
 
             //[!] 디렉터리 브라우징 기능 제공(옵션)
             services.AddDirectoryBrowser();
@@ -71,9 +70,7 @@ namespace DotNetNote
 
 
             //[강의] AspNetCore21_MemberManagement_EF Core로 회원 입출력 기능 구현하기
-            services.AddDbContext<MemberDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<MemberDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 
             //<세션 정보를 SQL Server에 저장하기 위한 절차>
@@ -189,15 +186,9 @@ namespace DotNetNote
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
-
-
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDefaultIdentity<IdentityUser>().AddDefaultUI(UIFramework.Bootstrap4).AddEntityFrameworkStores<ApplicationDbContext>();
+                       
             // Identity 옵션 설정
             services.Configure<IdentityOptions>(options =>
             {
