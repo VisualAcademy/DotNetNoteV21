@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 
-namespace AngularNote.Models
+namespace DotNetNote.Models
 {
     public class OneRepository : IOneRepository
     {

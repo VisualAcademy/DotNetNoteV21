@@ -1,4 +1,4 @@
-﻿namespace DotNetNoteCom.Models
+﻿namespace DotNetNote.Models
 {
     /// <summary>
     /// SignDto: Data Transfer Object

@@ -1,7 +1,7 @@
-﻿using DotNetNoteCom.Models;
+﻿using DotNetNote.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotNetNoteCom
+namespace DotNetNote
 {
     public class AccountContext : DbContext
     {

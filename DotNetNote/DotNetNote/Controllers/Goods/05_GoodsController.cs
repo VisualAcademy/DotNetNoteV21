@@ -1,8 +1,7 @@
-﻿using DotNetNoteCom.Models;
-using GoodsManager.Models;
+﻿using DotNetNote.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GoodsManager.Controllers
+namespace DotNetNote.Controllers
 {
     /// <summary>
     /// [5] 컨트롤러 클래스: ASP.NET Core - MVC 파트 

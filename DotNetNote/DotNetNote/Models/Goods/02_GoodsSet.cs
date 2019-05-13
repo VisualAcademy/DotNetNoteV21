@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GoodsManager.Models
+namespace DotNetNote.Models
 {
     /// <summary>
     /// [2] 집합 클래스: 제품 리스트와 제품 수 

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DotNetNoteCom.Models
+namespace DotNetNote.Models
 {
     public class CategoryRepositoryInMemory : ICategoryRepository
     {

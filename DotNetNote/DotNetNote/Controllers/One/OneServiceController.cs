@@ -1,9 +1,9 @@
-﻿using AngularNote.Models;
+﻿using DotNetNote.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AngularNote.Controllers
+namespace DotNetNote.Controllers
 {
     [Route("api/[controller]")]
     public class OneServiceController : Controller

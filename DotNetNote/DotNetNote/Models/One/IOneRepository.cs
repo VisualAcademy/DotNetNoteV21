@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AngularNote.Models
+namespace DotNetNote.Models
 {
     public interface IOneRepository
     {

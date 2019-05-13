@@ -1,8 +1,8 @@
-﻿using AngularNote.Models;
+﻿using DotNetNote.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq; 
+using System.Linq;
 
-namespace AngularNote.Controllers
+namespace DotNetNote.Controllers
 {
     [Route("api/[controller]")]
     public class ThreeServiceController : Controller

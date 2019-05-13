@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using DotNetNoteCom.Models;
+using DotNetNote.Models;
 using DotNetSaleCom.Models;
 using Microsoft.AspNetCore.Mvc;
 

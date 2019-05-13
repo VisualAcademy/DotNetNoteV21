@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System;
 
-namespace AngularNote.Models
+namespace DotNetNote.Models
 {
     /// <summary>
     /// 모델 클래스

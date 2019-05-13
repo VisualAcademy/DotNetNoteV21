@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DotNetNoteCom.Models.Samples
+namespace DotNetNote.Models.Samples
 {
     public class Department_Employee
     {

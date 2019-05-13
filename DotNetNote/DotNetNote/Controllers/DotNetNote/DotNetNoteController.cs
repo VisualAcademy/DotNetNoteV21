@@ -1,5 +1,4 @@
 ﻿using DotNetNote.Models;
-using DotNetNoteCom.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

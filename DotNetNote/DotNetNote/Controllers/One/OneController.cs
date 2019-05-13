@@ -1,7 +1,7 @@
-﻿using AngularNote.Models;
+﻿using DotNetNote.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AngularNote.Controllers
+namespace DotNetNote.Controllers
 {
     public class OneController : Controller
     {

@@ -1,4 +1,3 @@
-using AngularNote.Models;
 using DotNetNote.Common;
 using DotNetNote.Components;
 using DotNetNote.Models;
@@ -7,8 +6,6 @@ using DotNetNote.Models.Exams;
 using DotNetNote.Models.RecruitManager;
 using DotNetNote.Services;
 using DotNetNote.Settings;
-using DotNetNoteCom.Models;
-using GoodsManager.Models;
 using MemberManagement.Data;
 using DotNetNote.Data;
 using Microsoft.AspNetCore.Builder;
@@ -31,7 +28,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication;
-using DotNetNoteCom;
 using DotNetNote.Models.Notifications;
 
 namespace DotNetNote
@@ -154,23 +150,18 @@ namespace DotNetNote
             #endregion
 
 
+
             //[User][9] Policy 설정
             services.AddAuthorization(options =>
             {
                 // Users Role이 있으면, Users Policy 부여
-                options.AddPolicy(
-                    "Users", policy => policy.RequireRole("Users"));
-                // Users Role이 있고 UserId가 "Admin"이면 "Administrators" 부여
-                options.AddPolicy(
-                    "Administrators",
-                        policy => policy
-                            .RequireRole("Users")
-                            .RequireClaim("UserId", // 대소문자 구분
-                                Configuration
-                                    .GetSection("DotNetNoteSettings")
-                                    .GetSection("SiteAdmin").Value)
-                            );
+                options.AddPolicy("Users", policy => policy.RequireRole("Users"));
+
+                // Users Role이 있고 UserId가 DotNetNoteSettings:SiteAdmin에 지정된 값(예를 들어 "Admin")이면 "Administrators" 부여
+                // "UserId" - 대소문자 구분
+                options.AddPolicy("Administrators", policy => policy.RequireRole("Users").RequireClaim("UserId", Configuration.GetSection("DotNetNoteSettings").GetSection("SiteAdmin").Value));
             });
+
 
 
             //[CORS] CORS 설정

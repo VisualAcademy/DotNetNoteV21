@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GoodsManager.Models;
+using DotNetNote.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GoodsManager.Controllers
+namespace DotNetNote.Controllers
 {
     /// <summary>
     /// [6] Web API 컨트롤러 클래스: Angular / jQuery 등의 프론트엔드에서 접근할 Web API

@@ -1,4 +1,4 @@
-﻿using DotNetNoteCom.Models;
+﻿using DotNetNote.Models;
 using System.Collections.Generic;
 
 namespace DotNetSaleCom.Models

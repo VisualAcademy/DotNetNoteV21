@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using Dapper;
 
-namespace GoodsManager.Models
+namespace DotNetNote.Models
 {
     /// <summary>
     /// [4] 리포지토리 클래스

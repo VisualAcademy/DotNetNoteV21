@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GoodsManager.Models
+namespace DotNetNote.Models
 {
     /// <summary>
     /// [1] 모델 클래스

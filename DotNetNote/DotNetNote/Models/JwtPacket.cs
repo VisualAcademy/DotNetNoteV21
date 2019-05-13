@@ -1,4 +1,4 @@
-﻿namespace DotNetNoteCom.Models
+﻿namespace DotNetNote.Models
 {
     /// <summary>
     /// JSON Web Token 반환값 
