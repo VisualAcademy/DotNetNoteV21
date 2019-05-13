@@ -1,8 +1,10 @@
 ﻿@using DotNetNote.Models
-@inject Microsoft.Extensions.Options.IOptions<
-            DotNetNote.Settings.DotNetNoteSettings> option
+@inject Microsoft.Extensions.Options.IOptions<DotNetNote.Settings.DotNetNoteSettings> option
 
-@if (User.Identity.IsAuthenticated)
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@*@if (User.Identity.IsAuthenticated)*@
+@if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
 {
     <form asp-controller="User" asp-action="Logout" method="post" 
         id="logoutForm" class="navbar-right">

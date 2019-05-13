@@ -3,9 +3,11 @@ using DotNetNote.Common;
 using DotNetNote.Components;
 using DotNetNote.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -102,8 +104,7 @@ namespace DotNetNote.Controllers
                 }
 
                 //if (_repository.IsCorrectUser(model.UserId, model.Password))
-                if (_repository.IsCorrectUser(model.UserId,
-                    Common.CryptorEngine.EncryptPassword(model.Password)))
+                if (_repository.IsCorrectUser(model.UserId, Common.CryptorEngine.EncryptPassword(model.Password)))
                 {
                     //[!] 인증 부여: 인증된 사용자의 주요 정보(Name, Role, ...)를 기록
                     var claims = new List<Claim>()
@@ -111,24 +112,31 @@ namespace DotNetNote.Controllers
                         // 로그인 아이디 지정
                         new Claim("UserId", model.UserId),
 
+                        new Claim(ClaimTypes.NameIdentifier, model.UserId),
+
+                        new Claim(ClaimTypes.Name, model.UserId), 
+
                         // 기본 역할 지정, "Role" 기능에 "Users" 값 부여
                         new Claim(ClaimTypes.Role, "Users") // 추가 정보 기록
                     };
 
-                    var ci = new ClaimsIdentity(claims,
-                        Common.CryptorEngine.EncryptPassword(model.Password));
-
-
+                    //var ci = new ClaimsIdentity(claims, Common.CryptorEngine.EncryptPassword(model.Password));
+                    var ci = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
                     //[1] 로그인 처리: Authorize 특성 사용해서 로그인 체크 가능 
                     //[1][1] ASP.NET Core 1.X 사용: 버전업되면서 아래 메서드 사용 중지 
                     //await HttpContext.Authentication.SignInAsync(
                     //    "Cookies", new ClaimsPrincipal(ci));
                     //[1][2] ASP.NET Core 2.X 사용
-                    await HttpContext.SignInAsync(
-                        "Cookies", 
-                        new ClaimsPrincipal(ci), 
-                        new AuthenticationProperties { IsPersistent = true });
+                    var authenticationProperties = new AuthenticationProperties()
+                    {
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60),
+                        IssuedUtc = DateTimeOffset.UtcNow,
+                        IsPersistent = true 
+                    };
+                    //await HttpContext.SignInAsync("Cookies", new ClaimsPrincipal(ci), new AuthenticationProperties { IsPersistent = true });
+                    //await HttpContext.SignInAsync("Cookies", new ClaimsPrincipal(ci), authenticationProperties);
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(ci), authenticationProperties);
 
 
 
@@ -160,7 +168,8 @@ namespace DotNetNote.Controllers
             // ASP.NET Core 1.X
             //await HttpContext.Authentication.SignOutAsync("Cookies");
             // ASP.NET Core 2.X
-            await HttpContext.SignOutAsync("Cookies");
+            //await HttpContext.SignOutAsync("Cookies");
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             return Redirect("/User/Index");
         }

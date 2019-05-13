@@ -106,12 +106,13 @@ namespace DotNetNote
             //    options.AccessDeniedPath = "/User/Forbidden/";
             //});
 
+
             //[!] ASP.NET Core 2.X 쿠키 인증 및 JWT 인증: 기본형
             //services.AddAuthentication()
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme =
-                    CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             })
@@ -125,7 +126,12 @@ namespace DotNetNote
             .AddCookie(options =>
             {
                 options.LoginPath = new PathString("/User/Login");
+                options.LogoutPath = "/User/Logout";
                 options.AccessDeniedPath = new PathString("/User/Forbidden");
+                //options.Cookie.Name = "Cookies"; // 직접 이름 지정
+                options.Cookie.Name = CookieAuthenticationDefaults.AuthenticationScheme; // 정의되어 있는 이름으로 지정
+                options.Cookie.HttpOnly = false;
+                options.Cookie.SameSite = SameSiteMode.None; 
                 options.SlidingExpiration = true;
             })
             .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
@@ -508,11 +514,13 @@ namespace DotNetNote
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
-            app.UseCookiePolicy();
 
             #region ASP.NET Core 2.X 쿠키 인증: Configure()
             // ASP.NET Core 2.X에서 쿠키 인증
             app.UseAuthentication(); // 인증 미들웨어를 사용하겠다고 지정 
+            //app.UseCookiePolicy();
+            var cookiePolicyOptions = new CookiePolicyOptions() { MinimumSameSitePolicy = SameSiteMode.Strict };
+            app.UseCookiePolicy(cookiePolicyOptions);
             #endregion
 
 
