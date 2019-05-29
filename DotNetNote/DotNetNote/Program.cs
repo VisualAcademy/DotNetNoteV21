@@ -19,7 +19,7 @@ namespace DotNetNote
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                //.ConfigureAppConfiguration(ConfigConfiguration)
+                .ConfigureAppConfiguration(ConfigConfiguration)
                     .UseStartup<Startup>();
 
         public static void ConfigConfiguration(
