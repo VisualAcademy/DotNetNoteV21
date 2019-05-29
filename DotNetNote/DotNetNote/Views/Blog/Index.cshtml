@@ -71,9 +71,7 @@
                                 @Html.Raw(BoardLibrary.FuncNew(item.PostDate))
                             </td>
                             <td style="text-align:center;">
-                                @Html.Raw(BoardLibrary.FuncFileDownSingle(
-                                    item.Id, (item.FileName ?? "")
-                                    , item.FileSize.ToString()))
+                                @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id, item.FileName, item.FileSize.ToString(), "DotNetNote", "/BoardDown/"))
                             </td>
                             <td style="text-align:center;">
                                 @Html.DisplayFor(modelItem => item.Name)
@@ -116,7 +114,7 @@
                                 @Html.Raw(BoardLibrary.FuncNew(item.PostDate))
                             </td>
                             <td style="text-align:center;">
-                                @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id, item.FileName ?? "", item.FileSize.ToString()))
+                                @Html.Raw(BoardLibrary.FuncFileDownSingle(item.Id, item.FileName, item.FileSize.ToString(), "DotNetNote", "/BoardDown/"))
                             </td>
                             <td style="text-align:center;">
                                 @Html.DisplayFor(modelItem => item.Name)
