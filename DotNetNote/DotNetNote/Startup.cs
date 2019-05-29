@@ -521,7 +521,7 @@ namespace DotNetNote
                 //.WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "DnnLogs-{Date}.txt"))
                 .WriteTo.RollingFile(Path.Combine(env.ContentRootPath + "\\Logs", "DnnLogs-{Date}.txt"))
                 .CreateLogger();
-            loggerFactory.AddSerilog();
+            //loggerFactory.AddSerilog();
 
 
             //[!] CORS
