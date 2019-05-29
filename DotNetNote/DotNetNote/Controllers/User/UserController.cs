@@ -21,7 +21,9 @@ namespace DotNetNote.Controllers
         private ILoginFailedManager _loginFailed;
         private IUserModelRepository _userRepo;
 
-        public UserController(IUserRepository repository, ILoginFailedManager loginFailed, 
+        public UserController(
+            IUserRepository repository, 
+            ILoginFailedManager loginFailed, 
             IUserModelRepository userRepo)
         {
             _repository = repository;
@@ -31,18 +33,12 @@ namespace DotNetNote.Controllers
 
         //[User][6][2]
         [Authorize]
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index() => View();
 
 
         //[User][6][3] : 회원 가입 폼
         [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
+        public IActionResult Register() => View();
 
         //[User][6][4] : 회원 가입 처리
         [HttpPost]
@@ -66,9 +62,7 @@ namespace DotNetNote.Controllers
             else
             {
                 //_repository.AddUser(model.UserId, model.Password);
-                _repository.AddUser(
-                    model.UserId,
-                    Common.CryptorEngine.EncryptPassword(model.Password)
+                _repository.AddUser(model.UserId, Common.CryptorEngine.EncryptPassword(model.Password)
                 );
                 return RedirectToAction("Index");
             }
@@ -177,10 +171,7 @@ namespace DotNetNote.Controllers
 
         //[User][6][8] : 회원 정보 보기 및 수정
         [Authorize]
-        public IActionResult UserInfor()
-        {
-            return View();
-        }
+        public IActionResult UserInfor() => View();
 
         //[User][6][9] : 인사말 페이지
         public IActionResult Greetings()
@@ -197,10 +188,7 @@ namespace DotNetNote.Controllers
         }
 
         //[User][6][10] : 접근 거부 페이지
-        public IActionResult Forbidden()
-        {
-            return View();
-        }
+        public IActionResult Forbidden() => View();
 
         //[!] 추가: 사용자 상세 보기(GetUsers 저장 프로시저 사용)
         [Authorize]
@@ -218,9 +206,6 @@ namespace DotNetNote.Controllers
         /// <summary>
         /// 아이디 중복 확인 Web API 테스트
         /// </summary>
-        public IActionResult CheckUsername()
-        {
-            return View();
-        }
+        public IActionResult CheckUsername() => View();
     }
 }
