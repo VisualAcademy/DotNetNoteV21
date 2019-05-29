@@ -26,9 +26,9 @@
     </script>
 
     <!-- 기본 JavaScript 라이브러리 참조 시작 -->
-        <script src="~/lib_/jquery/dist/jquery.js"></script>
-        <script src="~/lib_/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib_/jquery/dist/jquery.js"></script>
+    <script src="~/lib_/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <!-- 기본 JavaScript 라이브러리 참조 종료 -->
 
     <script src="~/lib/angular/angular.js"></script>
@@ -40,14 +40,14 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" 
+                <button type="button" class="navbar-toggle"
                         data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" 
+                <a asp-area="" asp-controller="Home"
                    asp-action="Index" class="navbar-brand">닷넷노트</a>
             </div>
             <div class="navbar-collapse collapse">
@@ -220,6 +220,9 @@
             <p><em>Creator: @Configuration["Creator"] </em></p>
         </footer>
     </div>
+
+    <script src="~/src/bs3/jquery/dist/jquery.js"></script>
+    <script src="~/src/bs3/bootstrap/dist/js/bootstrap.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>

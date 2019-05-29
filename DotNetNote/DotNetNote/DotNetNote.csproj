@@ -1612,6 +1612,26 @@
     <None Include="wwwroot\scripts\ckeditor\skins\bootstrapck\scss\config\_defaults.scss" />
     <None Include="wwwroot\scripts\ckeditor\skins\bootstrapck\scss\dialog\dialog.scss" />
     <None Include="wwwroot\scripts\ckeditor\styles.js" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\src\bs3\bootstrap\dist\js\npm.js" />
+    <None Include="wwwroot\src\bs3\bootstrap\LICENSE" />
+    <None Include="wwwroot\src\bs3\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\src\bs3\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\src\bs3\jquery\dist\jquery.js" />
+    <None Include="wwwroot\src\bs3\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\src\bs3\jquery\dist\jquery.min.map" />
   </ItemGroup>
 
   <ItemGroup>
