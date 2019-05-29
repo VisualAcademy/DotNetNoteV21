@@ -555,7 +555,7 @@ namespace DotNetNote
 
 
             // [!] ASP.NET Core를 메인으로 실행할건지 Angular를 메인으로 실행할건지 결정 
-            var isMvc = false; // true면 ASP.NET Core, false면 Angular
+            var isMvc = true; // true면 ASP.NET Core, false면 Angular
             if (isMvc)
             {
                 // [1] ASP.NET Core를 메인으로 사용할 때
