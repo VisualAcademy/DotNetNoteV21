@@ -1,4 +1,6 @@
-﻿namespace DotNetNote.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DotNetNote.Models
 {
     /// <summary>
     /// [2] 모델 클래스
@@ -14,6 +16,7 @@
         /// <summary>
         /// 노트
         /// </summary>
+        [Required]
         public string Note { get; set; }
     }
 }

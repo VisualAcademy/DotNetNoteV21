@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace DotNetNote.Models
 {
@@ -14,6 +15,7 @@ namespace DotNetNote.Models
         /// <summary>
         /// 도메인
         /// </summary>
+        [Required]
         public string SiteUrl { get; set; }
         /// <summary>
         /// 비고
