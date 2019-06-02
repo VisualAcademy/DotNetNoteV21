@@ -44,5 +44,7 @@ namespace DotNetNote.Models
         /// 도메인 관리자 테이블 참조
         /// </summary>
         public DbSet<Url> Urls { get; set; }
+
+        public DbSet<Tech> Teches { get; set; }
     }
 }
