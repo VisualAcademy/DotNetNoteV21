@@ -23,29 +23,47 @@ else
         <tbody>
             @foreach (var tech in teches)
             {
-            <tr>
-                <td>@tech.Id</td>
-                <td>@tech.Title</td>
-            </tr>
+                <tr onclick="@(() => Details(tech.Id))">
+                    <td>@tech.Id</td>
+                    <td>@tech.Title</td>
+                </tr>
             }
         </tbody>
     </table>
 }
-<h3>입력</h3>
-<div>
-    기술명: <input type="text" bind="@txtTitle" class="form-control" style="width: 200px; display: inline;" />
-    <input type="button" name="btnSave" value="저장" class="btn btn-primary" onclick="@Add" />
-</div>
+
+@if (teches != null)
+{
+    <h3>입력</h3>
+    <div>
+        기술명: <input type="text" bind="@txtTitle" class="form-control" 
+                    style="width: 200px; display: inline;" />
+        <input type="button" name="btnSave" value="저장" 
+               class="btn btn-primary" onclick="@Add" />
+        @if (formType == BoardWriteFormType.Modify)
+        {
+            <input type="button" name="btnUpdate" value="수정" 
+                   class="btn btn-primary" onclick="@Update" />
+            <input type="button" name="btnUpdate" value="삭제" 
+                   class="btn btn-primary" onclick="@Delete" />
+        }
+    </div>
+}
+
+@functions {
+    BoardWriteFormType formType = BoardWriteFormType.None;
+}
 
 @functions {
     string txtTitle;
 
     string baseUri = "http://localhost:57368/";
 
-
     protected async Task Add()
     {
-        string postApi = $"{baseUri}api/TechesApi";
+        formType = BoardWriteFormType.Write;
+
+        string postApi = $"{baseUri}api/TechServices";
         Tech t = new Tech() { Title = txtTitle };
 
         await Http.SendJsonAsync(HttpMethod.Post, postApi, t);
@@ -58,10 +76,58 @@ else
 
 @functions {
     Tech[] teches;
-    
+
     protected override async Task OnInitAsync()
     {
-        string apiUrl = $"{baseUri}/api/TechesApi";
+        formType = BoardWriteFormType.None;
+
+        string apiUrl = $"{baseUri}/api/TechServices";
         teches = await Http.GetJsonAsync<Tech[]>(apiUrl);
+    }
+}
+
+@functions {
+    int techId;
+    protected async Task Update()
+    {
+        formType = BoardWriteFormType.Modify;
+
+        string updateUri = $"{baseUri}api/TechServices/{techId}";
+
+        Tech t = new Tech { Id = techId, Title = txtTitle };
+
+        await Http.SendJsonAsync(HttpMethod.Put, updateUri, t);
+
+        await OnInitAsync();
+
+        txtTitle = "";
+    }
+}
+
+@functions {
+    protected async Task Delete()
+    {
+        formType = BoardWriteFormType.Modify;
+
+        string deleteUri = $"{baseUri}api/TechServices/{techId}";
+
+        await Http.SendJsonAsync(HttpMethod.Delete, deleteUri, null);
+
+        txtTitle = "";
+
+        await OnInitAsync();
+    }
+}
+
+@functions {
+    Tech tech;
+    protected async Task Details(int id)
+    {
+        formType = BoardWriteFormType.Modify;
+
+        string detailsUri = $"{baseUri}api/TechServices/{id}";
+        tech = await Http.GetJsonAsync<Tech>(detailsUri);
+        techId = tech.Id;
+        txtTitle = tech.Title;
     }
 }

@@ -36,4 +36,30 @@ namespace DotNetNote.Models
             return this.db.Query<Tech>(sql).ToList();
         }
     }
+
+    public class TechRepositoryEf : ITechRepository
+    {
+        private readonly TechContext _context;
+
+        public TechRepositoryEf()
+        {
+            _context = new TechContext();
+        }
+
+        public TechRepositoryEf(TechContext context)
+        {
+            _context = context;
+        }
+
+        public void AddTech(Tech model)
+        {
+            _context.Teches.Add(model);
+            _context.SaveChanges();
+        }
+
+        public List<Tech> GetTechs()
+        {
+            return _context.Teches.OrderBy(t => t.Id).ToList();
+        }
+    }
 }

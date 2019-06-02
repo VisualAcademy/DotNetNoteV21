@@ -45,6 +45,9 @@ namespace DotNetNote.Models
         /// </summary>
         public DbSet<Url> Urls { get; set; }
 
+        /// <summary>
+        /// 기술 리스트: [실습] Teches 테이블부터 Angular 앱 또는 Blazor 앱까지
+        /// </summary>
         public DbSet<Tech> Teches { get; set; }
     }
 }
