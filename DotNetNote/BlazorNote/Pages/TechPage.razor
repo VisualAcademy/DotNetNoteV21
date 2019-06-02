@@ -1,0 +1,67 @@
+﻿@page "/techpage"
+@inject HttpClient Http
+@using DotNetNote.Models
+
+<h1>기술 리스트</h1>
+
+<p>@*<BlazorLinkOnBuild>false</BlazorLinkOnBuild>*@</p>
+
+<h2>출력</h2>
+@if (teches == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tech in teches)
+            {
+            <tr>
+                <td>@tech.Id</td>
+                <td>@tech.Title</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+<h3>입력</h3>
+<div>
+    기술명: <input type="text" bind="@txtTitle" class="form-control" style="width: 200px; display: inline;" />
+    <input type="button" name="btnSave" value="저장" class="btn btn-primary" onclick="@Add" />
+</div>
+
+@functions {
+    string txtTitle;
+
+    string baseUri = "http://localhost:57368/";
+
+
+    protected async Task Add()
+    {
+        string postApi = $"{baseUri}api/TechesApi";
+        Tech t = new Tech() { Title = txtTitle };
+
+        await Http.SendJsonAsync(HttpMethod.Post, postApi, t);
+
+        await OnInitAsync();
+
+        txtTitle = "";
+    }
+}
+
+@functions {
+    Tech[] teches;
+    
+    protected override async Task OnInitAsync()
+    {
+        string apiUrl = $"{baseUri}/api/TechesApi";
+        teches = await Http.GetJsonAsync<Tech[]>(apiUrl);
+    }
+}
