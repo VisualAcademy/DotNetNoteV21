@@ -164,7 +164,7 @@ namespace DotNetNote
 
 
 
-            //[CORS] CORS 설정
+            //[CORS] CORS 설정 공식 코드 1/2
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAnyOrigin",
@@ -527,10 +527,10 @@ namespace DotNetNote
             //[!] CORS
             //app.UseCors(options => options.WithOrigins(
             //    "http://dotnetnote.azurewebsites.net/api/values"));
-            app.UseCors(options => options.AllowAnyOrigin().WithMethods("GET"));
-            
-            //[CORS] CORS 설정
-            //app.UseCors("AllowAnyOrigin");
+            //app.UseCors(options => options.AllowAnyOrigin().WithMethods("GET"));
+
+            //[CORS] CORS 설정 공식 코드 2/2
+            app.UseCors("AllowAnyOrigin"); // Policy 이름은 AddCores() 메서드의 내용과 동일해야 함 
 
 
             // [!] 로그아웃 처리 
