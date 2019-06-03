@@ -355,7 +355,7 @@ namespace DotNetNote
 
             //[Tech] 기술 목록
             // services.AddTransient<ITechRepository, TechRepository>(); // Dapper 사용한 리포지토리 클래스 사용
-            services.AddTransient<ITechRepository, TechRepositoryEf>(); // Entity Framework  사용한 리포지토리 클래스 사용
+            services.AddTransient<ITechRepositoryEf, TechRepositoryEf>(); // Entity Framework  사용한 리포지토리 클래스 사용
 
             //[Attendee] 참석자 목록 - 서비스 등록
             services.AddTransient<IAttendeeRepository, AttendeeRepository>();
