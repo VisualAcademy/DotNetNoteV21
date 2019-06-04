@@ -626,7 +626,6 @@
     <None Include="wwwroot\lib\bootstrap-3-datepicker\tests\suites\options.js" />
     <None Include="wwwroot\lib\bootstrap-3-datepicker\tests\suites\timezone.js" />
     <None Include="wwwroot\lib\bootstrap-3-datepicker\tests\suites\touch_navigation\all.js" />
-    <None Include="wwwroot\lib\bootstrap-3-datepicker\yarn.lock" />
     <None Include="wwwroot\lib\bootstrap-3-timepicker\.bowerrc" />
     <None Include="wwwroot\lib\bootstrap-3-timepicker\.gitignore" />
     <None Include="wwwroot\lib\bootstrap-3-timepicker\.grunt\grunt-contrib-jasmine\jasmine-helper.js" />
