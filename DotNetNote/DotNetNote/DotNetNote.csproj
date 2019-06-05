@@ -1639,6 +1639,7 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
+    <Folder Include="wwwroot\assets\BuildSeoul\" />
   </ItemGroup>
 
   <ItemGroup>
