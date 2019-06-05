@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote.Models", "DotNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorNote", "BlazorNote\BlazorNote.csproj", "{E90E9F0E-9E8B-4213-AF66-485E81214F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorNote", "RazorNote\RazorNote.csproj", "{C13536E6-684D-4232-8259-EC5346BED40C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorNote", "RazorNote\RazorNote.csproj", "{C13536E6-684D-4232-8259-EC5346BED40C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterService", "GreeterService\GreeterService.csproj", "{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{C13536E6-684D-4232-8259-EC5346BED40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13536E6-684D-4232-8259-EC5346BED40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13536E6-684D-4232-8259-EC5346BED40C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
