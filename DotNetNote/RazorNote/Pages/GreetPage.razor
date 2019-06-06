@@ -2,7 +2,7 @@
 
 <h1>gRPC 초간단 데모!</h1>
 
-<button class="btn btn-primary" onclick="@SayHello">클릭하세요.</button>
+<button class="btn btn-primary" onclick="@SayHello" onmouseout="@ClearText">클릭하세요.</button>
 
 <hr />
 
@@ -11,6 +11,13 @@
 @functions {
 
     private string Greeting;
+
+    async Task ClearText()
+    {
+        Greeting = "";
+
+        await Task.CompletedTask;
+    }
 
     async Task SayHello()
     {
