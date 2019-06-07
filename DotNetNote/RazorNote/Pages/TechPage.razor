@@ -1,4 +1,5 @@
-﻿@page "/techpage"
+﻿@*// Blazor Server 데모*@
+@page "/techpage"
 @using DotNetNote.Models
 @inject  ITechRepositoryEf _repository
 
@@ -51,11 +52,11 @@ else
 }
 
 @functions {
-    BoardWriteFormType formType = BoardWriteFormType.None;
+    private BoardWriteFormType formType = BoardWriteFormType.None;
 }
 
 @functions {
-    string txtTitle;
+    private string txtTitle;
 
     protected async Task Add()
     {
@@ -72,7 +73,7 @@ else
 }
 
 @functions {
-    IEnumerable<Tech> teches;
+    private IEnumerable<Tech> teches;
 
     protected override async Task OnInitAsync()
     {
@@ -83,7 +84,8 @@ else
 }
 
 @functions {
-    int techId;
+    private int techId;
+
     protected async Task Update()
     {
         formType = BoardWriteFormType.Modify;
@@ -112,7 +114,7 @@ else
 }
 
 @functions {
-    Tech tech;
+    public Tech tech { get; set; }
     protected async Task Details(int id)
     {
         formType = BoardWriteFormType.Modify;
