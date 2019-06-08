@@ -1,7 +1,8 @@
 ﻿@*// Blazor Server 데모*@
 @page "/techpage"
 @using DotNetNote.Models
-@inject  ITechRepositoryEf _repository
+@using Dul.Board
+@inject ITechRepositoryEf _repository
 
 <h1>기술 리스트</h1>
 
@@ -26,8 +27,8 @@ else
                     <td>@tech.Id</td>
                     <td>@tech.Title</td>
                 </tr>
-                }
-            </tbody>
+            }
+        </tbody>
     </table>
 }
 
@@ -79,7 +80,7 @@ else
     {
         formType = BoardWriteFormType.None;
 
-        teches = await _repository.GetTechesAsync();        
+        teches = await _repository.GetTechesAsync();
     }
 }
 

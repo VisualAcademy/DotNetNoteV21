@@ -1,11 +1,12 @@
 ﻿@model Note
+@using Dul.Board
 
 @*CKEditor 적용: http://docs.ckeditor.com/#!/guide/dev_codesnippet 참고*@
 <link href="/scripts/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" rel="stylesheet" />
 <script src="/scripts/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js"></script>
 
 <div class="form-horizontal">
-    @if (ViewBag.FormType == DotNetNote.Models.BoardWriteFormType.Modify)
+    @if (ViewBag.FormType == BoardWriteFormType.Modify)
     {
         <div class="form-group">
             <label asp-for="Id" class="col-md-2 control-label"></label>

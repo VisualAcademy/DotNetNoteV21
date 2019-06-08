@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dul" Version="1.1.6" />
     <PackageReference Include="Google.Protobuf" Version="3.8.0" />
     <PackageReference Include="Grpc.Core" Version="1.21.0" />
     <PackageReference Include="Grpc.Tools" Version="1.21.0">
@@ -15,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" Generator="MSBuild:Compile"/>
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" Generator="MSBuild:Compile" />
     <Content Include="@(Protobuf)" />
     <None Remove="@(Protobuf)" />
   </ItemGroup>
