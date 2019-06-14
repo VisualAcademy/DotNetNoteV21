@@ -23,7 +23,7 @@ else
         <tbody>
             @foreach (var tech in teches)
             {
-                <tr onclick="@(() => Details(tech.Id))">
+                <tr @onclick="@(() => Details(tech.Id))">
                     <td>@tech.Id</td>
                     <td>@tech.Title</td>
                 </tr>
@@ -40,23 +40,23 @@ else
                     style="width: 200px; display: inline;" />
         @if (formType != BoardWriteFormType.Modify)
         {
-            <input type="button" name="btnSave" value="저장" class="btn btn-primary" onclick="@Add" />
+            <input type="button" name="btnSave" value="저장" class="btn btn-primary" @onclick="@Add" />
         }
         @if (formType == BoardWriteFormType.Modify)
         {
             <input type="button" name="btnUpdate" value="수정"
-                   class="btn btn-primary" onclick="@Update" />
+                   class="btn btn-primary" @onclick="@Update" />
             <input type="button" name="btnUpdate" value="삭제"
-                   class="btn btn-primary" onclick="@Delete" />
+                   class="btn btn-primary" @onclick="@Delete" />
         }
     </div>
 }
 
-@functions {
+@code {
     private BoardWriteFormType formType = BoardWriteFormType.None;
 }
 
-@functions {
+@code {
     private string txtTitle;
 
     protected async Task Add()
@@ -73,7 +73,7 @@ else
     }
 }
 
-@functions {
+@code {
     private IEnumerable<Tech> teches;
 
     protected override async Task OnInitAsync()
@@ -84,7 +84,7 @@ else
     }
 }
 
-@functions {
+@code {
     private int techId;
 
     protected async Task Update()
@@ -101,7 +101,7 @@ else
     }
 }
 
-@functions {
+@code {
     protected async Task Delete()
     {
         formType = BoardWriteFormType.Modify;
@@ -114,7 +114,7 @@ else
     }
 }
 
-@functions {
+@code {
     public Tech tech { get; set; }
     protected async Task Details(int id)
     {
