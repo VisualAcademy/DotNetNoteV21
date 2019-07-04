@@ -26,7 +26,7 @@ namespace DotNetNote.Models
         /// </summary>
         public string UserName { get; set; }
         /// <summary>
-        /// 등록일
+        /// 등록일: Created, DateReleased, CreatedAt, ...
         /// </summary>
         public DateTime Created { get; set; }
     }
