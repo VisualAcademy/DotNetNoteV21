@@ -25,8 +25,15 @@ namespace DotNetNote.Controllers
         [HttpPost]
         public IActionResult Index(Idea model)
         {
-            model = _repository.Add(model);
-            return RedirectToAction(nameof(Index));
+            if (ModelState.IsValid)
+            {
+                model = _repository.Add(model);
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
         }
     }
 }
