@@ -22,6 +22,8 @@ namespace DotNetNote.Models
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
         {
+            // 닷넷 프레임워크 기반에서 호출되는 코드 영역: 
+            // App.Config 또는 Web.Config의 연결 문자열 사용
             if (!optionsBuilder.IsConfigured)
             {
                 string connectionString = ConfigurationManager.ConnectionStrings[
@@ -32,6 +34,7 @@ namespace DotNetNote.Models
 
         /// <summary>
         /// 아이디어 관리자
+        /// 아이디어 앱에 대한 참조(Idea 모델 클래스 <=> Ideas 테이블)
         /// </summary>
         public DbSet<Idea> Ideas { get; set; }
 
