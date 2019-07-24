@@ -24,17 +24,9 @@ namespace DotNetNote.Models
         }
 
         // 입력
-        public void AddTech(Tech model)
-        {
-            string sql = "Insert Into Teches (Title) Values (@Title)";
-            var id = this.db.Execute(sql, model);
-        }
+        public void AddTech(Tech model) => this.db.Execute("Insert Into Teches (Title) Values (@Title)", model);
 
         // 출력
-        public List<Tech> GetTechs()
-        {
-            string sql = "Select Id, Title From Teches Order By Id Asc";
-            return this.db.Query<Tech>(sql).ToList();
-        }
+        public List<Tech> GetTechs() => this.db.Query<Tech>("Select Id, Title From Teches Order By Id Asc").ToList();
     }
 }

@@ -22,12 +22,8 @@ namespace DotNetNote.Models
             db = new SqlConnection(_config.GetSection("ConnectionString").Value);
         }
 
-        public List<Idea> GetAll()
-        {
-            //TODO: 데이터 캐싱과 페이징 등을 적용할 것
-            string sql = "Select * From Ideas";
-            return db.Query<Idea>(sql).ToList();
-        }
+        public List<Idea> GetAll() => 
+            db.Query<Idea>("Select * From Ideas").ToList();
 
         public Idea Add(Idea model)
         {
