@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorNote", "RazorNote\Razo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreeterService", "GreeterService\GreeterService.csproj", "{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNote.Tests", "DotNetNote.Tests\DotNetNote.Tests.csproj", "{ADFC5E30-93C0-428C-85CD-7A4EB39C42F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNote.Tests", "DotNetNote.Tests\DotNetNote.Tests.csproj", "{ADFC5E30-93C0-428C-85CD-7A4EB39C42F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preview", "Preview", "{A885D3EC-03A3-4264-86F5-FE3E5A4ADFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E90E9F0E-9E8B-4213-AF66-485E81214F81} = {A885D3EC-03A3-4264-86F5-FE3E5A4ADFD3}
+		{C13536E6-684D-4232-8259-EC5346BED40C} = {A885D3EC-03A3-4264-86F5-FE3E5A4ADFD3}
+		{1FE8A31A-9A5C-4AA5-8126-3DF6E3342814} = {A885D3EC-03A3-4264-86F5-FE3E5A4ADFD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61B8B3F7-B6B8-40EB-9E73-FA88F8A94FAB}

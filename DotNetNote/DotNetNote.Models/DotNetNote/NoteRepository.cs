@@ -199,12 +199,7 @@ namespace DotNetNote.Models
         /// <summary>
         /// Id에 해당하는 파일명 반환
         /// </summary>
-        public string GetFileNameById(int id)
-        {
-            return 
-                con.Query<string>("Select FileName From Notes Where Id = @Id", 
-                new { Id = id }).SingleOrDefault();
-        }
+        public string GetFileNameById(int id) => con.Query<string>("Select FileName From Notes Where Id = @Id", new { Id = id }).SingleOrDefault();
 
         /// <summary>
         /// 검색 결과 리스트
@@ -221,37 +216,19 @@ namespace DotNetNote.Models
         /// <summary>
         /// 다운 카운트 1 증가
         /// </summary>
-        public void UpdateDownCount(string fileName)
-        {
-            con.Execute("Update Notes Set DownCount = DownCount + 1 " 
-                + " Where FileName = @FileName", new { FileName = fileName });
-        }
-        public void UpdateDownCountById(int id)
-        {
-            var p = new DynamicParameters(new { Id = id });
-            con.Execute("Update Notes Set DownCount = DownCount + 1 "
-                + " Where Id = @Id", p, commandType: CommandType.Text);
-        }
+        public void UpdateDownCount(string fileName) => con.Execute("Update Notes Set DownCount = DownCount + 1 " + " Where FileName = @FileName", new { FileName = fileName });
+
+        public void UpdateDownCountById(int id) => con.Execute("Update Notes Set DownCount = DownCount + 1 " + " Where Id = @Id", new DynamicParameters(new { Id = id }), commandType: CommandType.Text);
 
         /// <summary>
         /// 상세 보기 
         /// </summary>
-        public Note GetNoteById(int id)
-        {
-            var parameters = new DynamicParameters(new { Id = id });
-            return con.Query<Note>("ViewNote", parameters, 
-                commandType: CommandType.StoredProcedure).SingleOrDefault();
-        }
+        public Note GetNoteById(int id) => con.Query<Note>("ViewNote", new DynamicParameters(new { Id = id }), commandType: CommandType.StoredProcedure).SingleOrDefault();
         
         /// <summary>
         /// 삭제 
         /// </summary>
-        public int DeleteNote(int id, string password)
-        {
-            return con.Execute("DeleteNote", 
-                new { Id = id, Password = password }, 
-                commandType: CommandType.StoredProcedure); 
-        }
+        public int DeleteNote(int id, string password) => con.Execute("DeleteNote", new { Id = id, Password = password }, commandType: CommandType.StoredProcedure); 
 
         /// <summary>
         /// 최근 올라온 사진 리스트 4개 출력: DotNetNote\_NewPhotos.cshtml
@@ -265,6 +242,7 @@ namespace DotNetNote.Models
                 + " Order By Id Desc";
             return con.Query<Note>(sql).ToList();
         }
+
         public List<Note> GetNewPhotosCache()
         {
             //string sql =
@@ -370,11 +348,6 @@ namespace DotNetNote.Models
         /// <summary>
         /// 특정 게시물을 공지사항(NOTICE)으로 올리기
         /// </summary>
-        public void Pinned(int id)
-        {
-            con.Execute(
-                "Update Notes Set Category = 'Notice' Where Id = @Id"
-                , new { Id = id });
-        }
+        public void Pinned(int id) => con.Execute("Update Notes Set Category = 'Notice' Where Id = @Id", new { Id = id });
     }
 }

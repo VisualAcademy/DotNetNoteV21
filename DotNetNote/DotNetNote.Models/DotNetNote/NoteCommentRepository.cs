@@ -53,37 +53,17 @@ namespace DotNetNote.Models
         /// <summary>
         /// 특정 게시물에 해당하는 댓글 리스트
         /// </summary>
-        public List<NoteComment> GetNoteComments(int boardId)
-        {
-            return con.Query<NoteComment>(
-                "Select * From NoteComments Where BoardId = @BoardId"
-                , new { BoardId = boardId }
-                , commandType: CommandType.Text).ToList();
-        }
+        public List<NoteComment> GetNoteComments(int boardId) => con.Query<NoteComment>("Select * From NoteComments Where BoardId = @BoardId", new { BoardId = boardId }, commandType: CommandType.Text).ToList();
 
         /// <summary>
         /// 특정 게시물의 특정 Id에 해당하는 댓글 카운트
         /// </summary>
-        public int GetCountBy(int boardId, int id, string password)
-        {
-            return con.Query<int>(@"Select Count(*) From NoteComments 
-                Where BoardId = @BoardId And Id = @Id And Password = @Password"
-                , new { BoardId = boardId, Id = id, Password = password }
-                , commandType: CommandType.Text).SingleOrDefault();
-        }
+        public int GetCountBy(int boardId, int id, string password) => con.Query<int>(@"Select Count(*) From NoteComments Where BoardId = @BoardId And Id = @Id And Password = @Password", new { BoardId = boardId, Id = id, Password = password }, commandType: CommandType.Text).SingleOrDefault();
 
         /// <summary>
         /// 댓글 삭제 
         /// </summary>
-        public int DeleteNoteComment(int boardId, int id, string password)
-        {
-            return con.Execute(@"Delete NoteComments 
-                Where BoardId = @BoardId And Id = @Id And Password = @Password; 
-                Update Notes Set CommentCount = CommentCount - 1 
-                Where Id = @BoardId"
-                , new { BoardId = boardId, Id = id, Password = password }
-                , commandType: CommandType.Text);
-        }
+        public int DeleteNoteComment(int boardId, int id, string password) => con.Execute(@"Delete NoteComments Where BoardId = @BoardId And Id = @Id And Password = @Password; Update Notes Set CommentCount = CommentCount - 1 Where Id = @BoardId", new { BoardId = boardId, Id = id, Password = password }, commandType: CommandType.Text);
         
         /// <summary>
         /// 최근 댓글 리스트 전체
@@ -112,11 +92,6 @@ namespace DotNetNote.Models
             return cacheData;
         }
 
-        public List<NoteComment> GetRecentCommentsNoCache()
-        {
-            string sql =
-                "SELECT TOP 2 * FROM NoteComments Order By Id Desc";
-            return con.Query<NoteComment>(sql).ToList(); ;
-        }
+        public List<NoteComment> GetRecentCommentsNoCache() => con.Query<NoteComment>("SELECT TOP 2 * FROM NoteComments Order By Id Desc").ToList();
     }
 }
