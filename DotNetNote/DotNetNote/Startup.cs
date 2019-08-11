@@ -254,10 +254,11 @@ namespace DotNetNote
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            // 새로운 DbContext 추가
+            // <DashboardContext:새로운 DbContext 추가>
             services.AddEntityFrameworkSqlServer().AddDbContext<DashboardContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+            // </DashboardContext:새로운 DbContext 추가>
 
             // ============================================================================== // 
             // 새로운 DbContext 추가

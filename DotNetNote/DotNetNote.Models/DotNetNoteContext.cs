@@ -1,6 +1,9 @@
-﻿// System.Data.SqlClient.dll
-// Microsoft.EntityFrameworkCore.SqlServer.dll
-// System.Configuration.ConfigurationManager.dll 
+﻿//Install-Package Microsoft.EntityFrameworkCore
+//Install-Package Microsoft.EntityFrameworkCore.SqlServer
+//Install-Package Microsoft.EntityFrameworkCore.Tools
+//Install-Package System.Configuration.ConfigurationManager
+//Install-Package System.Data.SqlClient
+
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 
