@@ -26,7 +26,7 @@ namespace DotNetNote.Models
 
     /// <summary>
     /// [2] 인터페이스 
-    /// Heroes 테이블에 대한 CURD API 명세서 작성
+    /// Heroes 테이블에 대한 CRUD API 명세서 작성
     /// </summary>
     public interface IHeroRepository
     {
