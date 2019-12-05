@@ -1,5 +1,8 @@
 ﻿namespace DotNetNote.Models
 {
+    /// <summary>
+    /// 페이저를 위한 공통 클래스
+    /// </summary>
     public class PagerBase
     {
         /// <summary>
@@ -21,6 +24,11 @@
         /// 페이지 사이즈: 한 페이지에 몇 개의 레코드를 보여줄건지 결정 
         /// </summary>
         public int PageSize { get; set; } = 10;
+
+        /// <summary>
+        /// 페이지 인덱스: 현재 보여줄 페이지 번호의 인덱스(PageNumber - 1)
+        /// </summary>
+        public int PageIndex { get; set; } = 0;
 
         /// <summary>
         /// 페이지 번호: 현재 보여줄 페이지 번호: 1 페이지, 2 페이지, ... 

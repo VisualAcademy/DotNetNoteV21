@@ -6,7 +6,8 @@
     string Url = Model.Url;
     int RecordCount = Model.RecordCount;
     int PageSize = Model.PageSize;
-    int PageCount = ((RecordCount - 1) / PageSize) + 1;
+    //int PageCount = ((RecordCount - 1) / PageSize) + 1;
+    int PageCount = Convert.ToInt32(Math.Ceiling(RecordCount / (double)PageSize));
     int PageNumber = Model.PageNumber;
     int PagerButtonCount = Model.PagerButtonCount;
     bool SearchMode = Model.SearchMode;
