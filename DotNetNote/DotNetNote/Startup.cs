@@ -103,6 +103,7 @@ namespace DotNetNote
             //});
 
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); // _httpContextAccessor.IsAuthenticated 등 사용 
             //[!] ASP.NET Core 2.X 쿠키 인증 및 JWT 인증: 기본형
             //services.AddAuthentication()
             //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
