@@ -109,6 +109,7 @@ namespace DotNetNote.Controllers
                         new Claim(ClaimTypes.NameIdentifier, model.UserId),
 
                         new Claim(ClaimTypes.Name, model.UserId), 
+                        //new Claim(ClaimTypes.Email, model.UserId), //
 
                         // 기본 역할 지정, "Role" 기능에 "Users" 값 부여
                         new Claim(ClaimTypes.Role, "Users") // 추가 정보 기록
@@ -130,9 +131,10 @@ namespace DotNetNote.Controllers
                     };
                     //await HttpContext.SignInAsync("Cookies", new ClaimsPrincipal(ci), new AuthenticationProperties { IsPersistent = true });
                     //await HttpContext.SignInAsync("Cookies", new ClaimsPrincipal(ci), authenticationProperties);
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(ci), authenticationProperties);
-
-
+                    //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(ci)); // 기본
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme
+                        , new ClaimsPrincipal(ci), authenticationProperties); // 옵션
+                    
 
                     ////[참고] ASP.NET Core Identity에서 로그인하는 모양
                     //var identity = new ClaimsIdentity("Cookies");
@@ -144,6 +146,7 @@ namespace DotNetNote.Controllers
 
 
                     // 추가: 세션에 로그인 사용자 정보 저장
+                    // 세션 인증 로그인
                     HttpContext.Session.SetString("Username", model.UserId);
 
 
@@ -155,15 +158,19 @@ namespace DotNetNote.Controllers
         }
 
 
-        //[User][6][7] : 로그아웃 처리
+        //[User][6][7]: 로그아웃 처리
         public async Task<IActionResult> Logout()
         {
+            #region Old Version
             // Startup.cs의 미들웨어에서 지정한 "Cookies" 이름 사용
             // ASP.NET Core 1.X
             //await HttpContext.Authentication.SignOutAsync("Cookies");
             // ASP.NET Core 2.X
-            //await HttpContext.SignOutAsync("Cookies");
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            //await HttpContext.SignOutAsync("Cookies"); 
+            #endregion
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); // 쿠키 인증 로그아웃
+
+            HttpContext.Session.Clear(); // 세션 인증 로그아웃
 
             return Redirect("/User/Index");
         }

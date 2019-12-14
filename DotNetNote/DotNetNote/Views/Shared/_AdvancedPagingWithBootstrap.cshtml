@@ -12,7 +12,7 @@
     int PageNumber = Model.PageNumber;
     int PagerButtonCount = Model.PagerButtonCount;
     bool SearchMode = Model.SearchMode;
-    string SearchFiled = Model.SearchField;
+    string SearchField = Model.SearchField;
     string SearchQuery = Model.SearchQuery;
 }
 <ul class="pagination pagination-sm">
@@ -50,7 +50,7 @@
         if (SearchMode)
         {
             <li>
-                <a href="/@Url?Page=@(((PageNumber - 1) / (int)PagerButtonCount) * PagerButtonCount)&SearchField=@SearchFiled&SearchQuery=@SearchQuery" class="prev">
+                <a href="/@Url?Page=@(((PageNumber - 1) / (int)PagerButtonCount) * PagerButtonCount)&SearchField=@SearchField&SearchQuery=@SearchQuery" class="prev">
                     이전
                 </a>
             </li>
@@ -97,7 +97,7 @@
             if (SearchMode)
             {
                 <li>
-                    <a href="/@Url?Page=@i&SearchField=@SearchFiled&SearchQuery=@SearchQuery">
+                    <a href="/@Url?Page=@i&SearchField=@SearchField&SearchQuery=@SearchQuery">
                         @i
                     </a>
                 </li>
@@ -113,12 +113,13 @@
         }
     }
 
+    @*다음 링크*@
     @if (i <= PageCount)
     {
         if (SearchMode)
         {
             <li>
-                <a href="/@Url?Page=@(((PageNumber - 1) / (int)PagerButtonCount) * PagerButtonCount + (PagerButtonCount + 1))&SearchField=@SearchFiled&SearchQuery=@SearchQuery" class="next">
+                <a href="/@Url?Page=@(((PageNumber - 1) / (int)PagerButtonCount) * PagerButtonCount + (PagerButtonCount + 1))&SearchField=@SearchField&SearchQuery=@SearchQuery" class="next">
                     다음
                 </a>
             </li>
@@ -141,12 +142,12 @@
         </li>
     }
 
-    @if (i <= PageCount)
+    @if (i < PageCount)
     {
         if (SearchMode)
         {
             <li>
-                <a href="/@Url?Page=@PageCount&SearchField=@SearchFiled&SearchQuery=@SearchQuery" class="last">
+                <a href="/@Url?Page=@PageCount&SearchField=@SearchField&SearchQuery=@SearchQuery" class="last">
                     마지막
                 </a>
             </li>
