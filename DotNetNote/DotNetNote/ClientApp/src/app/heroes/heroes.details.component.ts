@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IHero, HeroModel } from './model';
 import { HeroesDataService } from './heroes.data.service';
@@ -8,8 +8,10 @@ import { HeroesDataService } from './heroes.data.service';
     templateUrl: './heroes.details.component.html' 
 })
 export class HeroesDetailsComponent implements OnInit {
+  // 모델
+  model: IHero = { id: 0, name: "", icon: "", created: "" }; // 기본값으로 초기화
+
     id: number; 
-    model: IHero = { id: 0, name: "", icon: "", created: "" }; // 기본값으로 초기화 
 
     constructor(
         private router: Router,             // 페이지 이동

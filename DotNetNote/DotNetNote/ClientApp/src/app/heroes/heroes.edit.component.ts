@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IHero, HeroModel } from './model';
 
@@ -9,8 +9,10 @@ import { HeroesDataService } from './heroes.data.service';
     templateUrl: './heroes.edit.component.html'
 })
 export class HeroesEditComponent implements OnInit {
+  // 모델
+  model: IHero = { id: 0, name: "", icon: "", created: "" }; // 기본값으로 초기화
+
     id: number;
-    model: IHero = { id: 0, name: "", icon: "", created: "" }; // 기본값으로 초기화 
     // 동의 체크박스
     isAgree: boolean = true; 
     constructor(private router: Router, private route: ActivatedRoute, private ds: HeroesDataService) { }

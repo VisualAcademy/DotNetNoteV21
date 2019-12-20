@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeroesDataService } from './heroes.data.service';
 import { IHero, IPagedViewModel } from './model';
 
@@ -7,7 +7,9 @@ import { IHero, IPagedViewModel } from './model';
     templateUrl: './heroes.index.component.html'
 })
 export class HeroesIndexComponent implements OnInit {
-    models: IHero[] = [];
+  // 모델 컬렉션
+  models: IHero[] = [];
+
     totalRecordCount: number; // 총 레코드 수
     pageSize: number = 3; // 페이지 크기
 
