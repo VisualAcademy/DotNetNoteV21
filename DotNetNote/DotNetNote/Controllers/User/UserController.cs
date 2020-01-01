@@ -4,6 +4,7 @@ using DotNetNote.Components;
 using DotNetNote.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -168,8 +169,9 @@ namespace DotNetNote.Controllers
             // ASP.NET Core 2.X
             //await HttpContext.SignOutAsync("Cookies"); 
             #endregion
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); // 쿠키 인증 로그아웃
 
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); // 쿠키 인증 로그아웃
+            await HttpContext.SignOutAsync(OpenIdConnectDefaults.AuthenticationScheme); // 토큰 인증 로그아웃 
             HttpContext.Session.Clear(); // 세션 인증 로그아웃
 
             return Redirect("/User/Index");
