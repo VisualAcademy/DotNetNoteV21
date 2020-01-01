@@ -94,24 +94,29 @@ namespace DotNetNote
             });
 
 
-            #region ASP.NET Core 2.X 쿠키 인증: ConfigureServices()
-            ////[1] ASP.NET Core 2.X 쿠키 인증: 단순형
+
+            #region ASP.NET Core 쿠키 인증: ConfigureServices()
+            ////[1] ASP.NET Core 쿠키 인증: 단순형
             //services.AddAuthentication("Cookies").AddCookie(options =>
             //{
             //    options.LoginPath = "/User/Login/";
             //    options.AccessDeniedPath = "/User/Forbidden/";
             //});
 
+            // _httpContextAccessor.IsAuthenticated 등 사용 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
 
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); // _httpContextAccessor.IsAuthenticated 등 사용 
-            //[!] ASP.NET Core 2.X 쿠키 인증 및 JWT 인증: 기본형
+            //[!] ASP.NET Core 쿠키 인증 및 JWT 인증: 기본형
             //services.AddAuthentication()
             //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = 
+                    CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = 
+                    CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = 
+                    CookieAuthenticationDefaults.AuthenticationScheme;
             })
             //services.AddAuthentication(options =>
             //{
@@ -126,7 +131,8 @@ namespace DotNetNote
                 options.LogoutPath = "/User/Logout";
                 options.AccessDeniedPath = new PathString("/User/Forbidden");
                 //options.Cookie.Name = "Cookies"; // 직접 이름 지정
-                options.Cookie.Name = CookieAuthenticationDefaults.AuthenticationScheme; // 정의되어 있는 이름으로 지정
+                options.Cookie.Name = 
+                    CookieAuthenticationDefaults.AuthenticationScheme; // 정의되어 있는 이름으로 지정
                 options.Cookie.HttpOnly = false;
                 options.Cookie.SameSite = SameSiteMode.None; 
                 options.SlidingExpiration = true;
