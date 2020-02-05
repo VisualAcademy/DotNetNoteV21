@@ -93,7 +93,7 @@
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td style="text-align:center;">
+                            <td style="text-align:center; font-size: xx-small;">
                                 @if (item.Step == 0)
                                 {
                                     @Html.DisplayFor(modelItem => item.Id)
@@ -103,7 +103,6 @@
                                     <text>&nbsp;</text>
                                 }
                             </td>
-
                             <td>
                                 @Html.Raw(BoardLibrary.FuncStep(item.Step))
                                 <a asp-controller="DotNetNote" asp-action="Details"

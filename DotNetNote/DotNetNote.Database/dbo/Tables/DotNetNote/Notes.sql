@@ -14,14 +14,19 @@ Create Table dbo.Notes
     Homepage        NVarChar(100) Null,                         -- 홈페이지
     ModifyDate      DateTime Null,                              -- 수정일 
     ModifyIp        NVarChar(15) Null,                          -- 수정IP
+
+	--[2] 자료실 게시판 관련 주요 컬럼
     FileName        NVarChar(255) Null,                         -- 파일명
     FileSize        Int Default 0,                              -- 파일크기
     DownCount       Int Default 0,                              -- 다운수 
+
+	--[3] 답변형 게시판 관련 주요 컬럼
     Ref             Int Not Null,                               -- 참조(부모글)
     Step            Int Default 0,                              -- 답변깊이(레벨)
     RefOrder        Int Default 0,                              -- 답변순서
     AnswerNum       Int Default 0,                              -- 답변수
     ParentNum       Int Default 0,                              -- 부모글번호
+
     CommentCount    Int Default 0,                              -- 댓글수
     Category        NVarChar(10) Default('Free') Null,          -- 카테고리(확장...)
     -- 추가: 필요한 항목 추가

@@ -51,14 +51,25 @@ namespace DotNetNote.Models
         [Display(Name = "수정IP")]
         public string ModifyIp { get; set; }
 
+        #region [2] 자료실 게시판 관련 주요 컬럼
+        /// <summary>
+        /// 파일명
+        /// </summary>
         [Display(Name = "파일")]
         public string FileName { get; set; }
 
+        /// <summary>
+        /// 파일크기
+        /// </summary>
         [Display(Name = "파일크기")]
         public int FileSize { get; set; }
 
+        /// <summary>
+        /// 다운수 
+        /// </summary>
         [Display(Name = "다운수")]
         public int DownCount { get; set; }
+        #endregion
 
         [Display(Name = "참조번호")]
         public int Ref { get; set; }

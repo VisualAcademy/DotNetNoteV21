@@ -28,7 +28,7 @@ namespace DotNetNote.Controllers
         private readonly DotNetNoteContext _context; // 컨텍스트 클래스
 
         public DotNetNoteController(
-            IHostingEnvironment environment,
+            IHostingEnvironment environment, // IWebHostEnvironment로 변경할 것
             INoteRepository repository,
             INoteCommentRepository commentRepository,
             ILogger<DotNetNoteController> logger,
