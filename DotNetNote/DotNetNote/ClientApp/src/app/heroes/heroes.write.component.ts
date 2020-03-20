@@ -40,7 +40,7 @@ export class HeroesWriteComponent implements OnInit {
           console.log(`저장 에러 발생: ${err}`);
         },  // 에러 콜백
         () => {
-          // 저장 후 리스트 페이지로 이동 
+          //[!] 저장 후 리스트 페이지로 이동 
           this.router.navigate(['/heroes']);
         }   // 마무리 콜백
       );
