@@ -42,7 +42,8 @@ else
                     style="width: 200px; display: inline;" />
         @if (formType != BoardWriteFormType.Modify)
         {
-            <input type="button" name="btnSave" value="저장" class="btn btn-primary" onclick="@Add" />
+            <input type="button" name="btnSave" value="저장" 
+                   class="btn btn-primary" onclick="@Add" />
         }
         @if (formType == BoardWriteFormType.Modify)
         {
