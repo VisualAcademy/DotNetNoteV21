@@ -272,7 +272,7 @@ namespace DotNetNote.Models.Exams
             }
         } // </Post>
 
-        // PUT: /api/QuestoinService 
+        // PUT: /api/QuestionService 
         [HttpPut("{id:int}")] // HttpPatch == 부분 업데이트 
         public IActionResult Put(int id, [FromBody] Question model)
         {
@@ -299,7 +299,7 @@ namespace DotNetNote.Models.Exams
             }
         }
 
-        // DELETE: /api/QuestoinService/{id} 
+        // DELETE: /api/QuestionService/{id} 
         [HttpDelete("{id:int}")] // 데코레이터 특성
         public IActionResult Delete(int id)
         {
